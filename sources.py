@@ -2,9 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import os
 
 file_path_write = ".\sources-ref.md"
-file_path = "./md\sources.md"
+file_path = ".\sources.md"
 
 text = "# Sources\n\nVoici la liste de tout les documents que j'ai utilise pour faire ce projet. Il y a des sites et des videos. Les sites sont classes par ordre alphabetique et les videos par ordre de duree."
 
@@ -143,7 +144,12 @@ def get_image(soup, url):
 
 
 # Ouvre le fichier contenant la liste des liens
-sources = open_file(file_path).splitlines()
+if open_file(file_path) == False:
+    sources = []
+    if not os.path.exists(file_path):
+        open(file_path, 'w').close()
+else :
+    sources = open_file(file_path).splitlines()
 
 # Vérifie s'il y a des doublons
 if same(sources):
@@ -164,8 +170,14 @@ dict_site = {}
 dict_video = {}
 dict_image = {}
 
-# Vérifie s'il y a des doublons dans le fichier de référence
-ref = open_file(file_path_write).splitlines()
+# Ouvre le fichier contenant la liste des liens
+if open_file(file_path_write) == False:
+    ref = []
+    if not os.path.exists(file_path_write):
+        open(file_path_write, 'w').close()
+else :
+    ref = open_file(file_path_write).splitlines()
+
 for line in ref:
     if line.startswith("- ["):
         url = line.split("](")[1].split(")")[0]
