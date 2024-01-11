@@ -6,7 +6,15 @@ Dans un bus de creation de resenc√©e les sources et d'etre prurement utile que √
 
 ## Lancement
 
+ne pas oublier de lancer la commande
+```shell
+pip install reportlab
+pip install sources
+pip install requests
+pip install beautifulsoup4
+```
 Lancer le fichier main.py
+
 
 ## Optimisation
 
