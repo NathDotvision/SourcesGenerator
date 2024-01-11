@@ -1,4 +1,5 @@
 import subprocess
+from main import file_path_write
 
 def git_diff():
     try:
@@ -13,5 +14,5 @@ def git_diff():
         print(f"Erreur lors de l'exécution de git diff : {e.stderr}")
 
 # Appeler la fonction git_diff
-data = git_diff().split("---")[1].split("\ ")[1].split('+')[2:]
+data = git_diff().splitlines()
 print(data)

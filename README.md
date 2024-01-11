@@ -12,6 +12,7 @@ pip install reportlab
 pip install sources
 pip install requests
 pip install beautifulsoup4
+pip install subprocess
 ```
 Lancer le fichier main.py
 
