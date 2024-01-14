@@ -1,0 +1,19 @@
+{
+  "name": "source_generator",
+  "version": "1.0.0",
+  "description": "genererate sources for develloppeur and manageur",
+  "main": "index.js",
+  "scripts": {
+    "_comment": "//! Attention fait planter les tests",
+    "test": "nodemon electron .",
+    "start": "electron ."
+  },
+  "author": "Nathan Morel",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.3"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
