@@ -1,5 +1,4 @@
 import subprocess
-from main import file_path_write
 
 def git_diff():
     try:

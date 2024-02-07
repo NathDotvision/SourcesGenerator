@@ -1,7 +1,11 @@
 @media (prefers-color-scheme: dark) {
     body { background: #333; color: white; }
+    button { background: #444; color: white; }
+    img{ filter: invert(1); }
 }
   
 @media (prefers-color-scheme: light) {
     body { background: #ddd; color: black; }
+    button { background: #eee; color: black; }
+    img { filter: invert(0); }
 }

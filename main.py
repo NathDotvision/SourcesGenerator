@@ -1,20 +1,25 @@
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
-from sources import open_file
+from sources import open_file, info_time
+from colorama import Fore, Style
 from reportlab.platypus import Image
-from reportlab.platypus import Table
+from reportlab.platypus import Table, TableStyle
+from reportlab.lib import colors
 import requests
 from io import BytesIO
 from bs4 import BeautifulSoup
+import os
 
+info_time(os.path.basename(__file__))
 doc = SimpleDocTemplate("sources.pdf", pagesize=letter)
 styles = getSampleStyleSheet()
 story = []
+story.append(Paragraph(info_time(), styles["Normal"]))
 
 file_path_write = ".\sources-ref.md"
 
-text = open_file(file_path_write)
+text = open_file(file_path_write) 
 youtube_logo = None
 
 for line in text.splitlines():
@@ -55,16 +60,22 @@ for line in text.splitlines():
                         img = Image(image_data, width=20, height=20)
                     except:
                         img = ""
-                        print("error in " + image_url)
+                        print(Fore.RED + "error Icon in " + image_url + Style.RESET_ALL)
             link_para = Paragraph(link, styles["BodyText"])
 
             # Créer un tableau avec l'image, le nom et le lien
             data = [[img,link_para]]
             table = Table(data, colWidths=[40, 400])
 
+            # Ajouter un style de tableau avec un cadre
+            # table.setStyle(TableStyle([
+            # ('GRID', (0,0), (-1,-1), 1, colors.black),
+            # ]))
+
             # Ajouter le tableau à l'histoire
             story.append(table)
         elif line.startswith('- ![Thumbnail'):
+            story.pop()
             # Extraire les informations de l'image et du lien
             image_url = line.split('](')[1].split(')')[0].strip()
 
@@ -72,22 +83,25 @@ for line in text.splitlines():
             response = requests.get(image_url)
             image_data = BytesIO(response.content)
 
+            ImageSizeFactor = 30
+            ImageSize = [1920/ImageSizeFactor, 1080/ImageSizeFactor]
+
             # Créer une image
             if response.headers['Content-Type'] == 'image/png':
-                img = Image(image_data, width=1920/20, height=1080/20)
+                img = Image(image_data, width=ImageSize[0], height=ImageSize[1])
             else:
                 try:
                     response = requests.get(image_url.split("?")[0])
                     #soup = BeautifulSoup(response.text, 'html.parser')
                     image_data = BytesIO(response.content)
-                    img = Image(image_data, width=1280/10, height=720/10)
+                    img = Image(image_data, width=ImageSize[0], height=ImageSize[1])
                 except:
                     img = ""
-                    print("error in " + image_url)
+                    print(Fore.RED + "error Thumbnail in " + image_url + Style.RESET_ALL)
     
             # Créer un tableau avec l'image
-            data = [[img]]
-            table = Table(data, colWidths=[1280/10])
+            data[0].append(img)
+            table = Table(data, colWidths=[40,400-ImageSize[0],ImageSize[0]])
 
             # Ajouter le tableau à l'histoire
             story.append(table)
@@ -107,8 +121,8 @@ for line in text.splitlines():
 
 # Largeur et hauteur de la page
 page_width, page_height = letter
-
+doc.build(story)
+print(Fore.GREEN + "Pdf generated")
 print("Page width:", page_width)
 print("Page height:", page_height)
-
-doc.build(story)
+print(Style.RESET_ALL + "")
