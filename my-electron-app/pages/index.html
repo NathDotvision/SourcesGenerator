@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title id="title">Titlle</title>
+    <title class="title" id="title">Titlle</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script type="module" src="../renderer.js" defer></script>
   </head>
   <body>
-    <h1 id="title">Title</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-    <span id="author"></span>
-    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <div class="NavBar">
+      <h1 class="title" id="title">Title</h1>
+      <span id="author"></span>
+      <button id="toggle-dark-mode">
+        <img id= "myImage" src="" alt="Description of image" width="20" height="20">
+      </button>
+    </div>
     <button id="reset-to-system">Reset to System Theme</button>
     <button id="execute-command">command executer</button>
-    <span id="theme-source"></span>
-
-    <script src="../renderer.js"></script>
   </body>
 </html>

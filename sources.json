@@ -1,0 +1,1466 @@
+{
+    " Organisation d'un graphique de mat\u00c3\u00a9riau dans Unreal Engine | Unreal Engine 5.3 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.3/fr/organizing-a-material-graph-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.3/fr/organizing-a-material-graph-in-unreal-engine/\"> Organisation d'un graphique de mat\u00c3\u00a9riau dans Unreal Engine | Unreal Engine 5.3 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    " Texture Merging With UCanvasRenderTarget2D - Old UE4 Wiki": {
+        "icon_image": "https://github.githubassets.com/favicons/favicon.png",
+        "link_url": "https://nerivec.github.io/old-ue4-wiki/pages/texture-merging-with-ucanvasrendertarget2d.html",
+        "link_pdf": "<link href=\"https://nerivec.github.io/old-ue4-wiki/pages/texture-merging-with-ucanvasrendertarget2d.html\"> Texture Merging With UCanvasRenderTarget2D - Old UE4 Wiki</link>",
+        "type": "link_with_icon"
+    },
+    "Accessing pixel values of Texture2D - Asset Creation - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/accessing-pixel-values-of-texture2d/279798",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/accessing-pixel-values-of-texture2d/279798\">Accessing pixel values of Texture2D - Asset Creation - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Activating the Virtual Scouting Tools| Unreal Engine 4.27 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.27/en-US/BuildingWorlds/VRMode/VirtualScouting/ActivateVirtualScouting/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.27/en-US/BuildingWorlds/VRMode/VirtualScouting/ActivateVirtualScouting/\">Activating the Virtual Scouting Tools| Unreal Engine 4.27 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Application Manifests for Release Builds | Oculus Developers": {
+        "icon_image": "https://developer.oculus.com/favicon.ico?is_staging",
+        "link_url": "https://developer.oculus.com/resources/publish-mobile-manifest/",
+        "link_pdf": "<link href=\"https://developer.oculus.com/resources/publish-mobile-manifest/\">Application Manifests for Release Builds | Oculus Developers</link>",
+        "type": "link_with_icon"
+    },
+    "Applying a Physics Constraint Profile in Unreal Engine | Unreal Engine 5.0 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.0/en-US/applying-a-physics-constraint-profile-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.0/en-US/applying-a-physics-constraint-profile-in-unreal-engine/\">Applying a Physics Constraint Profile in Unreal Engine | Unreal Engine 5.0 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Bing Maps Tile System - Bing Maps | Microsoft Learn": {
+        "icon_image": "https://learn.microsoft.com/favicon.ico",
+        "link_url": "https://learn.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system",
+        "link_pdf": "<link href=\"https://learn.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system\">Bing Maps Tile System - Bing Maps | Microsoft Learn</link>",
+        "type": "link_with_icon"
+    },
+    "Call REST API using HTTP &amp; JSON from UE5 C++ | Community tutorial": {
+        "icon_image": "https://dev.epicgames.com/community/assets/images/favicon-light.png",
+        "link_url": "https://dev.epicgames.com/community/learning/tutorials/ZdXD/call-rest-api-using-http-json-from-ue5-c",
+        "link_pdf": "<link href=\"https://dev.epicgames.com/community/learning/tutorials/ZdXD/call-rest-api-using-http-json-from-ue5-c\">Call REST API using HTTP &amp; JSON from UE5 C++ | Community tutorial</link>",
+        "type": "link_with_icon"
+    },
+    "Cesium for Unreal Quickstart a\u0080\u0093 Cesium": {
+        "icon_image": null,
+        "link_url": "https://cesium.com/learn/unreal/unreal-quickstart/",
+        "link_pdf": "<link href=\"https://cesium.com/learn/unreal/unreal-quickstart/\">Cesium for Unreal Quickstart a\u0080\u0093 Cesium</link>",
+        "type": "link_without_icon"
+    },
+    "Cesium for Unreal a\u0080\u0093 Cesium": {
+        "icon_image": null,
+        "link_url": "https://cesium.com/platform/cesium-for-unreal/",
+        "link_pdf": "<link href=\"https://cesium.com/platform/cesium-for-unreal/\">Cesium for Unreal a\u0080\u0093 Cesium</link>",
+        "type": "link_without_icon"
+    },
+    "Cesium for Unreal in Code Plugins - UE Marketplace": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://www.unrealengine.com/marketplace/en-US/product/cesium-for-unreal?sessionInvalidated=true#",
+        "link_pdf": "<link href=\"https://www.unrealengine.com/marketplace/en-US/product/cesium-for-unreal?sessionInvalidated=true#\">Cesium for Unreal in Code Plugins - UE Marketplace</link>",
+        "type": "link_with_icon"
+    },
+    "Collision Tutorials in Unreal Engine | Unreal Engine 5.3 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.3/en-US/collision-tutorials-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.3/en-US/collision-tutorials-in-unreal-engine/\">Collision Tutorials in Unreal Engine | Unreal Engine 5.3 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Collision in Unreal Engine - Overview | Unreal Engine 5.0 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.0/en-US/collision-in-unreal-engine---overview/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.0/en-US/collision-in-unreal-engine---overview/\">Collision in Unreal Engine - Overview | Unreal Engine 5.0 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Collisions in VR and movement - XR Development - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/collisions-in-vr-and-movement/88690",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/collisions-in-vr-and-movement/88690\">Collisions in VR and movement - XR Development - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Community Tutorial Unreal Engine 5.3.2 for Meta Quest VR - Tutorial & Course Discussions - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/community-tutorial-unreal-engine-5-3-2-for-meta-quest-vr/1376911",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/community-tutorial-unreal-engine-5-3-2-for-meta-quest-vr/1376911\">Community Tutorial Unreal Engine 5.3.2 for Meta Quest VR - Tutorial & Course Discussions - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Creating Your First Meta Quest VR App in Unreal Engine Unreal | Oculus Developers": {
+        "icon_image": "https://developer.oculus.com/favicon.ico?is_staging",
+        "link_url": "https://developer.oculus.com/documentation/unreal/unreal-quick-start-guide-quest/",
+        "link_pdf": "<link href=\"https://developer.oculus.com/documentation/unreal/unreal-quick-start-guide-quest/\">Creating Your First Meta Quest VR App in Unreal Engine Unreal | Oculus Developers</link>",
+        "type": "link_with_icon"
+    },
+    "Creating a new Material in C++ - Rendering - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/creating-a-new-material-in-c/357563",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/creating-a-new-material-in-c/357563\">Creating a new Material in C++ - Rendering - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Demos - Tangram Docs": {
+        "icon_image": "https://tangrams.readthedocs.io/en/latest/img/favicon.ico",
+        "link_url": "https://tangrams.readthedocs.io/en/latest/Tutorials/Demos/",
+        "link_pdf": "<link href=\"https://tangrams.readthedocs.io/en/latest/Tutorials/Demos/\">Demos - Tangram Docs</link>",
+        "type": "link_with_icon"
+    },
+    "Digital Elevation Model (DEM) Data": {
+        "icon_image": "https://docs.sentinel-hub.com/api/latest/static/favicon-0211032a7963283fad24e3b280053c45.ico",
+        "link_url": "https://docs.sentinel-hub.com/api/latest/data/dem/",
+        "link_pdf": "<link href=\"https://docs.sentinel-hub.com/api/latest/data/dem/\">Digital Elevation Model (DEM) Data</link>",
+        "type": "link_with_icon"
+    },
+    "Documentation - Mapzen": {
+        "icon_image": "https://www.mapzen.com/assets/common/styleguide/images/favicons/favicon-32x32.png",
+        "link_url": "https://mapzen.com/documentation",
+        "link_pdf": "<link href=\"https://mapzen.com/documentation\">Documentation - Mapzen</link>",
+        "type": "link_with_icon"
+    },
+    "Dotvision_MyMotion Release Channel": {
+        "icon_image": "https://www.oculus.com/favicon.ico ",
+        "link_url": "https://www.meta.com/s/1C6MMAdTq",
+        "link_pdf": "<link href=\"https://www.meta.com/s/1C6MMAdTq\">Dotvision_MyMotion Release Channel</link>",
+        "type": "link_with_icon"
+    },
+    "Downloading Images? Imagewrapper? - 5 by Thoth_FN - Mobile - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/downloading-images-imagewrapper/25945/5",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/downloading-images-imagewrapper/25945/5\">Downloading Images? Imagewrapper? - 5 by Thoth_FN - Mobile - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Events in Unreal Engine | Unreal Engine 5.0 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.0/en-US/events-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.0/en-US/events-in-unreal-engine/\">Events in Unreal Engine | Unreal Engine 5.0 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "FMath | Unreal Engine Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.27/en-US/API/Runtime/Core/Math/FMath/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.27/en-US/API/Runtime/Core/Math/FMath/\">FMath | Unreal Engine Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Fly-away physics collision trouble - World Creation - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/fly-away-physics-collision-trouble/439530",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/fly-away-physics-collision-trouble/439530\">Fly-away physics collision trouble - World Creation - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "GitHub - EverNewJoy/VictoryPlugin Rama's Victory BP Plugin": {
+        "icon_image": "https://github.githubassets.com/favicons/favicon.png",
+        "link_url": "https://github.com/EverNewJoy/VictoryPlugin",
+        "link_pdf": "<link href=\"https://github.com/EverNewJoy/VictoryPlugin\">GitHub - EverNewJoy/VictoryPlugin Rama's Victory BP Plugin</link>",
+        "type": "link_with_icon"
+    },
+    "Goulandis": {
+        "icon_image": "https://github.githubassets.com/favicons/favicon.png",
+        "link_url": "https://goulandis.github.io/",
+        "link_pdf": "<link href=\"https://goulandis.github.io/\">Goulandis</link>",
+        "type": "link_with_icon"
+    },
+    "HTTP Requests for Blueprints in Code Plugins - UE Marketplace": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://www.unrealengine.com/marketplace/en-US/product/http-requests-for-blueprints?sessionInvalidated=true",
+        "link_pdf": "<link href=\"https://www.unrealengine.com/marketplace/en-US/product/http-requests-for-blueprints?sessionInvalidated=true\">HTTP Requests for Blueprints in Code Plugins - UE Marketplace</link>",
+        "type": "link_with_icon"
+    },
+    "How can I get an image from a URL and use it as a texture without using C++? - 2 by DevilsD - Rendering - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-can-i-get-an-image-from-a-url-and-use-it-as-a-texture-without-using-c/342303/2",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-can-i-get-an-image-from-a-url-and-use-it-as-a-texture-without-using-c/342303/2\">How can I get an image from a URL and use it as a texture without using C++? - 2 by DevilsD - Rendering - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to combine two textures - 2 by anonymous_user_95ce03cf - Rendering - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-combine-two-textures/338957/2",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-combine-two-textures/338957/2\">How to combine two textures - 2 by anonymous_user_95ce03cf - Rendering - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to create a material using a texture in c++? - C++ - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-create-a-material-using-a-texture-in-c/497751",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-create-a-material-using-a-texture-in-c/497751\">How to create a material using a texture in c++? - C++ - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to create textures at runtime and assign them to a mesh? - 2 by anonymous_user_21686246 - C++ - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-create-textures-at-runtime-and-assign-them-to-a-mesh/238371/2",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-create-textures-at-runtime-and-assign-them-to-a-mesh/238371/2\">How to create textures at runtime and assign them to a mesh? - 2 by anonymous_user_21686246 - C++ - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to make the VR hands' collision as complex shape which seperate each finger BUT not a shpere? - XR Development - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-make-the-vr-hands-collision-as-complex-shape-which-seperate-each-finger-but-not-a-shpere/232552",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-make-the-vr-hands-collision-as-complex-shape-which-seperate-each-finger-but-not-a-shpere/232552\">How to make the VR hands' collision as complex shape which seperate each finger BUT not a shpere? - XR Development - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to merge 2 (unique) textures into 1 larger texture - Asset Creation - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-merge-2-unique-textures-into-1-larger-texture/363057",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-merge-2-unique-textures-into-1-larger-texture/363057\">How to merge 2 (unique) textures into 1 larger texture - Asset Creation - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to merge 2 2D Texture assets into 1? - 2 by RecourseDesign - Programming & Scripting - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-merge-2-2d-texture-assets-into-1/1189912/2",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-merge-2-2d-texture-assets-into-1/1189912/2\">How to merge 2 2D Texture assets into 1? - 2 by RecourseDesign - Programming & Scripting - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to rotate a object(wheel/propeller) when using Rotating Movement Component? - 2 by ClockworkOcean - Character & Animation - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-rotate-a-object-wheel-propeller-when-using-rotating-movement-component/506265/2",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-rotate-a-object-wheel-propeller-when-using-rotating-movement-component/506265/2\">How to rotate a object(wheel/propeller) when using Rotating Movement Component? - 2 by ClockworkOcean - Character & Animation - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "How to use box collision with VR hands on UE5? - 2 by SupportiveEntity - Blueprint - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/how-to-use-box-collision-with-vr-hands-on-ue5/1208454/2",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/how-to-use-box-collision-with-vr-hands-on-ue5/1208454/2\">How to use box collision with VR hands on UE5? - 2 by SupportiveEntity - Blueprint - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Learn How to Use Unreal Engine - A Powerful Real-Time 3D Creation Platform": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://www.unrealengine.com/en-US/learn",
+        "link_pdf": "<link href=\"https://www.unrealengine.com/en-US/learn\">Learn How to Use Unreal Engine - A Powerful Real-Time 3D Creation Platform</link>",
+        "type": "link_with_icon"
+    },
+    "Lighting on the Oculus Quest - XR Development - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/lighting-on-the-oculus-quest/138178",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/lighting-on-the-oculus-quest/138178\">Lighting on the Oculus Quest - XR Development - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Lighting settings for VR, messed up on Light Build - Debugging, Optimization, & Profiling - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/lighting-settings-for-vr-messed-up-on-light-build/626120",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/lighting-settings-for-vr-messed-up-on-light-build/626120\">Lighting settings for VR, messed up on Light Build - Debugging, Optimization, & Profiling - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Math Material Expressions in Unreal Engine | Unreal Engine 5.2 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.2/en-US/math-material-expressions-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.2/en-US/math-material-expressions-in-unreal-engine/\">Math Material Expressions in Unreal Engine | Unreal Engine 5.2 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Media Framework Technical Reference | Unreal Engine 4.27 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.27/en-US/WorkingWithMedia/IntegratingMedia/MediaFramework/TechReference/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.27/en-US/WorkingWithMedia/IntegratingMedia/MediaFramework/TechReference/\">Media Framework Technical Reference | Unreal Engine 4.27 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Navigating the World in VR Mode | Unreal Engine 5.0 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.0/en-US/navigating-the-world-in-vr-mode/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.0/en-US/navigating-the-world-in-vr-mode/\">Navigating the World in VR Mode | Unreal Engine 5.0 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Petr Leontev - Tech Entrepreneur & Unreal Engineer| Efficient and asynchronous creation of textures at runtime in Unreal Engine": {
+        "icon_image": null,
+        "link_url": "https://peterleontev.com/blog/efficient_construction_of_textures/",
+        "link_pdf": "<link href=\"https://peterleontev.com/blog/efficient_construction_of_textures/\">Petr Leontev - Tech Entrepreneur & Unreal Engineer| Efficient and asynchronous creation of textures at runtime in Unreal Engine</link>",
+        "type": "link_without_icon"
+    },
+    "Photopea | Online Photo Editor": {
+        "icon_image": null,
+        "link_url": "https://www.photopea.com/",
+        "link_pdf": "<link href=\"https://www.photopea.com/\">Photopea | Online Photo Editor</link>",
+        "type": "link_without_icon"
+    },
+    "Physics Constraint Component User Guide | Unreal Engine 4.27 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Physics/Constraints/ConstraintsBlueprints/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Physics/Constraints/ConstraintsBlueprints/\">Physics Constraint Component User Guide | Unreal Engine 4.27 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Physics Constraints in Unreal Engine | Unreal Engine 5.3 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.3/en-US/physics-constraints-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.3/en-US/physics-constraints-in-unreal-engine/\">Physics Constraints in Unreal Engine | Unreal Engine 5.3 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Play a Video Stream | Unreal Engine 4.27 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.27/en-US/WorkingWithMedia/IntegratingMedia/MediaFramework/HowTo/StreamMediaSource/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.27/en-US/WorkingWithMedia/IntegratingMedia/MediaFramework/HowTo/StreamMediaSource/\">Play a Video Stream | Unreal Engine 4.27 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Preview Apps cover image change - Alpha channel re... - Meta Community Forums - 963738": {
+        "icon_image": "https://communityforums.atmeta.com/html/@04C305FE78126711BC668E52B4451B49/assets/M_Favicon_1632.ico ",
+        "link_url": "https://communityforums.atmeta.com/t5/Developer-Dashboard/Preview-Apps-cover-image-change-Alpha-channel-release/td-p/963738",
+        "link_pdf": "<link href=\"https://communityforums.atmeta.com/t5/Developer-Dashboard/Preview-Apps-cover-image-change-Alpha-channel-release/td-p/963738\">Preview Apps cover image change - Alpha channel re... - Meta Community Forums - 963738</link>",
+        "type": "link_with_icon"
+    },
+    "Pricing - 3D-Mapper | Create Your Own 3D Map Online": {
+        "icon_image": "https://3d-mapper.com/wp-content/uploads/2022/09/3d-mapper-fav.png",
+        "link_url": "https://3d-mapper.com/pricing/",
+        "link_pdf": "<link href=\"https://3d-mapper.com/pricing/\">Pricing - 3D-Mapper | Create Your Own 3D Map Online</link>",
+        "type": "link_with_icon"
+    },
+    "Procedurals Material Functions in Unreal Engine | Unreal Engine 5.0 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.0/en-US/procedurals-material-functions-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.0/en-US/procedurals-material-functions-in-unreal-engine/\">Procedurals Material Functions in Unreal Engine | Unreal Engine 5.0 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Recommended Asset Naming Conventions in Unreal Engine projects. | Unreal Engine 4.27 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/AssetNaming/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/AssetNaming/\">Recommended Asset Naming Conventions in Unreal Engine projects. | Unreal Engine 4.27 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Reddit - Dive into anything": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://www.reddit.com/r/unrealengine/comments/vu65z1/slower_event_tick/",
+        "link_pdf": "<link href=\"https://www.reddit.com/r/unrealengine/comments/vu65z1/slower_event_tick/\">Reddit - Dive into anything</link>",
+        "type": "link_with_icon"
+    },
+    "Repeat Action | Unreal Engine Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.26/en-US/BlueprintAPI/Ability/Tasks/RepeatAction/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.26/en-US/BlueprintAPI/Ability/Tasks/RepeatAction/\">Repeat Action | Unreal Engine Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "ScienceDirect": {
+        "icon_image": "https://th.bing.com/th/id/R.342d15c28fcc2096c059a485d59aa097?rik=qq254yYJi11Yuw&pid=ImgRaw&r=0",
+        "link_url": "https://www.sciencedirect.com/science/article/pii/S0924271620303506?via%3Dihub",
+        "link_pdf": "<link href=\"https://www.sciencedirect.com/science/article/pii/S0924271620303506?via%3Dihub\">ScienceDirect</link>",
+        "type": "link_with_icon"
+    },
+    "Set Actor Location And Rotation | Unreal Engine Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.1/en-US/BlueprintAPI/Transformation/SetActorLocationAndRotation/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.1/en-US/BlueprintAPI/Transformation/SetActorLocationAndRotation/\">Set Actor Location And Rotation | Unreal Engine Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Set the VR Pawn location and rotation to camera - Programming & Scripting - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/set-the-vr-pawn-location-and-rotation-to-camera/1285001",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/set-the-vr-pawn-location-and-rotation-to-camera/1285001\">Set the VR Pawn location and rotation to camera - Programming & Scripting - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Setting Up Character Movement | Unreal Engine 4.27 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/HowTo/CharacterMovement/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/HowTo/CharacterMovement/\">Setting Up Character Movement | Unreal Engine 4.27 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Setting Up Character Movement | Unreal Engine 5.0 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.0/en-US/setting-up-character-movement/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.0/en-US/setting-up-character-movement/\">Setting Up Character Movement | Unreal Engine 5.0 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Setting Up Collisions With Static Meshes in Unreal Engine | Unreal Engine 5.3 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.3/en-US/setting-up-collisions-with-static-meshes-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.3/en-US/setting-up-collisions-with-static-meshes-in-unreal-engine/\">Setting Up Collisions With Static Meshes in Unreal Engine | Unreal Engine 5.3 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Signing Android Projects for Release on the Google Play Store with Unreal Engine | Unreal Engine 5.3 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.3/en-US/signing-android-projects-for-release-on-the-google-play-store-with-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.3/en-US/signing-android-projects-for-release-on-the-google-play-store-with-unreal-engine/\">Signing Android Projects for Release on the Google Play Store with Unreal Engine | Unreal Engine 5.3 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Supported XR Devices in Unreal Engine | Unreal Engine 5.3 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.3/en-US/supported-xr-devices-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.3/en-US/supported-xr-devices-in-unreal-engine/\">Supported XR Devices in Unreal Engine | Unreal Engine 5.3 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Telechargez une image - remove.bg": {
+        "icon_image": "https://www.remove.bg/images/remove_image_background.jpg property",
+        "link_url": "https://www.remove.bg/fr/upload",
+        "link_pdf": "<link href=\"https://www.remove.bg/fr/upload\">Telechargez une image - remove.bg</link>",
+        "type": "link_with_icon"
+    },
+    "Terrain Tiles - Registry of Open Data on AWS": {
+        "icon_image": "https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico",
+        "link_url": "https://registry.opendata.aws/terrain-tiles/",
+        "link_pdf": "<link href=\"https://registry.opendata.aws/terrain-tiles/\">Terrain Tiles - Registry of Open Data on AWS</link>",
+        "type": "link_with_icon"
+    },
+    "UE4 - Programmatically create a new material and inner nodes - Isara Tech.": {
+        "icon_image": "https://i0.wp.com/isaratech.com/wp-content/uploads/2018/09/cropped-Mini-Isara-Tech.png?fit=32%2C32&ssl=1",
+        "link_url": "https://isaratech.com/ue4-programmatically-create-a-new-material-and-inner-nodes/",
+        "link_pdf": "<link href=\"https://isaratech.com/ue4-programmatically-create-a-new-material-and-inner-nodes/\">UE4 - Programmatically create a new material and inner nodes - Isara Tech.</link>",
+        "type": "link_with_icon"
+    },
+    "UE4 create texture from C++ - Stack Overflow": {
+        "icon_image": "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v",
+        "link_url": "https://stackoverflow.com/questions/69825280/ue4-create-texture-from-c",
+        "link_pdf": "<link href=\"https://stackoverflow.com/questions/69825280/ue4-create-texture-from-c\">UE4 create texture from C++ - Stack Overflow</link>",
+        "type": "link_with_icon"
+    },
+    "UTexture2D | Unreal Engine 5.2 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.3/en-US/API/Runtime/Engine/Engine/UTexture2D/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.3/en-US/API/Runtime/Engine/Engine/UTexture2D/\">UTexture2D | Unreal Engine 5.2 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Unreal Engine 5.3.2 for Meta Quest VR | Community tutorial": {
+        "icon_image": "https://dev.epicgames.com/community/assets/images/favicon-light.png",
+        "link_url": "https://dev.epicgames.com/community/learning/tutorials/3Vx6/unreal-engine-5-3-2-for-meta-quest-vr",
+        "link_pdf": "<link href=\"https://dev.epicgames.com/community/learning/tutorials/3Vx6/unreal-engine-5-3-2-for-meta-quest-vr\">Unreal Engine 5.3.2 for Meta Quest VR | Community tutorial</link>",
+        "type": "link_with_icon"
+    },
+    "Upload an image using HTTP POST request C++ | Community tutorial": {
+        "icon_image": "https://dev.epicgames.com/community/assets/images/favicon-light.png",
+        "link_url": "https://dev.epicgames.com/community/learning/tutorials/R6rv/unreal-engine-upload-an-image-using-http-post-request-c",
+        "link_pdf": "<link href=\"https://dev.epicgames.com/community/learning/tutorials/R6rv/unreal-engine-upload-an-image-using-http-post-request-c\">Upload an image using HTTP POST request C++ | Community tutorial</link>",
+        "type": "link_with_icon"
+    },
+    "VR Template in Unreal Engine | Unreal Engine 5.0 Documentation": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://docs.unrealengine.com/5.0/en-US/vr-template-in-unreal-engine/",
+        "link_pdf": "<link href=\"https://docs.unrealengine.com/5.0/en-US/vr-template-in-unreal-engine/\">VR Template in Unreal Engine | Unreal Engine 5.0 Documentation</link>",
+        "type": "link_with_icon"
+    },
+    "Web Browser Plugin ": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/web-browser-plugin-umg/148085",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/web-browser-plugin-umg/148085\">Web Browser Plugin </link>",
+        "type": "link_with_icon"
+    },
+    "Web Browser Widget | Unreal Engine Community Wiki": {
+        "icon_image": null,
+        "link_url": "https://unrealcommunity.wiki/web-browser-widget-13f406",
+        "link_pdf": "<link href=\"https://unrealcommunity.wiki/web-browser-widget-13f406\">Web Browser Widget | Unreal Engine Community Wiki</link>",
+        "type": "link_without_icon"
+    },
+    "android - How to view AndroidManifest.xml from APK file? - Stack Overflow": {
+        "icon_image": "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v",
+        "link_url": "https://stackoverflow.com/questions/4191762/how-to-view-androidmanifest-xml-from-apk-file",
+        "link_pdf": "<link href=\"https://stackoverflow.com/questions/4191762/how-to-view-androidmanifest-xml-from-apk-file\">android - How to view AndroidManifest.xml from APK file? - Stack Overflow</link>",
+        "type": "link_with_icon"
+    },
+    "graphics - How to read data from a UTexture2D in C++ - Stack Overflow": {
+        "icon_image": "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v",
+        "link_url": "https://stackoverflow.com/questions/37578939/how-to-read-data-from-a-utexture2d-in-c",
+        "link_pdf": "<link href=\"https://stackoverflow.com/questions/37578939/how-to-read-data-from-a-utexture2d-in-c\">graphics - How to read data from a UTexture2D in C++ - Stack Overflow</link>",
+        "type": "link_with_icon"
+    },
+    "joerd/docs/data-sources.md at master - tilezen/joerd": {
+        "icon_image": "https://github.githubassets.com/favicons/favicon.png",
+        "link_url": "https://github.com/tilezen/joerd/blob/master/docs/data-sources.md",
+        "link_pdf": "<link href=\"https://github.com/tilezen/joerd/blob/master/docs/data-sources.md\">joerd/docs/data-sources.md at master - tilezen/joerd</link>",
+        "type": "link_with_icon"
+    },
+    "physics object flies away due the collision with the landscape - Programming & Scripting - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/physics-object-flies-away-due-the-collision-with-the-landscape/794718",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/physics-object-flies-away-due-the-collision-with-the-landscape/794718\">physics object flies away due the collision with the landscape - Programming & Scripting - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "stb/stb_image.h at master - nothings/stb</count;++i,></count;++i,></count;></width;++x,></height;></n)></arm_neon.h></intrin.h></emmintrin.h></stdint.h></assert.h></stdio.h></math.h></limits.h></string.h></stdlib.h></stddef.h></stdarg.h></stdlib.h></stdio.h>": {
+        "icon_image": "https://github.githubassets.com/favicons/favicon.png",
+        "link_url": "https://github.com/nothings/stb/blob/master/stb_image.h",
+        "link_pdf": "<link href=\"https://github.com/nothings/stb/blob/master/stb_image.h\">stb/stb_image.h at master - nothings/stb</count;++i,></count;++i,></count;></width;++x,></height;></n)></arm_neon.h></intrin.h></emmintrin.h></stdint.h></assert.h></stdio.h></math.h></limits.h></string.h></stdlib.h></stddef.h></stdarg.h></stdlib.h></stdio.h></link>",
+        "type": "link_with_icon"
+    },
+    "\ud83c\udf1e Victory Plugin ~ 's Extra Blueprint Nodes for UE5, No C++ Required! - Blueprint - Epic Developer Community Forums": {
+        "icon_image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/4/f/c/4fc78ce65be09c7e97b60a65447c99c078aca16b_2_32x32.png",
+        "link_url": "https://forums.unrealengine.com/t/victory-plugin-s-extra-blueprint-nodes-for-ue5-no-c-required/231476",
+        "link_pdf": "<link href=\"https://forums.unrealengine.com/t/victory-plugin-s-extra-blueprint-nodes-for-ue5-no-c-required/231476\">\ud83c\udf1e Victory Plugin ~ 's Extra Blueprint Nodes for UE5, No C++ Required! - Blueprint - Epic Developer Community Forums</link>",
+        "type": "link_with_icon"
+    },
+    "Smart Poly ---- None": {
+        "icon_image": "https://www.youtube.com/s/desktop/d133835b/img/favicon.ico ",
+        "link_url": "https://www.youtube.com/channel/UCp1e34nrTQqVXkNU5ekH9CQ",
+        "link_pdf": "<link href=\"https://www.youtube.com/channel/UCp1e34nrTQqVXkNU5ekH9CQ\">Smart Poly ---- None</link>",
+        "type": "link_with_icon"
+    },
+    "Unreal Sensei ---- None": {
+        "icon_image": "https://www.youtube.com/s/desktop/d133835b/img/favicon.ico ",
+        "link_url": "https://www.youtube.com/@UnrealSensei",
+        "link_pdf": "<link href=\"https://www.youtube.com/@UnrealSensei\">Unreal Sensei ---- None</link>",
+        "type": "link_with_icon"
+    },
+    "Matt Aspland ---- None": {
+        "icon_image": "https://www.youtube.com/s/desktop/d133835b/img/favicon.ico ",
+        "link_url": "https://www.youtube.com/@MattAspland",
+        "link_pdf": "<link href=\"https://www.youtube.com/@MattAspland\">Matt Aspland ---- None</link>",
+        "type": "link_with_icon"
+    },
+    "Unreal ART With Alireza  ---- None": {
+        "icon_image": "https://www.youtube.com/s/desktop/d133835b/img/favicon.ico ",
+        "link_url": "https://www.youtube.com/@UnrealART",
+        "link_pdf": "<link href=\"https://www.youtube.com/@UnrealART\">Unreal ART With Alireza  ---- None</link>",
+        "type": "link_with_icon"
+    },
+    "Unreal Engine ---- None": {
+        "icon_image": "https://www.youtube.com/s/desktop/d133835b/img/favicon.ico ",
+        "link_url": "https://www.youtube.com/@UnrealEngine",
+        "link_pdf": "<link href=\"https://www.youtube.com/@UnrealEngine\">Unreal Engine ---- None</link>",
+        "type": "link_with_icon"
+    },
+    "How To Turn On Developer Mode on Oculus Quest & Quest 2 (In 1 Minute!) ---- 1m 0s": {
+        "icon_image": "https://i.ytimg.com/vi/6iSncojIFZQ/maxresdefault.jpg",
+        "link_url": "https://youtu.be/6iSncojIFZQ",
+        "link_pdf": "<link href=\"https://youtu.be/6iSncojIFZQ\">How To Turn On Developer Mode on Oculus Quest & Quest 2 (In 1 Minute!) ---- 1m 0s</link>",
+        "type": "video"
+    },
+    "How To Fix VR Pawn Collision in Unreal Engine VR Template ---- 1m 14s": {
+        "icon_image": "https://i.ytimg.com/vi/iO6zwWPNnJc/maxresdefault.jpg",
+        "link_url": "https://youtu.be/iO6zwWPNnJc",
+        "link_pdf": "<link href=\"https://youtu.be/iO6zwWPNnJc\">How To Fix VR Pawn Collision in Unreal Engine VR Template ---- 1m 14s</link>",
+        "type": "video"
+    },
+    "Unreal 5 - Automatic Landscapes (HEIGHT-MAPS) ---- 1m 34s": {
+        "icon_image": "https://i.ytimg.com/vi/KUwR8bpsyLg/maxresdefault.jpg",
+        "link_url": "https://youtu.be/KUwR8bpsyLg",
+        "link_pdf": "<link href=\"https://youtu.be/KUwR8bpsyLg\">Unreal 5 - Automatic Landscapes (HEIGHT-MAPS) ---- 1m 34s</link>",
+        "type": "video"
+    },
+    "Developing Interactive UI - 1 Unreal Engine 4 User Interface Tutorial Series ---- 1m 37s": {
+        "icon_image": "https://i.ytimg.com/vi/WJHfPwodtQo/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLB8AmU63K5XkZ2__6oEZkVF6yLIdA",
+        "link_url": "https://www.youtube.com/watch?v=WJHfPwodtQo&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=1&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=WJHfPwodtQo&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=1&pp=iAQB\">Developing Interactive UI - 1 Unreal Engine 4 User Interface Tutorial Series ---- 1m 37s</link>",
+        "type": "video"
+    },
+    "Import Objects From Blender to Unreal 5 (2 MINUTES!!) ---- 1m 42s": {
+        "icon_image": "https://i.ytimg.com/vi/BqF5D4kteX8/maxresdefault.jpg",
+        "link_url": "https://youtu.be/BqF5D4kteX8",
+        "link_pdf": "<link href=\"https://youtu.be/BqF5D4kteX8\">Import Objects From Blender to Unreal 5 (2 MINUTES!!) ---- 1m 42s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Quick Tip Making Rotating Objects ---- 1m 48s": {
+        "icon_image": "https://i.ytimg.com/vi/QndH9DuL_Ao/maxresdefault.jpg",
+        "link_url": "https://youtu.be/QndH9DuL_Ao",
+        "link_pdf": "<link href=\"https://youtu.be/QndH9DuL_Ao\">Unreal Engine 5 Quick Tip Making Rotating Objects ---- 1m 48s</link>",
+        "type": "video"
+    },
+    "Landscape generation 4 - shading | Unreal Engine ---- 1m 51s": {
+        "icon_image": "https://i.ytimg.com/vi/kgpNS47vzvM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLD5Ge2tZ-Qar1erXZOBGbfuFmKUCw",
+        "link_url": "https://www.youtube.com/watch?v=kgpNS47vzvM&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=kgpNS47vzvM&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=4&pp=iAQB\">Landscape generation 4 - shading | Unreal Engine ---- 1m 51s</link>",
+        "type": "video"
+    },
+    "Nuitrack For Unreal Engine 5 (Blueprints) | How to Start ---- 2m 1s": {
+        "icon_image": "https://i.ytimg.com/vi/oGu3yIf6s9Q/maxresdefault.jpg",
+        "link_url": "https://youtu.be/oGu3yIf6s9Q",
+        "link_pdf": "<link href=\"https://youtu.be/oGu3yIf6s9Q\">Nuitrack For Unreal Engine 5 (Blueprints) | How to Start ---- 2m 1s</link>",
+        "type": "video"
+    },
+    "Unreal 5 - Auto Materials (2 MINUTES!!) ---- 2m 22s": {
+        "icon_image": "https://i.ytimg.com/vi/xyf8n-3fiIo/maxresdefault.jpg",
+        "link_url": "https://youtu.be/xyf8n-3fiIo",
+        "link_pdf": "<link href=\"https://youtu.be/xyf8n-3fiIo\">Unreal 5 - Auto Materials (2 MINUTES!!) ---- 2m 22s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 4 Interior Lighting ---- 2m 29s": {
+        "icon_image": "https://i.ytimg.com/vi/5kAoi_Hs9HA/maxresdefault.jpg",
+        "link_url": "https://youtu.be/5kAoi_Hs9HA",
+        "link_pdf": "<link href=\"https://youtu.be/5kAoi_Hs9HA\">Unreal Engine 4 Interior Lighting ---- 2m 29s</link>",
+        "type": "video"
+    },
+    "BEST Free Plugin for Procedural Generation in Unreal Engine! ---- 2m 31s": {
+        "icon_image": "https://i.ytimg.com/vi/1NAFvW_WhIM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAsHeFz5lEMEN2ikY8suHEr6xbOOA",
+        "link_url": "https://www.youtube.com/watch?v=1NAFvW_WhIM&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=1NAFvW_WhIM&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=5&pp=iAQB\">BEST Free Plugin for Procedural Generation in Unreal Engine! ---- 2m 31s</link>",
+        "type": "video"
+    },
+    "Unreal Engine -- Spawn & Destroy | 01 | Spawning from the Level Blueprint ---- 3m 47s": {
+        "icon_image": "https://i.ytimg.com/vi/aRD_nKeuYYo/maxresdefault.jpg",
+        "link_url": "https://youtu.be/aRD_nKeuYYo",
+        "link_pdf": "<link href=\"https://youtu.be/aRD_nKeuYYo\">Unreal Engine -- Spawn & Destroy | 01 | Spawning from the Level Blueprint ---- 3m 47s</link>",
+        "type": "video"
+    },
+    "Errant Worlds - New Procedural Tools for Unreal Engine - Now available! ---- 4m 15s": {
+        "icon_image": "https://i.ytimg.com/vi/9hjdue97SVI/maxresdefault.jpg",
+        "link_url": "https://youtu.be/9hjdue97SVI",
+        "link_pdf": "<link href=\"https://youtu.be/9hjdue97SVI\">Errant Worlds - New Procedural Tools for Unreal Engine - Now available! ---- 4m 15s</link>",
+        "type": "video"
+    },
+    "Landscape generation 3 - Perlin Noise | Unreal Engine ---- 4m 29s": {
+        "icon_image": "https://i.ytimg.com/vi/1FTIiwge7p8/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAuFuz25sPuHWNd4TBFZK1znF1N5g",
+        "link_url": "https://www.youtube.com/watch?v=1FTIiwge7p8&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=1FTIiwge7p8&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=3&pp=iAQB\">Landscape generation 3 - Perlin Noise | Unreal Engine ---- 4m 29s</link>",
+        "type": "video"
+    },
+    "How to use visual studio code for unreal engine ---- 4m 38s": {
+        "icon_image": "https://i.ytimg.com/vi/uLoe0xzwBQs/hqdefault.jpg",
+        "link_url": "https://youtu.be/uLoe0xzwBQs",
+        "link_pdf": "<link href=\"https://youtu.be/uLoe0xzwBQs\">How to use visual studio code for unreal engine ---- 4m 38s</link>",
+        "type": "video"
+    },
+    "Procedural Generation (PCG) under 5 mins in Unreal Engine 5! ---- 4m 44s": {
+        "icon_image": "https://i.ytimg.com/vi/MF8ZMdOX7pU/maxresdefault.jpg",
+        "link_url": "https://youtu.be/MF8ZMdOX7pU",
+        "link_pdf": "<link href=\"https://youtu.be/MF8ZMdOX7pU\">Procedural Generation (PCG) under 5 mins in Unreal Engine 5! ---- 4m 44s</link>",
+        "type": "video"
+    },
+    "UE5 l Spawning Decal on Your Level l 5-Minute Material Tutorial l Unreal Engine 5 ---- 4m 48s": {
+        "icon_image": "https://i.ytimg.com/vi/6MXGzvot8tA/maxresdefault.jpg",
+        "link_url": "https://youtu.be/6MXGzvot8tA",
+        "link_pdf": "<link href=\"https://youtu.be/6MXGzvot8tA\">UE5 l Spawning Decal on Your Level l 5-Minute Material Tutorial l Unreal Engine 5 ---- 4m 48s</link>",
+        "type": "video"
+    },
+    "Unreal Engine Procedural Content Optimization Boost Performance with These 3 Tips! ---- 4m 52s": {
+        "icon_image": "https://i.ytimg.com/vi/_t55i17_7qE/maxresdefault.jpg",
+        "link_url": "https://youtu.be/_t55i17_7qE",
+        "link_pdf": "<link href=\"https://youtu.be/_t55i17_7qE\">Unreal Engine Procedural Content Optimization Boost Performance with These 3 Tips! ---- 4m 52s</link>",
+        "type": "video"
+    },
+    "Simple Menu for Virtual Reality with UMG in Unreal Engine ---- 5m 7s": {
+        "icon_image": "https://i.ytimg.com/vi/r55h7-bw8gY/maxresdefault.jpg",
+        "link_url": "https://youtu.be/r55h7-bw8gY",
+        "link_pdf": "<link href=\"https://youtu.be/r55h7-bw8gY\">Simple Menu for Virtual Reality with UMG in Unreal Engine ---- 5m 7s</link>",
+        "type": "video"
+    },
+    "UE5 - Mettre un ICON et une VIDEO de chargement a son JEUX ---- 5m 15s": {
+        "icon_image": "https://i.ytimg.com/vi/M9IW4YmTYYo/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCcQNaDYiH1xC9uGR1zS3ARWRKF1Q",
+        "link_url": "https://www.youtube.com/watch?v=M9IW4YmTYYo&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=M9IW4YmTYYo&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=5&pp=iAQB\">UE5 - Mettre un ICON et une VIDEO de chargement a son JEUX ---- 5m 15s</link>",
+        "type": "video"
+    },
+    "Adding Button Functionality - 7 Unreal Engine 4 User Interface Development Tutorial Series ---- 5m 17s": {
+        "icon_image": "https://i.ytimg.com/vi/le2lTgahzeI/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLA2IAaYSMCp5W_REONXX92FX-o5zw",
+        "link_url": "https://www.youtube.com/watch?v=le2lTgahzeI&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=7&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=le2lTgahzeI&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=7&pp=iAQB\">Adding Button Functionality - 7 Unreal Engine 4 User Interface Development Tutorial Series ---- 5m 17s</link>",
+        "type": "video"
+    },
+    "AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial ---- 5m 33s": {
+        "icon_image": "https://i.ytimg.com/vi/Mi7r0LqUmOE/maxresdefault.jpg",
+        "link_url": "https://youtu.be/Mi7r0LqUmOE",
+        "link_pdf": "<link href=\"https://youtu.be/Mi7r0LqUmOE\">AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial ---- 5m 33s</link>",
+        "type": "video"
+    },
+    "Terrain generation for Beginners - Unreal Engine tutorial ---- 5m 47s": {
+        "icon_image": "https://i.ytimg.com/vi/9ASgfwzNvL8/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLA0nUP3lN1CjH3NZ1LiomA54zje2w",
+        "link_url": "https://www.youtube.com/watch?v=9ASgfwzNvL8&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=1&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=9ASgfwzNvL8&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=1&pp=iAQB\">Terrain generation for Beginners - Unreal Engine tutorial ---- 5m 47s</link>",
+        "type": "video"
+    },
+    "Comment mettre de l'herbe animee sur UE5 ? ---- 5m 47s": {
+        "icon_image": "https://i.ytimg.com/vi/e83qWNcUNhg/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAKhEN9A48dp6LS6w-U0M9NZQlvbw",
+        "link_url": "https://www.youtube.com/watch?v=e83qWNcUNhg&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=e83qWNcUNhg&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=3&pp=iAQB\">Comment mettre de l'herbe animee sur UE5 ? ---- 5m 47s</link>",
+        "type": "video"
+    },
+    "Comment mettre une texture video sur Unreal Engine ? ---- 5m 52s": {
+        "icon_image": "https://i.ytimg.com/vi/Q12jxnttmfU/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCDngNVee-E8ANAX6bzgLdKCEydlQ",
+        "link_url": "https://www.youtube.com/watch?v=Q12jxnttmfU&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=1&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=Q12jxnttmfU&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=1&pp=iAQB\">Comment mettre une texture video sur Unreal Engine ? ---- 5m 52s</link>",
+        "type": "video"
+    },
+    "Install APKs From Inside Your Quest 2 ---- 5m 57s": {
+        "icon_image": "https://i.ytimg.com/vi/xNPB1F3OfUU/maxresdefault.jpg",
+        "link_url": "https://youtu.be/xNPB1F3OfUU",
+        "link_pdf": "<link href=\"https://youtu.be/xNPB1F3OfUU\">Install APKs From Inside Your Quest 2 ---- 5m 57s</link>",
+        "type": "video"
+    },
+    "Landscape generation 2 - terrain | Unreal Engine ---- 5m 59s": {
+        "icon_image": "https://i.ytimg.com/vi/s2_K3dzXDoM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBwhO0q4jGHLQtEZ8HEiwNexsdpFQ",
+        "link_url": "https://www.youtube.com/watch?v=s2_K3dzXDoM&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=s2_K3dzXDoM&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=2&pp=iAQB\">Landscape generation 2 - terrain | Unreal Engine ---- 5m 59s</link>",
+        "type": "video"
+    },
+    "How To Properly Export From Blender To Unreal Without Losing Textures ---- 6m 0s": {
+        "icon_image": "https://i.ytimg.com/vi/HIzDW4FlC-U/maxresdefault.jpg",
+        "link_url": "https://youtu.be/HIzDW4FlC-U",
+        "link_pdf": "<link href=\"https://youtu.be/HIzDW4FlC-U\">How To Properly Export From Blender To Unreal Without Losing Textures ---- 6m 0s</link>",
+        "type": "video"
+    },
+    "Ce projet Unreal est MAGNIFIQUE ! ---- 6m 0s": {
+        "icon_image": "https://i.ytimg.com/vi/-B3a_CylWQs/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCj6VbfOlrzxvGvmY9MfZuenjXXSA",
+        "link_url": "https://www.youtube.com/watch?v=-B3a_CylWQs&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=6&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=-B3a_CylWQs&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=6&pp=iAQB\">Ce projet Unreal est MAGNIFIQUE ! ---- 6m 0s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 1 - How To Read and Write Text Files with C++? - Unreal Engine Tutorial Editor CPP ---- 6m 1s": {
+        "icon_image": "https://i.ytimg.com/vi/YcTa_wMjCzY/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLA8eCJTsGE4bTjC0QA1MFJAmGWx3Q",
+        "link_url": "https://www.youtube.com/watch?v=YcTa_wMjCzY&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=YcTa_wMjCzY&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=3&pp=iAQB\">UE5 C++ 1 - How To Read and Write Text Files with C++? - Unreal Engine Tutorial Editor CPP ---- 6m 1s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5.2 - Next-Gen Graphics Tech Demo | State of Unreal 2023 ---- 6m 23s": {
+        "icon_image": "https://i.ytimg.com/vi/-lkEOEEKYD0/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=-lkEOEEKYD0",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=-lkEOEEKYD0\">Unreal Engine 5.2 - Next-Gen Graphics Tech Demo | State of Unreal 2023 ---- 6m 23s</link>",
+        "type": "video"
+    },
+    "Getting Started With The New Environment Light Mixer Inside Unreal Engine 4.26 ---- 6m 29s": {
+        "icon_image": "https://i.ytimg.com/vi/LR6_LiyHtwg/maxresdefault.jpg",
+        "link_url": "https://youtu.be/LR6_LiyHtwg",
+        "link_pdf": "<link href=\"https://youtu.be/LR6_LiyHtwg\">Getting Started With The New Environment Light Mixer Inside Unreal Engine 4.26 ---- 6m 29s</link>",
+        "type": "video"
+    },
+    "Importing UI Assets - 4 Unreal Engine 4 User Interface Development Tutorial Series ---- 6m 30s": {
+        "icon_image": "https://i.ytimg.com/vi/xlenfTUD2qA/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCQJ87nMxtb3iB-NChfduBdCEZ48w",
+        "link_url": "https://www.youtube.com/watch?v=xlenfTUD2qA&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=xlenfTUD2qA&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=4&pp=iAQB\">Importing UI Assets - 4 Unreal Engine 4 User Interface Development Tutorial Series ---- 6m 30s</link>",
+        "type": "video"
+    },
+    "Buttons & States - 6 Unreal Engine 4 User Interface Development Tutorial Series ---- 6m 36s": {
+        "icon_image": "https://i.ytimg.com/vi/wo17vj_nswg/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBArVP_XRFvriWnYCZSrmQIDjS-Fg",
+        "link_url": "https://www.youtube.com/watch?v=wo17vj_nswg&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=6&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=wo17vj_nswg&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=6&pp=iAQB\">Buttons & States - 6 Unreal Engine 4 User Interface Development Tutorial Series ---- 6m 36s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 4 Oculus Quest Hand Tracking & Controllers ---- 6m 45s": {
+        "icon_image": "https://i.ytimg.com/vi/8VAEs92UWJM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAB_QXVOK8DRF78g0JU5BfznRuhPw",
+        "link_url": "https://www.youtube.com/watch?v=8VAEs92UWJM&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=7&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=8VAEs92UWJM&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=7&pp=iAQB\">Unreal Engine 4 Oculus Quest Hand Tracking & Controllers ---- 6m 45s</link>",
+        "type": "video"
+    },
+    "UE4 C++ Tutorial - How To Change Material - UE4 / Unreal Engine 4 Intro to C++ ---- 6m 46s": {
+        "icon_image": "https://i.ytimg.com/vi/oqTwBmuw54Y/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=oqTwBmuw54Y",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=oqTwBmuw54Y\">UE4 C++ Tutorial - How To Change Material - UE4 / Unreal Engine 4 Intro to C++ ---- 6m 46s</link>",
+        "type": "video"
+    },
+    "Let's Make A Physical VR Button In Unreal Engine 5.3 ---- 6m 46s": {
+        "icon_image": "https://i.ytimg.com/vi/m8DGSmDUHfk/maxresdefault.jpg",
+        "link_url": "https://youtu.be/m8DGSmDUHfk",
+        "link_pdf": "<link href=\"https://youtu.be/m8DGSmDUHfk\">Let's Make A Physical VR Button In Unreal Engine 5.3 ---- 6m 46s</link>",
+        "type": "video"
+    },
+    "How to Make a Simple Procedural Mesh in Unreal Engine 5 - Geometry Script Tutorial ---- 6m 51s": {
+        "icon_image": "https://i.ytimg.com/vi/bNajh09iSnI/maxresdefault.jpg",
+        "link_url": "https://youtu.be/bNajh09iSnI",
+        "link_pdf": "<link href=\"https://youtu.be/bNajh09iSnI\">How to Make a Simple Procedural Mesh in Unreal Engine 5 - Geometry Script Tutorial ---- 6m 51s</link>",
+        "type": "video"
+    },
+    "UE4 C++ Tutorial - Dynamic Materials - UE4 / Unreal Engine 4 Intro to C++ ---- 6m 52s": {
+        "icon_image": "https://i.ytimg.com/vi/m4oSOugBQCg/maxresdefault.jpg",
+        "link_url": "https://youtu.be/m4oSOugBQCg",
+        "link_pdf": "<link href=\"https://youtu.be/m4oSOugBQCg\">UE4 C++ Tutorial - Dynamic Materials - UE4 / Unreal Engine 4 Intro to C++ ---- 6m 52s</link>",
+        "type": "video"
+    },
+    "Procedural Moss Material in UE5 w/ Displacement ---- 6m 58s": {
+        "icon_image": "https://i.ytimg.com/vi/Av8GlUPenXU/maxresdefault.jpg",
+        "link_url": "https://youtu.be/Av8GlUPenXU+",
+        "link_pdf": "<link href=\"https://youtu.be/Av8GlUPenXU+\">Procedural Moss Material in UE5 w/ Displacement ---- 6m 58s</link>",
+        "type": "video"
+    },
+    "Pro Game Animation Is EASY Now (Try This!) ---- 6m 59s": {
+        "icon_image": "https://i.ytimg.com/vi/mrAlXrNUmQc/maxresdefault.jpg",
+        "link_url": "https://youtu.be/mrAlXrNUmQc",
+        "link_pdf": "<link href=\"https://youtu.be/mrAlXrNUmQc\">Pro Game Animation Is EASY Now (Try This!) ---- 6m 59s</link>",
+        "type": "video"
+    },
+    "Introduction to Chaos Destructible Mesh in Unreal Engine 5 - Learn The Basics in 7 Minutes! ---- 7m 2s": {
+        "icon_image": "https://i.ytimg.com/vi/ThZPXbEtNsE/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDLqBGytQ6nY4Nxt4uGdU9W1mz5WA",
+        "link_url": "https://www.youtube.com/watch?v=ThZPXbEtNsE&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=1&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=ThZPXbEtNsE&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=1&pp=iAQB\">Introduction to Chaos Destructible Mesh in Unreal Engine 5 - Learn The Basics in 7 Minutes! ---- 7m 2s</link>",
+        "type": "video"
+    },
+    "How to install the MetaXR plugin to Unreal Engine 5 correctly ---- 7m 6s": {
+        "icon_image": "https://i.ytimg.com/vi/HkWLY6dh6Aw/maxresdefault.jpg",
+        "link_url": "https://youtu.be/HkWLY6dh6Aw",
+        "link_pdf": "<link href=\"https://youtu.be/HkWLY6dh6Aw\">How to install the MetaXR plugin to Unreal Engine 5 correctly ---- 7m 6s</link>",
+        "type": "video"
+    },
+    "Widget Introduction - 2 Unreal Engine 4 User Interface Development Tutorial Series ---- 7m 15s": {
+        "icon_image": "https://i.ytimg.com/vi/JKjH2iz2ekQ/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBkXwFNda-ERC70Kx4rZoYpJPwtkw",
+        "link_url": "https://www.youtube.com/watch?v=JKjH2iz2ekQ&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=JKjH2iz2ekQ&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=2&pp=iAQB\">Widget Introduction - 2 Unreal Engine 4 User Interface Development Tutorial Series ---- 7m 15s</link>",
+        "type": "video"
+    },
+    "Displaying UI Widgets On Screen - 5 Unreal Engine 4 User Interface Development Tutorial Series ---- 7m 23s": {
+        "icon_image": "https://i.ytimg.com/vi/hv8cClvSvSo/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLD__baZtf_mA5k2W_ruT5hLx__Uwg",
+        "link_url": "https://www.youtube.com/watch?v=hv8cClvSvSo&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=hv8cClvSvSo&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=5&pp=iAQB\">Displaying UI Widgets On Screen - 5 Unreal Engine 4 User Interface Development Tutorial Series ---- 7m 23s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 5 - How To Read and Write Data Table Json with C++? - Unreal Engine Tutorial Editor CPP ---- 7m 57s": {
+        "icon_image": "https://i.ytimg.com/vi/w9li3TR4-W4/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDCWSMZnwDK5fsiw0Ce5uQRF41yEQ",
+        "link_url": "https://www.youtube.com/watch?v=w9li3TR4-W4&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=7&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=w9li3TR4-W4&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=7&pp=iAQB\">UE5 C++ 5 - How To Read and Write Data Table Json with C++? - Unreal Engine Tutorial Editor CPP ---- 7m 57s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 - Google Maps API & Cesium - Full tutorial PT 1 ---- 8m 1s": {
+        "icon_image": "https://i.ytimg.com/vi/TbHCvAo-aGg/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=TbHCvAo-aGg",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=TbHCvAo-aGg\">Unreal Engine 5 - Google Maps API & Cesium - Full tutorial PT 1 ---- 8m 1s</link>",
+        "type": "video"
+    },
+    "create INFINITE Realistic world in Unreal Engine ---- 8m 10s": {
+        "icon_image": "https://i.ytimg.com/vi/KbVpX60-A1g/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDoZWmnsIQEzoczUon3okxjcQnbQg",
+        "link_url": "https://www.youtube.com/watch?v=KbVpX60-A1g&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=7&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=KbVpX60-A1g&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=7&pp=iAQB\">create INFINITE Realistic world in Unreal Engine ---- 8m 10s</link>",
+        "type": "video"
+    },
+    "COMMENT LIB\u00c9RER DE L'ESPACE DISQUE DUR SUR SON PC ! ": {
+        "icon_image": "https://i.ytimg.com/vi/0rTxaApsj_0/maxresdefault.jpg",
+        "link_url": "https://youtu.be/0rTxaApsj_0",
+        "link_pdf": "<link href=\"https://youtu.be/0rTxaApsj_0\">COMMENT LIB\u00c9RER DE L'ESPACE DISQUE DUR SUR SON PC ! </link>",
+        "type": "video"
+    },
+    "UE5 Blueprint Tutorial - How to Create Dynamic Material Instances ---- 8m 13s": {
+        "icon_image": "https://i.ytimg.com/vi/uSKzkg0dQpY/maxresdefault.jpg",
+        "link_url": "https://youtu.be/uSKzkg0dQpY",
+        "link_pdf": "<link href=\"https://youtu.be/uSKzkg0dQpY\">UE5 Blueprint Tutorial - How to Create Dynamic Material Instances ---- 8m 13s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 UE5 Free Tutorial - How To Tile Textures To The World In Unreal ---- 8m 16s": {
+        "icon_image": "https://i.ytimg.com/vi/fUW3HHMhx1A/hqdefault.jpg",
+        "link_url": "https://youtu.be/fUW3HHMhx1A",
+        "link_pdf": "<link href=\"https://youtu.be/fUW3HHMhx1A\">Unreal Engine 5 UE5 Free Tutorial - How To Tile Textures To The World In Unreal ---- 8m 16s</link>",
+        "type": "video"
+    },
+    "UE5 - Comment changer de map ? ---- 8m 35s": {
+        "icon_image": "https://i.ytimg.com/vi/fF6juulPQlM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAoCU8S_FjlMr03jR5OmREUqZ6Dcg",
+        "link_url": "https://www.youtube.com/watch?v=fF6juulPQlM&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=fF6juulPQlM&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=2&pp=iAQB\">UE5 - Comment changer de map ? ---- 8m 35s</link>",
+        "type": "video"
+    },
+    "Comment faire un bouton QUITTER sur UNREAL ENGINE 5 ? ---- 8m 52s": {
+        "icon_image": "https://i.ytimg.com/vi/kpkMwvTsWI4/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDyvPrPARDfea7_sK7hxnLKfNkEzA",
+        "link_url": "https://www.youtube.com/watch?v=kpkMwvTsWI4&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=kpkMwvTsWI4&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=4&pp=iAQB\">Comment faire un bouton QUITTER sur UNREAL ENGINE 5 ? ---- 8m 52s</link>",
+        "type": "video"
+    },
+    "10 Fonctionnalites d'Unreal Engine Incroyables pour 2024 ---- 9m 13s": {
+        "icon_image": "https://i.ytimg.com/vi/ZpLB53L2NWI/maxresdefault.jpg",
+        "link_url": "https://youtu.be/ZpLB53L2NWI",
+        "link_pdf": "<link href=\"https://youtu.be/ZpLB53L2NWI\">10 Fonctionnalites d'Unreal Engine Incroyables pour 2024 ---- 9m 13s</link>",
+        "type": "video"
+    },
+    "UE4 - Tutorial - Pulsing Emissive Material ---- 9m 24s": {
+        "icon_image": "https://i.ytimg.com/vi/kxHLw8r-4gE/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBdvQqe45Ptm__tfjQnda6CZj7F4w",
+        "link_url": "https://www.youtube.com/watch?v=kxHLw8r-4gE&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=7&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=kxHLw8r-4gE&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=7&pp=iAQB\">UE4 - Tutorial - Pulsing Emissive Material ---- 9m 24s</link>",
+        "type": "video"
+    },
+    "Terrain generation in C++ for Beginners - Unreal Engine tutorial ---- 9m 25s": {
+        "icon_image": "https://i.ytimg.com/vi/sNZ2g4qah28/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=sNZ2g4qah28",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=sNZ2g4qah28\">Terrain generation in C++ for Beginners - Unreal Engine tutorial ---- 9m 25s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 4 - How To Import and Export Data Table with C++? - Unreal Engine Tutorial Editor CPP ---- 9m 25s": {
+        "icon_image": "https://i.ytimg.com/vi/qO-5PAae5IE/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBr9aGy2Cd1DZ3pj508PRRF70YMdw",
+        "link_url": "https://www.youtube.com/watch?v=qO-5PAae5IE&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=6&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=qO-5PAae5IE&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=6&pp=iAQB\">UE5 C++ 4 - How To Import and Export Data Table with C++? - Unreal Engine Tutorial Editor CPP ---- 9m 25s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Tutoriel DebutantLandmass ---- 9m 27s": {
+        "icon_image": "https://i.ytimg.com/vi/mDKJ36_zPHE/maxresdefault.jpg",
+        "link_url": "https://youtu.be/mDKJ36_zPHE",
+        "link_pdf": "<link href=\"https://youtu.be/mDKJ36_zPHE\">Unreal Engine 5 Tutoriel DebutantLandmass ---- 9m 27s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 C++ Blueprint Function Library Tutorial Create Own Blueprint Code With C++ For UE5 ---- 9m 29s": {
+        "icon_image": "https://i.ytimg.com/vi/tvCUA1ZDMQI/maxresdefault.jpg",
+        "link_url": "https://youtu.be/tvCUA1ZDMQI",
+        "link_pdf": "<link href=\"https://youtu.be/tvCUA1ZDMQI\">Unreal Engine 5 C++ Blueprint Function Library Tutorial Create Own Blueprint Code With C++ For UE5 ---- 9m 29s</link>",
+        "type": "video"
+    },
+    "Creating Your First UI Widget BlueprintUnreal basics 101 course 4 ---- 9m 30s": {
+        "icon_image": "https://i.ytimg.com/vi/Z-9HwqzYFH8/maxresdefault.jpg",
+        "link_url": "https://youtu.be/Z-9HwqzYFH8",
+        "link_pdf": "<link href=\"https://youtu.be/Z-9HwqzYFH8\">Creating Your First UI Widget BlueprintUnreal basics 101 course 4 ---- 9m 30s</link>",
+        "type": "video"
+    },
+    "My Guide To Realistic Lighting in Unreal Engine 5 ---- 9m 39s": {
+        "icon_image": "https://i.ytimg.com/vi/grAyrbNmaUM/maxresdefault.jpg",
+        "link_url": "https://youtu.be/grAyrbNmaUM",
+        "link_pdf": "<link href=\"https://youtu.be/grAyrbNmaUM\">My Guide To Realistic Lighting in Unreal Engine 5 ---- 9m 39s</link>",
+        "type": "video"
+    },
+    "Placing Objects - 3 Unreal Engine 4 User Interface Development Tutorial Series ---- 9m 43s": {
+        "icon_image": "https://i.ytimg.com/vi/5JzaGZRxhX4/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCsZbudJHrXwwfeMssneipZmZjz4Q",
+        "link_url": "https://www.youtube.com/watch?v=5JzaGZRxhX4&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=5JzaGZRxhX4&list=PLL0cLF8gjBprIHm0yo-Vj9oBwi2-gAIEd&index=3&pp=iAQB\">Placing Objects - 3 Unreal Engine 4 User Interface Development Tutorial Series ---- 9m 43s</link>",
+        "type": "video"
+    },
+    "Switching Objects in Unreal Engine 5 Using Blueprints ---- 9m 44s": {
+        "icon_image": "https://i.ytimg.com/vi/-IzDYXhJg4M/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=-IzDYXhJg4M",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=-IzDYXhJg4M\">Switching Objects in Unreal Engine 5 Using Blueprints ---- 9m 44s</link>",
+        "type": "video"
+    },
+    "Oculus Quest Hand Tracking: Custom Skeletal Mesh ---- 9m 50s": {
+        "icon_image": "https://i.ytimg.com/vi/CKIdogPFZg8/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBy9j6HqS4Zbc7LJ1RjxcKvYsOHfA",
+        "link_url": "https://www.youtube.com/watch?v=CKIdogPFZg8&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=CKIdogPFZg8&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=2&pp=iAQB\">Oculus Quest Hand Tracking: Custom Skeletal Mesh ---- 9m 50s</link>",
+        "type": "video"
+    },
+    "How to Create a Map EXTREMELY FAST in UE5 ---- 9m 55s": {
+        "icon_image": "https://i.ytimg.com/vi/-GyDjoyBQ3o/maxresdefault.jpg",
+        "link_url": "https://youtu.be/-GyDjoyBQ3o",
+        "link_pdf": "<link href=\"https://youtu.be/-GyDjoyBQ3o\">How to Create a Map EXTREMELY FAST in UE5 ---- 9m 55s</link>",
+        "type": "video"
+    },
+    "Float Menu X - Unreal Engine 5 - Tutorial ---- 9m 55s": {
+        "icon_image": "https://i.ytimg.com/vi/wEa-O0mMaTQ/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=wEa-O0mMaTQ",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=wEa-O0mMaTQ\">Float Menu X - Unreal Engine 5 - Tutorial ---- 9m 55s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 3 - How To Import Assets with C++? - Unreal Engine Tutorial Editor CPP ---- 10m 11s": {
+        "icon_image": "https://i.ytimg.com/vi/rSV96Ux43dk/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCnqIh0mKDtnn3ukii0sok4ZJNeSg",
+        "link_url": "https://www.youtube.com/watch?v=rSV96Ux43dk&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=rSV96Ux43dk&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=5&pp=iAQB\">UE5 C++ 3 - How To Import Assets with C++? - Unreal Engine Tutorial Editor CPP ---- 10m 11s</link>",
+        "type": "video"
+    },
+    "Chaos Destruction In Unreal Engine 5 - Part 3: Adding Niagara FX Using The Chaos Data Interface ---- 10m 13s": {
+        "icon_image": "https://i.ytimg.com/vi/nB5YGxKERb4/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBLIkaCykoDaTtCTsl6BEm8ldILLQ",
+        "link_url": "https://www.youtube.com/watch?v=nB5YGxKERb4&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=nB5YGxKERb4&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=4&pp=iAQB\">Chaos Destruction In Unreal Engine 5 - Part 3: Adding Niagara FX Using The Chaos Data Interface ---- 10m 13s</link>",
+        "type": "video"
+    },
+    "How to use Displacement in Unreal Engine 5.2 ---- 10m 14s": {
+        "icon_image": "https://i.ytimg.com/vi/ik6s8xRceqE/maxresdefault.jpg",
+        "link_url": "https://youtu.be/ik6s8xRceqE",
+        "link_pdf": "<link href=\"https://youtu.be/ik6s8xRceqE\">How to use Displacement in Unreal Engine 5.2 ---- 10m 14s</link>",
+        "type": "video"
+    },
+    "Create a sci-fi HOLOGRAM material shader in Unreal Engine 5 (FREE download) ---- 10m 21s": {
+        "icon_image": "https://i.ytimg.com/vi/lWV52h-VHi8/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=lWV52h-VHi8&t=47s",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=lWV52h-VHi8&t=47s\">Create a sci-fi HOLOGRAM material shader in Unreal Engine 5 (FREE download) ---- 10m 21s</link>",
+        "type": "video"
+    },
+    "How to Make a Simple Minimap in Unreal Engine 5 ---- 10m 22s": {
+        "icon_image": "https://i.ytimg.com/vi/VzFAujhMdEA/maxresdefault.jpg",
+        "link_url": "https://youtu.be/VzFAujhMdEA",
+        "link_pdf": "<link href=\"https://youtu.be/VzFAujhMdEA\">How to Make a Simple Minimap in Unreal Engine 5 ---- 10m 22s</link>",
+        "type": "video"
+    },
+    "Comment INT\u00c9GRER un objet 3D sur un SITE WEB ---- 10m 23s": {
+        "icon_image": "https://i.ytimg.com/vi/3zcrt-VXVF8/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAKpcA-ZEB6aDfE4CmM0QGB8VKjqw",
+        "link_url": "https://www.youtube.com/watch?v=3zcrt-VXVF8&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=7&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=3zcrt-VXVF8&list=PL3uLQPKRP3zaL2YA9Kt3gYS3nLmzNAFoO&index=7&pp=iAQB\">Comment INT\u00c9GRER un objet 3D sur un SITE WEB ---- 10m 23s</link>",
+        "type": "video"
+    },
+    "How to Make an Animal AI in Unreal Engine 5 ---- 10m 26s": {
+        "icon_image": "https://i.ytimg.com/vi/yYfhsJNL5QE/maxresdefault.jpg",
+        "link_url": "https://youtu.be/yYfhsJNL5QE",
+        "link_pdf": "<link href=\"https://youtu.be/yYfhsJNL5QE\">How to Make an Animal AI in Unreal Engine 5 ---- 10m 26s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Tutoriel DebutantChaos Destruction ---- 10m 30s": {
+        "icon_image": "https://i.ytimg.com/vi/tIthS9yk3lc/maxresdefault.jpg",
+        "link_url": "https://youtu.be/tIthS9yk3lc",
+        "link_pdf": "<link href=\"https://youtu.be/tIthS9yk3lc\">Unreal Engine 5 Tutoriel DebutantChaos Destruction ---- 10m 30s</link>",
+        "type": "video"
+    },
+    "Introduction to Procedural Meshes in UE4 - Mesh Ops plugin ---- 10m 35s": {
+        "icon_image": "https://i.ytimg.com/vi/EnHvMuX6Y-U/maxresdefault.jpg",
+        "link_url": "https://youtu.be/EnHvMuX6Y-U",
+        "link_pdf": "<link href=\"https://youtu.be/EnHvMuX6Y-U\">Introduction to Procedural Meshes in UE4 - Mesh Ops plugin ---- 10m 35s</link>",
+        "type": "video"
+    },
+    "5 Tricks you (probably) don't know about Unreal Engine 5 ---- 10m 44s": {
+        "icon_image": "https://i.ytimg.com/vi/ZF7Vwc8L1ok/maxresdefault.jpg",
+        "link_url": "https://youtu.be/ZF7Vwc8L1ok",
+        "link_pdf": "<link href=\"https://youtu.be/ZF7Vwc8L1ok\">5 Tricks you (probably) don't know about Unreal Engine 5 ---- 10m 44s</link>",
+        "type": "video"
+    },
+    "Cette IA genere n'importe quel objet 3D pour Blender ! Luma Genie ---- 11m 9s": {
+        "icon_image": "https://i.ytimg.com/vi/R9pHrKQlW2E/maxresdefault.jpg",
+        "link_url": "https://youtu.be/R9pHrKQlW2E",
+        "link_pdf": "<link href=\"https://youtu.be/R9pHrKQlW2E\">Cette IA genere n'importe quel objet 3D pour Blender ! Luma Genie ---- 11m 9s</link>",
+        "type": "video"
+    },
+    "Pro Materials Are EASY Now! (Try This) ---- 11m 19s": {
+        "icon_image": "https://i.ytimg.com/vi/rBx4zLY_V_E/maxresdefault.jpg",
+        "link_url": "https://youtu.be/rBx4zLY_V_E",
+        "link_pdf": "<link href=\"https://youtu.be/rBx4zLY_V_E\">Pro Materials Are EASY Now! (Try This) ---- 11m 19s</link>",
+        "type": "video"
+    },
+    "Exporter de BLENDER vers UNREAL ENGINE 5 ---- 11m 22s": {
+        "icon_image": "https://i.ytimg.com/vi/BK-_pr9LyPo/maxresdefault.jpg",
+        "link_url": "https://youtu.be/BK-_pr9LyPo",
+        "link_pdf": "<link href=\"https://youtu.be/BK-_pr9LyPo\">Exporter de BLENDER vers UNREAL ENGINE 5 ---- 11m 22s</link>",
+        "type": "video"
+    },
+    "UE4 VR Physics Based Hands Interaction(Realistic Hands Interaction part 1) UE4Tuts For YouUE4VR ---- 11m 29s": {
+        "icon_image": "https://i.ytimg.com/vi/aavZbRjSE8w/hqdefault.jpg",
+        "link_url": "https://youtu.be/aavZbRjSE8w",
+        "link_pdf": "<link href=\"https://youtu.be/aavZbRjSE8w\">UE4 VR Physics Based Hands Interaction(Realistic Hands Interaction part 1) UE4Tuts For YouUE4VR ---- 11m 29s</link>",
+        "type": "video"
+    },
+    "Cesium for Unreal Tutorial 01 - Quickstart ---- 11m 31s": {
+        "icon_image": "https://i.ytimg.com/vi/BX37A949tiw/maxresdefault.jpg?sqp",
+        "link_url": "https://www.youtube.com/watch?v=BX37A949tiw&t=1s",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=BX37A949tiw&t=1s\">Cesium for Unreal Tutorial 01 - Quickstart ---- 11m 31s</link>",
+        "type": "video"
+    },
+    "UE4 / Unreal Engine 4 Make a Game C++ Edition - 01 C++ VSCode Setup ---- 11m 40s": {
+        "icon_image": "https://i.ytimg.com/vi/62MllhLQLvs/maxresdefault.jpg",
+        "link_url": "https://youtu.be/62MllhLQLvs?list=PLL7ZPw6CY7Ezdo7XbZoepGF83eGCHOEA_",
+        "link_pdf": "<link href=\"https://youtu.be/62MllhLQLvs?list=PLL7ZPw6CY7Ezdo7XbZoepGF83eGCHOEA_\">UE4 / Unreal Engine 4 Make a Game C++ Edition - 01 C++ VSCode Setup ---- 11m 40s</link>",
+        "type": "video"
+    },
+    "Chaos Destruction In Unreal Engine 5 - Part 2: Controlling Destruction With Anchor Fields ---- 11m 46s": {
+        "icon_image": "https://i.ytimg.com/vi/DbwCDz0zFBQ/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLB3gUqowRPnzr0OQGlIr7Ma3zh4eg",
+        "link_url": "https://www.youtube.com/watch?v=DbwCDz0zFBQ&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=DbwCDz0zFBQ&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=3&pp=iAQB\">Chaos Destruction In Unreal Engine 5 - Part 2: Controlling Destruction With Anchor Fields ---- 11m 46s</link>",
+        "type": "video"
+    },
+    "Chaos Destruction In Unreal Engine 5 - Part 4: Damage Over Time & Accumulated Damage (Master Field) ---- 11m 49s": {
+        "icon_image": "https://i.ytimg.com/vi/tkM9JY-My4U/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDjNrbUL4-54QE0v3Z2b02xSGfCWA",
+        "link_url": "https://www.youtube.com/watch?v=tkM9JY-My4U&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=tkM9JY-My4U&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=5&pp=iAQB\">Chaos Destruction In Unreal Engine 5 - Part 4: Damage Over Time & Accumulated Damage (Master Field) ---- 11m 49s</link>",
+        "type": "video"
+    },
+    "Create a Fence using Procedural Content Generation - Unreal Engine 5 PCG Spline Tutorial ---- 12m 13s": {
+        "icon_image": "https://i.ytimg.com/vi/TWjqci4nbO4/maxresdefault.jpg",
+        "link_url": "https://youtu.be/TWjqci4nbO4",
+        "link_pdf": "<link href=\"https://youtu.be/TWjqci4nbO4\">Create a Fence using Procedural Content Generation - Unreal Engine 5 PCG Spline Tutorial ---- 12m 13s</link>",
+        "type": "video"
+    },
+    "Unreal Dynamic Weather 1 - Wet Materials - UE4 Open World Tutorials 16 ---- 12m 14s": {
+        "icon_image": "https://i.ytimg.com/vi/pJC36guv7oU/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCbDE2Z7m5fKgUMJc1THJXrswfS4g",
+        "link_url": "https://www.youtube.com/watch?v=pJC36guv7oU&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=pJC36guv7oU&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=4&pp=iAQB\">Unreal Dynamic Weather 1 - Wet Materials - UE4 Open World Tutorials 16 ---- 12m 14s</link>",
+        "type": "video"
+    },
+    "Chaos Destruction In Unreal Engine 5 - Part 1: Explosions Using Physics Fields ---- 12m 15s": {
+        "icon_image": "https://i.ytimg.com/vi/i5f1DevgDUs/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAlYsqEd-q-Qf_omx3oRHs6ZC3wCA",
+        "link_url": "https://www.youtube.com/watch?v=i5f1DevgDUs&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=i5f1DevgDUs&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=2&pp=iAQB\">Chaos Destruction In Unreal Engine 5 - Part 1: Explosions Using Physics Fields ---- 12m 15s</link>",
+        "type": "video"
+    },
+    "Unreal Engine How To Sell Plugins 1 Create Plugin ---- 12m 28s": {
+        "icon_image": "https://i.ytimg.com/vi/v3_HkAU_rls/maxresdefault.jpg?sqp",
+        "link_url": "https://youtu.be/v3_HkAU_rls",
+        "link_pdf": "<link href=\"https://youtu.be/v3_HkAU_rls\">Unreal Engine How To Sell Plugins 1 Create Plugin ---- 12m 28s</link>",
+        "type": "video"
+    },
+    "Making a pawn that can actually turn into a queen | Blender 4.0 ---- 12m 43s": {
+        "icon_image": "https://i.ytimg.com/vi/t-7CFVslli4/maxresdefault.jpg",
+        "link_url": "https://youtu.be/t-7CFVslli4",
+        "link_pdf": "<link href=\"https://youtu.be/t-7CFVslli4\">Making a pawn that can actually turn into a queen | Blender 4.0 ---- 12m 43s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 - Colliders Explained in 12 min ---- 12m 44s": {
+        "icon_image": "https://i.ytimg.com/vi/X2CtmdkFdz0/maxresdefault.jpg",
+        "link_url": "https://youtu.be/X2CtmdkFdz0",
+        "link_pdf": "<link href=\"https://youtu.be/X2CtmdkFdz0\">Unreal Engine 5 - Colliders Explained in 12 min ---- 12m 44s</link>",
+        "type": "video"
+    },
+    "Unreal Dynamic Snow Layer - UE4 Open World Tutorials 29 ---- 12m 47s": {
+        "icon_image": "https://i.ytimg.com/vi/YtlF1bxDWHs/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAQ7FeM-Q512ABOk3h7cAh-1Ehn5A",
+        "link_url": "https://www.youtube.com/watch?v=YtlF1bxDWHs&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=YtlF1bxDWHs&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=3&pp=iAQB\">Unreal Dynamic Snow Layer - UE4 Open World Tutorials 29 ---- 12m 47s</link>",
+        "type": "video"
+    },
+    "Unreal Development Kit Beginner Tutorial Series - 1 Series Introduction ---- 12m 52s": {
+        "icon_image": "https://i.ytimg.com/vi/LXUWiVQ-xDY/maxresdefault.jpg",
+        "link_url": "https://youtu.be/LXUWiVQ-xDY?list=PLL0cLF8gjBpqAGUQWKbrmzOmgmu0yO7P0",
+        "link_pdf": "<link href=\"https://youtu.be/LXUWiVQ-xDY?list=PLL0cLF8gjBpqAGUQWKbrmzOmgmu0yO7P0\">Unreal Development Kit Beginner Tutorial Series - 1 Series Introduction ---- 12m 52s</link>",
+        "type": "video"
+    },
+    "L'inquietant FUTUR du MMORPG ?! ---- 12m 54s": {
+        "icon_image": "https://i.ytimg.com/vi/-Qj1ufuw470/maxresdefault.jpg",
+        "link_url": "https://youtu.be/-Qj1ufuw470",
+        "link_pdf": "<link href=\"https://youtu.be/-Qj1ufuw470\">L'inquietant FUTUR du MMORPG ?! ---- 12m 54s</link>",
+        "type": "video"
+    },
+    "Oculus Quest Hand Tracking Quick Start in Unreal Engine 4.26 ---- 13m 5s": {
+        "icon_image": "https://i.ytimg.com/vi/sSdpPtlEk20/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBbplS8iBfw7wvsE4ReE6u-X27G4Q",
+        "link_url": "https://www.youtube.com/watch?v=sSdpPtlEk20&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=1&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=sSdpPtlEk20&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=1&pp=iAQB\">Oculus Quest Hand Tracking Quick Start in Unreal Engine 4.26 ---- 13m 5s</link>",
+        "type": "video"
+    },
+    "5 intelligences artificielles qui revolutionnent la creation 3D ! ---- 13m 8s": {
+        "icon_image": "https://i.ytimg.com/vi/NUkXgD-lRiA/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=NUkXgD-lRiA",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=NUkXgD-lRiA\">5 intelligences artificielles qui revolutionnent la creation 3D ! ---- 13m 8s</link>",
+        "type": "video"
+    },
+    "UE5 3 Methods for Blocking Out Environments and Level Designs in UE5 ---- 13m 29s": {
+        "icon_image": "https://i.ytimg.com/vi/ZfalgxLtNyI/maxresdefault.jpg",
+        "link_url": "https://youtu.be/ZfalgxLtNyI",
+        "link_pdf": "<link href=\"https://youtu.be/ZfalgxLtNyI\">UE5 3 Methods for Blocking Out Environments and Level Designs in UE5 ---- 13m 29s</link>",
+        "type": "video"
+    },
+    "Faire n'importe quelle ville sur Blender ? ---- 13m 31s": {
+        "icon_image": "https://i.ytimg.com/vi/O2h0l4wMs1c/maxresdefault.jpg",
+        "link_url": "https://youtu.be/O2h0l4wMs1c",
+        "link_pdf": "<link href=\"https://youtu.be/O2h0l4wMs1c\">Faire n'importe quelle ville sur Blender ? ---- 13m 31s</link>",
+        "type": "video"
+    },
+    "Adding Virtual Hands to the VR Pawn in Unreal Engine ---- 13m 35s": {
+        "icon_image": "https://i.ytimg.com/vi/P1y2GARONiM/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=P1y2GARONiM",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=P1y2GARONiM\">Adding Virtual Hands to the VR Pawn in Unreal Engine ---- 13m 35s</link>",
+        "type": "video"
+    },
+    "UE5 Series Using Displacement in UNREAL Engine 5.3 ---- 14m 0s": {
+        "icon_image": "https://i.ytimg.com/vi/QnJiYp2Y00s/maxresdefault.jpg",
+        "link_url": "https://youtu.be/QnJiYp2Y00s",
+        "link_pdf": "<link href=\"https://youtu.be/QnJiYp2Y00s\">UE5 Series Using Displacement in UNREAL Engine 5.3 ---- 14m 0s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 2 - How To Read and Write Json Files with C++? - Unreal Engine Tutorial Editor CPP ---- 14m 10s": {
+        "icon_image": "https://i.ytimg.com/vi/4wJ45mrzrkM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLC7TMuhL8DlHVMU4eO4p655Yr-oLA",
+        "link_url": "https://www.youtube.com/watch?v=4wJ45mrzrkM&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=4wJ45mrzrkM&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=4&pp=iAQB\">UE5 C++ 2 - How To Read and Write Json Files with C++? - Unreal Engine Tutorial Editor CPP ---- 14m 10s</link>",
+        "type": "video"
+    },
+    "Build User Interfaces In VIRTUAL REALITY For Unreal Engine 5 ---- 14m 25s": {
+        "icon_image": "https://i.ytimg.com/vi/kM27HYbpvc0/maxresdefault.jpg",
+        "link_url": "https://youtu.be/kM27HYbpvc0",
+        "link_pdf": "<link href=\"https://youtu.be/kM27HYbpvc0\">Build User Interfaces In VIRTUAL REALITY For Unreal Engine 5 ---- 14m 25s</link>",
+        "type": "video"
+    },
+    "Infinite world generation in Unreal Engine ---- 14m 35s": {
+        "icon_image": "https://i.ytimg.com/vi/pX4pNfcEfA0/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBZLQaOcnau962rwWTVBKNaHyKIZw",
+        "link_url": "https://www.youtube.com/watch?v=pX4pNfcEfA0&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=6&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=pX4pNfcEfA0&list=PLyL5ZNukfVqskz_OkMdrLamiYg1sITyic&index=6&pp=iAQB\">Infinite world generation in Unreal Engine ---- 14m 35s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Beginner Tutorial - Pirate Of The Caribbean Scene Creation ---- 14m 49s": {
+        "icon_image": "https://i.ytimg.com/vi/fBFd4Am7e4I/maxresdefault.jpg",
+        "link_url": "https://youtu.be/fBFd4Am7e4I",
+        "link_pdf": "<link href=\"https://youtu.be/fBFd4Am7e4I\">Unreal Engine 5 Beginner Tutorial - Pirate Of The Caribbean Scene Creation ---- 14m 49s</link>",
+        "type": "video"
+    },
+    "Chaos Destruction In Unreal Engine 5 - Part 5: Using Disable Fields To Control Large Simulations ---- 15m 17s": {
+        "icon_image": "https://i.ytimg.com/vi/0bIx4vThZcQ/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCKSUKhc_J16iBK_QfOlPLOXMPsKw",
+        "link_url": "https://www.youtube.com/watch?v=0bIx4vThZcQ&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=6&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=0bIx4vThZcQ&list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob&index=6&pp=iAQB\">Chaos Destruction In Unreal Engine 5 - Part 5: Using Disable Fields To Control Large Simulations ---- 15m 17s</link>",
+        "type": "video"
+    },
+    "The Easiest Way to Make a Simple Enemy AI in Unreal Engine 5 ---- 15m 40s": {
+        "icon_image": "https://i.ytimg.com/vi/xm-7m5Fw1HU/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=xm-7m5Fw1HU",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=xm-7m5Fw1HU\">The Easiest Way to Make a Simple Enemy AI in Unreal Engine 5 ---- 15m 40s</link>",
+        "type": "video"
+    },
+    "Getting Started in VR | Physics-Based Hands | Unreal Engine ---- 15m 52s": {
+        "icon_image": "https://i.ytimg.com/vi/L0nSNMwgc5Q/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=L0nSNMwgc5Q",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=L0nSNMwgc5Q\">Getting Started in VR | Physics-Based Hands | Unreal Engine ---- 15m 52s</link>",
+        "type": "video"
+    },
+    "How to Salami Slice Mesh In Unreal Engine - Easy ---- 15m 58s": {
+        "icon_image": "https://i.ytimg.com/vi/oIdKxYYQBdw/maxresdefault.jpg",
+        "link_url": "https://youtu.be/oIdKxYYQBdw",
+        "link_pdf": "<link href=\"https://youtu.be/oIdKxYYQBdw\">How to Salami Slice Mesh In Unreal Engine - Easy ---- 15m 58s</link>",
+        "type": "video"
+    },
+    "25 Tips and Tricks you (probably) don't know about Unreal Engine 5 ---- 16m 6s": {
+        "icon_image": "https://i.ytimg.com/vi/ocKFXjut6ls/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=ocKFXjut6ls",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=ocKFXjut6ls\">25 Tips and Tricks you (probably) don't know about Unreal Engine 5 ---- 16m 6s</link>",
+        "type": "video"
+    },
+    "How to Build Quest 2 VR Apps with Unreal Engine 4.27 | VR Development ---- 16m 28s": {
+        "icon_image": "https://i.ytimg.com/vi/BoOB_btt41o/maxresdefault.jpg",
+        "link_url": "https://youtu.be/BoOB_btt41o",
+        "link_pdf": "<link href=\"https://youtu.be/BoOB_btt41o\">How to Build Quest 2 VR Apps with Unreal Engine 4.27 | VR Development ---- 16m 28s</link>",
+        "type": "video"
+    },
+    "Create your own MetaHuman | Unreal Engine 5 tutorial ---- 16m 40s": {
+        "icon_image": "https://i.ytimg.com/vi/7lAWhk_aVvc/maxresdefault.jpg",
+        "link_url": "https://youtu.be/7lAWhk_aVvc",
+        "link_pdf": "<link href=\"https://youtu.be/7lAWhk_aVvc\">Create your own MetaHuman | Unreal Engine 5 tutorial ---- 16m 40s</link>",
+        "type": "video"
+    },
+    "Introduction to Dynamic Mesh and Geometry Script in Unreal Engine ---- 16m 54s": {
+        "icon_image": "https://i.ytimg.com/vi/nW4dHuEFbQ4/maxresdefault.jpg",
+        "link_url": "https://youtu.be/nW4dHuEFbQ4",
+        "link_pdf": "<link href=\"https://youtu.be/nW4dHuEFbQ4\">Introduction to Dynamic Mesh and Geometry Script in Unreal Engine ---- 16m 54s</link>",
+        "type": "video"
+    },
+    "Create Entire Cities Automatically With PCG Splines! Procedural Content Generation in Unreal Engine ---- 16m 57s": {
+        "icon_image": "https://i.ytimg.com/vi/STqt92VF3KM/maxresdefault.jpg",
+        "link_url": "https://youtu.be/STqt92VF3KM",
+        "link_pdf": "<link href=\"https://youtu.be/STqt92VF3KM\">Create Entire Cities Automatically With PCG Splines! Procedural Content Generation in Unreal Engine ---- 16m 57s</link>",
+        "type": "video"
+    },
+    "QUICK TRICK to Realistically BLEND ASSETS with LANDSCAPE | UE5 Runtime Virtual Texturing Tutorial ---- 16m 58s": {
+        "icon_image": "https://i.ytimg.com/vi/ATfzfvtvfIo/maxresdefault.jpg",
+        "link_url": "https://youtu.be/ATfzfvtvfIo",
+        "link_pdf": "<link href=\"https://youtu.be/ATfzfvtvfIo\">QUICK TRICK to Realistically BLEND ASSETS with LANDSCAPE | UE5 Runtime Virtual Texturing Tutorial ---- 16m 58s</link>",
+        "type": "video"
+    },
+    "Unreal Engine C++ Tutorial - Episode 6 Dynamic Materials ---- 17m 30s": {
+        "icon_image": "https://i.ytimg.com/vi/V5bugE5K-ys/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=V5bugE5K-ys",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=V5bugE5K-ys\">Unreal Engine C++ Tutorial - Episode 6 Dynamic Materials ---- 17m 30s</link>",
+        "type": "video"
+    },
+    "Painting Ice and Snow On Mesh - UE4 Material ---- 17m 42s": {
+        "icon_image": "https://i.ytimg.com/vi/95dx6j2FncY/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBhMnfPkFNlvzZXutr9N0TkEcltFA",
+        "link_url": "https://www.youtube.com/watch?v=95dx6j2FncY&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=8&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=95dx6j2FncY&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=8&pp=iAQB\">Painting Ice and Snow On Mesh - UE4 Material ---- 17m 42s</link>",
+        "type": "video"
+    },
+    "VR Pawn Movement using Hand Activated Controls - Unreal Engine 4 Tutorial ---- 18m 5s": {
+        "icon_image": "https://i.ytimg.com/vi/lpDIYd6EEAs/maxresdefault.jpg",
+        "link_url": "https://youtu.be/lpDIYd6EEAs",
+        "link_pdf": "<link href=\"https://youtu.be/lpDIYd6EEAs\">VR Pawn Movement using Hand Activated Controls - Unreal Engine 4 Tutorial ---- 18m 5s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 4 Tutorial - Reactive Snow/Mud ---- 18m 38s": {
+        "icon_image": "https://i.ytimg.com/vi/bB1ZK4nv9gg/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBHQlSdeFgWKI2y2NpBMFaqdp6-dQ",
+        "link_url": "https://www.youtube.com/watch?v=bB1ZK4nv9gg&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=bB1ZK4nv9gg&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=2&pp=iAQB\">Unreal Engine 4 Tutorial - Reactive Snow/Mud ---- 18m 38s</link>",
+        "type": "video"
+    },
+    "Hand Tracking Grabbing Objects 1/2 ---- 19m 11s": {
+        "icon_image": "https://i.ytimg.com/vi/W1xGv_YEb6k/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLB3LriPF5bhWwM-yaJ-tnnE117i8w",
+        "link_url": "https://www.youtube.com/watch?v=W1xGv_YEb6k&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=W1xGv_YEb6k&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=5&pp=iAQB\">Hand Tracking Grabbing Objects 1/2 ---- 19m 11s</link>",
+        "type": "video"
+    },
+    "Hand Tracking Laser Pointer & Widget in UE4 ---- 19m 35s": {
+        "icon_image": "https://i.ytimg.com/vi/TJpmf4mJhes/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDr7Rlyy_VORrajEYZ0iAQWHb2pGg",
+        "link_url": "https://www.youtube.com/watch?v=TJpmf4mJhes&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=TJpmf4mJhes&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=3&pp=iAQB\">Hand Tracking Laser Pointer & Widget in UE4 ---- 19m 35s</link>",
+        "type": "video"
+    },
+    "How To Use VIRTUAL REALITY In Unreal Engine 5 | Beginner Tutorial ---- 20m 19s": {
+        "icon_image": "https://i.ytimg.com/vi/DiGh6MxDFds/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=DiGh6MxDFds&t=403s",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=DiGh6MxDFds&t=403s\">How To Use VIRTUAL REALITY In Unreal Engine 5 | Beginner Tutorial ---- 20m 19s</link>",
+        "type": "video"
+    },
+    "Packaging for Oculus Quest 2 - Unreal Engine 5 VR Tutorial ---- 20m 33s": {
+        "icon_image": "https://i.ytimg.com/vi/TXQhGjVZJ-8/maxresdefault.jpg",
+        "link_url": "https://youtu.be/TXQhGjVZJ-8",
+        "link_pdf": "<link href=\"https://youtu.be/TXQhGjVZJ-8\">Packaging for Oculus Quest 2 - Unreal Engine 5 VR Tutorial ---- 20m 33s</link>",
+        "type": "video"
+    },
+    "UE4 - Tutorial - Hologram Material! (Request!) ---- 21m 46s": {
+        "icon_image": "https://i.ytimg.com/vi/wIz6iyIOkys/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDSMt2EnN_IEi48bRNh77ZRueSQMg",
+        "link_url": "https://www.youtube.com/watch?v=wIz6iyIOkys&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=1&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=wIz6iyIOkys&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=1&pp=iAQB\">UE4 - Tutorial - Hologram Material! (Request!) ---- 21m 46s</link>",
+        "type": "video"
+    },
+    "Hand Tracking Grabbing Objects 2/2 ---- 22m 1s": {
+        "icon_image": "https://i.ytimg.com/vi/0WfCrToDThU/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCG6NxfpIlvE37nT-_tyY3CGfRX7g",
+        "link_url": "https://www.youtube.com/watch?v=0WfCrToDThU&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=6&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=0WfCrToDThU&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=6&pp=iAQB\">Hand Tracking Grabbing Objects 2/2 ---- 22m 1s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 0.2 - How To Create Debug Widgets? - Unreal Engine Tutorial Editor CPP ---- 22m 18s": {
+        "icon_image": "https://i.ytimg.com/vi/dWY_s2FdS7g/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLA5ep34C8wnD5sSuHcof1mLtOuXoQ",
+        "link_url": "https://www.youtube.com/watch?v=dWY_s2FdS7g&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=dWY_s2FdS7g&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=2&pp=iAQB\">UE5 C++ 0.2 - How To Create Debug Widgets? - Unreal Engine Tutorial Editor CPP ---- 22m 18s</link>",
+        "type": "video"
+    },
+    "Create Procedural Forest Path Unreal Engine 5.3 - Full PCG Tutorial ---- 22m 25s": {
+        "icon_image": "https://i.ytimg.com/vi/ZJO_ss7ewUA/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=ZJO_ss7ewUA",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=ZJO_ss7ewUA\">Create Procedural Forest Path Unreal Engine 5.3 - Full PCG Tutorial ---- 22m 25s</link>",
+        "type": "video"
+    },
+    "UE4 - Tutorial - Ice! (Ice baby!) ---- 22m 46s": {
+        "icon_image": "https://i.ytimg.com/vi/sE64iTjnoUM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBwvfPlBbl2q1mtjT4GAE2oNl1OUw",
+        "link_url": "https://www.youtube.com/watch?v=sE64iTjnoUM&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=sE64iTjnoUM&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=5&pp=iAQB\">UE4 - Tutorial - Ice! (Ice baby!) ---- 22m 46s</link>",
+        "type": "video"
+    },
+    "UE5 Blueprint Tips - Event Tick Performance ---- 23m 14s": {
+        "icon_image": "https://i.ytimg.com/vi/GFsGLpliG8E/maxresdefault.jpg",
+        "link_url": "https://youtu.be/GFsGLpliG8E",
+        "link_pdf": "<link href=\"https://youtu.be/GFsGLpliG8E\">UE5 Blueprint Tips - Event Tick Performance ---- 23m 14s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 - 3D Elements in Widgets (ALS 142 ) ---- 24m 9s": {
+        "icon_image": "https://i.ytimg.com/vi/BeX9Cobo3_c/maxresdefault.jpg",
+        "link_url": "https://youtu.be/BeX9Cobo3_c",
+        "link_pdf": "<link href=\"https://youtu.be/BeX9Cobo3_c\">Unreal Engine 5 - 3D Elements in Widgets (ALS 142 ) ---- 24m 9s</link>",
+        "type": "video"
+    },
+    "Brushify - SmartBrush System for UNREAL ENGINE 5 ---- 25m 22s": {
+        "icon_image": "https://i.ytimg.com/vi/xKPqqmPJGTI/maxresdefault.jpg",
+        "link_url": "https://youtu.be/xKPqqmPJGTI",
+        "link_pdf": "<link href=\"https://youtu.be/xKPqqmPJGTI\">Brushify - SmartBrush System for UNREAL ENGINE 5 ---- 25m 22s</link>",
+        "type": "video"
+    },
+    "UE4 - Tutorial - Dynamic Materials in BluePrints! (Request!) ---- 25m 29s": {
+        "icon_image": "https://i.ytimg.com/vi/6OTaEHfRyH8/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCDL505658AdGqjh21kjnBcSvzqmw",
+        "link_url": "https://www.youtube.com/watch?v=6OTaEHfRyH8&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=6&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=6OTaEHfRyH8&list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa&index=6&pp=iAQB\">UE4 - Tutorial - Dynamic Materials in BluePrints! (Request!) ---- 25m 29s</link>",
+        "type": "video"
+    },
+    "Procedural Content Generation in UE5 |GDC 2023 ---- 25m 35s": {
+        "icon_image": "https://i.ytimg.com/vi/aoCGLW53fZg/maxresdefault.jpg",
+        "link_url": "https://youtu.be/aoCGLW53fZg",
+        "link_pdf": "<link href=\"https://youtu.be/aoCGLW53fZg\">Procedural Content Generation in UE5 |GDC 2023 ---- 25m 35s</link>",
+        "type": "video"
+    },
+    "UE4 C++ Development for VR, Part 5 (Shooting the Grabbed Object and Wrapping Up) ---- 26m 27s": {
+        "icon_image": "https://i.ytimg.com/vi/wBZEHqCTDU4/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDkHwPS_FtQs6ahMYh4GvCM_JGoFg",
+        "link_url": "https://www.youtube.com/watch?v=wBZEHqCTDU4&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=5&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=wBZEHqCTDU4&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=5&pp=iAQB\">UE4 C++ Development for VR, Part 5 (Shooting the Grabbed Object and Wrapping Up) ---- 26m 27s</link>",
+        "type": "video"
+    },
+    "Widget Communication In Unreal Engine 5.1 - Part 1 + Using UMG To Modify An Actor. ---- 26m 44s": {
+        "icon_image": "https://i.ytimg.com/vi/_tpgGhtirT0/maxresdefault.jpg",
+        "link_url": "https://youtu.be/_tpgGhtirT0",
+        "link_pdf": "<link href=\"https://youtu.be/_tpgGhtirT0\">Widget Communication In Unreal Engine 5.1 - Part 1 + Using UMG To Modify An Actor. ---- 26m 44s</link>",
+        "type": "video"
+    },
+    "Introducing EasyMapper for Unreal Engine 5 ---- 28m 47s": {
+        "icon_image": "https://i.ytimg.com/vi/UWrCA-t0v3U/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=UWrCA-t0v3U",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=UWrCA-t0v3U\">Introducing EasyMapper for Unreal Engine 5 ---- 28m 47s</link>",
+        "type": "video"
+    },
+    "Comment Creer une IA ENNEMI de BASE | Unreal Engine 4 ---- 29m 7s": {
+        "icon_image": "https://i.ytimg.com/vi/HDZUTzjuXBo/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=HDZUTzjuXBo",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=HDZUTzjuXBo\">Comment Creer une IA ENNEMI de BASE | Unreal Engine 4 ---- 29m 7s</link>",
+        "type": "video"
+    },
+    "Virtual Textures Are Now My Favorite Thing ---- 29m 20s": {
+        "icon_image": "https://i.ytimg.com/vi/mk2BaeNr_p4/maxresdefault.jpg",
+        "link_url": "https://youtu.be/mk2BaeNr_p4",
+        "link_pdf": "<link href=\"https://youtu.be/mk2BaeNr_p4\">Virtual Textures Are Now My Favorite Thing ---- 29m 20s</link>",
+        "type": "video"
+    },
+    "Lighting a NIGHT-TIME exterior in Unreal ---- 29m 22s": {
+        "icon_image": "https://i.ytimg.com/vi/1LfiYtKDsac/maxresdefault.jpg",
+        "link_url": "https://youtu.be/1LfiYtKDsac",
+        "link_pdf": "<link href=\"https://youtu.be/1LfiYtKDsac\">Lighting a NIGHT-TIME exterior in Unreal ---- 29m 22s</link>",
+        "type": "video"
+    },
+    "Oculus Quest Hand Tracking Teleportation in UE4 ---- 29m 51s": {
+        "icon_image": "https://i.ytimg.com/vi/fsxH-z8qx58/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCmE6GlOKx6-YL77teF7_GE1j0h1Q",
+        "link_url": "https://www.youtube.com/watch?v=fsxH-z8qx58&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=fsxH-z8qx58&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=4&pp=iAQB\">Oculus Quest Hand Tracking Teleportation in UE4 ---- 29m 51s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 0.1 - How To Find Anything In Engine Source? - Unreal Engine Tutorial Editor CPP ---- 30m 8s": {
+        "icon_image": "https://i.ytimg.com/vi/chfhADEicv0/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBg8yi-urZrTFxYQ2KoHX5pXN9R1A",
+        "link_url": "https://www.youtube.com/watch?v=chfhADEicv0&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=1&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=chfhADEicv0&list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe&index=1&pp=iAQB\">UE5 C++ 0.1 - How To Find Anything In Engine Source? - Unreal Engine Tutorial Editor CPP ---- 30m 8s</link>",
+        "type": "video"
+    },
+    "Create Stunning Fire Effects in Unreal Engine 5 with Niagara ---- 30m 47s": {
+        "icon_image": "https://i.ytimg.com/vi/oaaBxBMUGvQ/maxresdefault.jpg",
+        "link_url": "https://youtu.be/oaaBxBMUGvQ",
+        "link_pdf": "<link href=\"https://youtu.be/oaaBxBMUGvQ\">Create Stunning Fire Effects in Unreal Engine 5 with Niagara ---- 30m 47s</link>",
+        "type": "video"
+    },
+    "UE5 C++ 10 - How ToBuild Material Graph with C++? - Unreal Engine Tutorial Editor CPP ---- 31m 51s": {
+        "icon_image": "https://i.ytimg.com/vi/Fd56hSN83mk/maxresdefault.jpg",
+        "link_url": "https://youtu.be/Fd56hSN83mk",
+        "link_pdf": "<link href=\"https://youtu.be/Fd56hSN83mk\">UE5 C++ 10 - How ToBuild Material Graph with C++? - Unreal Engine Tutorial Editor CPP ---- 31m 51s</link>",
+        "type": "video"
+    },
+    "Oculus Quest Hand Tracking Gestures in UE4 ---- 33m 21s": {
+        "icon_image": "https://i.ytimg.com/vi/XkDEb282kII/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBYf7O8yD3MWAgicb8APL9yAvyKBA",
+        "link_url": "https://www.youtube.com/watch?v=XkDEb282kII&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=8&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=XkDEb282kII&list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR&index=8&pp=iAQB\">Oculus Quest Hand Tracking Gestures in UE4 ---- 33m 21s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Environment Lighting Tutorial | Part 1 ---- 33m 22s": {
+        "icon_image": "https://i.ytimg.com/vi/Bmndxya39lM/maxresdefault.jpg",
+        "link_url": "https://youtu.be/Bmndxya39lM",
+        "link_pdf": "<link href=\"https://youtu.be/Bmndxya39lM\">Unreal Engine 5 Environment Lighting Tutorial | Part 1 ---- 33m 22s</link>",
+        "type": "video"
+    },
+    "UE5 Series Using Procedural Foliage Tool in UNREAL Engine ---- 33m 43s": {
+        "icon_image": "https://i.ytimg.com/vi/xhJLBoSl4gw/maxresdefault.jpg",
+        "link_url": "https://youtu.be/xhJLBoSl4gw",
+        "link_pdf": "<link href=\"https://youtu.be/xhJLBoSl4gw\">UE5 Series Using Procedural Foliage Tool in UNREAL Engine ---- 33m 43s</link>",
+        "type": "video"
+    },
+    "Doxygen Basics ---- 35m 23s": {
+        "icon_image": "https://i.ytimg.com/vi/TtRn3HsOm1s/maxresdefault.jpg",
+        "link_url": "https://youtu.be/TtRn3HsOm1s",
+        "link_pdf": "<link href=\"https://youtu.be/TtRn3HsOm1s\">Doxygen Basics ---- 35m 23s</link>",
+        "type": "video"
+    },
+    "Let's Build the RPG! - 61 - Torch Fire Full Tutorial - Fire and Light in Unreal Engine 5 ---- 36m 20s": {
+        "icon_image": "https://i.ytimg.com/vi/ZceJPOMDLSA/maxresdefault.jpg",
+        "link_url": "https://youtu.be/ZceJPOMDLSA",
+        "link_pdf": "<link href=\"https://youtu.be/ZceJPOMDLSA\">Let's Build the RPG! - 61 - Torch Fire Full Tutorial - Fire and Light in Unreal Engine 5 ---- 36m 20s</link>",
+        "type": "video"
+    },
+    "Advanced UI Templating Techniques using Widget Blueprints and Materials | Unreal Fest 2022 ---- 39m 47s": {
+        "icon_image": "https://i.ytimg.com/vi/dSTdAToJ7Gg/maxresdefault.jpg",
+        "link_url": "https://youtu.be/dSTdAToJ7Gg",
+        "link_pdf": "<link href=\"https://youtu.be/dSTdAToJ7Gg\">Advanced UI Templating Techniques using Widget Blueprints and Materials | Unreal Fest 2022 ---- 39m 47s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Tutorial - Open World Optimization Don't use actors too much ---- 42m 24s": {
+        "icon_image": "https://i.ytimg.com/vi/GFzBoUeem74/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=GFzBoUeem74",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=GFzBoUeem74\">Unreal Engine 5 Tutorial - Open World Optimization Don't use actors too much ---- 42m 24s</link>",
+        "type": "video"
+    },
+    "Creating AR and VR Projects with Unreal Engine | Webinar ---- 46m 9s": {
+        "icon_image": "https://i.ytimg.com/vi/Asw4C51RH9I/maxresdefault.jpg",
+        "link_url": "https://youtu.be/Asw4C51RH9I",
+        "link_pdf": "<link href=\"https://youtu.be/Asw4C51RH9I\">Creating AR and VR Projects with Unreal Engine | Webinar ---- 46m 9s</link>",
+        "type": "video"
+    },
+    "Learn Unreal Engine C++ In One Hour ---- 55m 43s": {
+        "icon_image": "https://i.ytimg.com/vi/nVm-DYdAsts/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=nVm-DYdAsts",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=nVm-DYdAsts\">Learn Unreal Engine C++ In One Hour ---- 55m 43s</link>",
+        "type": "video"
+    },
+    "Unreal Niagara Next-Gen Disintegration VFX ---- 59m 21s": {
+        "icon_image": "https://i.ytimg.com/vi/79ZnSh6nJUo/maxresdefault.jpg",
+        "link_url": "https://youtu.be/79ZnSh6nJUo",
+        "link_pdf": "<link href=\"https://youtu.be/79ZnSh6nJUo\">Unreal Niagara Next-Gen Disintegration VFX ---- 59m 21s</link>",
+        "type": "video"
+    },
+    "UE4 C++ Development for VR, Part 4 (VR Grab Methods: Grip, Force Grab, Magnetic Grip) ---- 1h 4m 6s": {
+        "icon_image": "https://i.ytimg.com/vi/_knZ3KfK48A/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDsS36b1N9ihkLacXCA2aFHvP3-fw",
+        "link_url": "https://www.youtube.com/watch?v=_knZ3KfK48A&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=4&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=_knZ3KfK48A&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=4&pp=iAQB\">UE4 C++ Development for VR, Part 4 (VR Grab Methods: Grip, Force Grab, Magnetic Grip) ---- 1h 4m 6s</link>",
+        "type": "video"
+    },
+    "UE4 C++ Development for VR, Part 1 (Setting Up the Basic VR Character) ---- 1h 10m 45s": {
+        "icon_image": "https://i.ytimg.com/vi/N7TUC0ZvuGM/maxresdefault.jpg",
+        "link_url": "https://youtu.be/N7TUC0ZvuGM?list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy",
+        "link_pdf": "<link href=\"https://youtu.be/N7TUC0ZvuGM?list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy\">UE4 C++ Development for VR, Part 1 (Setting Up the Basic VR Character) ---- 1h 10m 45s</link>",
+        "type": "video"
+    },
+    "UE4 C++ Development for VR, Part 2 (Shooting Raygun) ---- 1h 15m 32s": {
+        "icon_image": "https://i.ytimg.com/vi/2ZZxjoXEV3s/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBLAckYRZBoh6SZr3-EUDf5dq4Ayg",
+        "link_url": "https://www.youtube.com/watch?v=2ZZxjoXEV3s&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=2&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=2ZZxjoXEV3s&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=2&pp=iAQB\">UE4 C++ Development for VR, Part 2 (Shooting Raygun) ---- 1h 15m 32s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Beginner Tutorial - UE5 Starter Course 2023 unrealengine5megascans cgi ---- 1h 19m 27s": {
+        "icon_image": "https://i.ytimg.com/vi/gHnnAB2bxK0/maxresdefault.jpg",
+        "link_url": "https://youtu.be/gHnnAB2bxK0",
+        "link_pdf": "<link href=\"https://youtu.be/gHnnAB2bxK0\">Unreal Engine 5 Beginner Tutorial - UE5 Starter Course 2023 unrealengine5megascans cgi ---- 1h 19m 27s</link>",
+        "type": "video"
+    },
+    "Unreal Engine 5 Tutoriel Debutant - Cours de demarrage UE5! ---- 1h 25m 25s": {
+        "icon_image": "https://i.ytimg.com/vi/XX_4YgAseyw/maxresdefault.jpg",
+        "link_url": "https://youtu.be/XX_4YgAseyw",
+        "link_pdf": "<link href=\"https://youtu.be/XX_4YgAseyw\">Unreal Engine 5 Tutoriel Debutant - Cours de demarrage UE5! ---- 1h 25m 25s</link>",
+        "type": "video"
+    },
+    "UE4 C++ Development for VR, Part 3 (Finishing Shooting, Navigation, Teleporting, Fighting with VS) ---- 1h 27m 33s": {
+        "icon_image": "https://i.ytimg.com/vi/wHA-WVddXM4/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBal5mDpJuw_RmuCxvIaanJrGYMoA",
+        "link_url": "https://www.youtube.com/watch?v=wHA-WVddXM4&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=3&pp=iAQB",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=wHA-WVddXM4&list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy&index=3&pp=iAQB\">UE4 C++ Development for VR, Part 3 (Finishing Shooting, Navigation, Teleporting, Fighting with VS) ---- 1h 27m 33s</link>",
+        "type": "video"
+    },
+    "Your first Virtual Reality Project with Unreal Engine 5.1 ---- 1h 34m 28s": {
+        "icon_image": "https://i.ytimg.com/vi/AqF9R4afZgA/maxresdefault.jpg?sqp",
+        "link_url": "https://www.youtube.com/watch?v=AqF9R4afZgA",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=AqF9R4afZgA\">Your first Virtual Reality Project with Unreal Engine 5.1 ---- 1h 34m 28s</link>",
+        "type": "video"
+    },
+    "Unreal Engine & C++ Tutorial - Endless Runner Game  ---- 1h 34m 37s": {
+        "icon_image": "https://i.ytimg.com/vi/SOjZTmOMGcY/maxresdefault.jpg",
+        "link_url": "https://www.youtube.com/watch?v=SOjZTmOMGcY",
+        "link_pdf": "<link href=\"https://www.youtube.com/watch?v=SOjZTmOMGcY\">Unreal Engine & C++ Tutorial - Endless Runner Game  ---- 1h 34m 37s</link>",
+        "type": "video"
+    },
+    "Mastering Procedural Open World Creation with PCG and Unreal Engine 5.2 ---- 1h 47m 42s": {
+        "icon_image": "https://i.ytimg.com/vi/Y0UwL-Bo2l0/maxresdefault.jpg",
+        "link_url": "https://youtu.be/Y0UwL-Bo2l0",
+        "link_pdf": "<link href=\"https://youtu.be/Y0UwL-Bo2l0\">Mastering Procedural Open World Creation with PCG and Unreal Engine 5.2 ---- 1h 47m 42s</link>",
+        "type": "video"
+    },
+    "Apprendre Unreal Engine 5 de A a Z (Formation Debutants) ---- 11h 58m 33s": {
+        "icon_image": "https://i.ytimg.com/vi/hn98tbztoBg/maxresdefault.jpg",
+        "link_url": "https://youtu.be/hn98tbztoBg",
+        "link_pdf": "<link href=\"https://youtu.be/hn98tbztoBg\">Apprendre Unreal Engine 5 de A a Z (Formation Debutants) ---- 11h 58m 33s</link>",
+        "type": "video"
+    }
+}

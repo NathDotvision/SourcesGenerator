@@ -2,18 +2,29 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import time
 import os
+from colorama import Fore, Style
 
-file_path_write = ".\sources-ref.md"
-file_path = ".\sources.md"
+file_path_write = ".\sources.md"
+file_path = ".\sources-ref.md"
 
-text = "# Sources\n\nVoici la liste de tout les documents que j'ai utilise pour faire ce projet. Il y a des sites et des videos. Les sites sont classes par ordre alphabetique et les videos par ordre de duree."
+def info_time(name:str = ""):
+    value = []
+    if name != "":
+        value.append("File " + name)
+    value.append("Start at " + time.strftime("%H:%M:%S", time.localtime()) + " in " + time.strftime("%d/%m/%Y", time.localtime()))
+    print(Fore.BLUE + "\n".join(value) + Style.RESET_ALL)
+    return "\n".join(value)
+
+text = info_time() +"\n"+"# Sources\n\nVoici la liste de tout les documents que j'ai utilise pour faire ce projet. Il y a des sites et des videos. Les sites sont classes par ordre alphabetique et les videos par ordre de duree."
 
 def open_file(path:str):
     try:
-        with open(path, "r") as file:
+        with open(path, "r", encoding='utf-8') as file:
             return file.read()
     except FileNotFoundError:
+        print(Fore.RED + "File not found" +Style.RESET_ALL)
         return False
 
 def extract_sources(content:str):
@@ -39,8 +50,8 @@ def get_title(soup):
 
 def write_file(path:str, content:str):
     try:
-        with open(path, "w") as file:
-            file.write(content)
+        with open(path, 'w', encoding='utf-8') as file:
+                file.write(content)
         return True
     except FileNotFoundError:
         return False
@@ -144,16 +155,11 @@ def get_image(soup, url):
 
 
 # Ouvre le fichier contenant la liste des liens
-if open_file(file_path) == False:
-    sources = []
-    if not os.path.exists(file_path):
-        open(file_path, 'w').close()
-else :
-    sources = open_file(file_path).splitlines()
+sources = open_file(file_path).splitlines()
 
 # Vérifie s'il y a des doublons
 if same(sources):
-    print("Il y a des doublons dans la liste des liens.")
+    print(Fore.YELLOW + "There are duplicates in the link list" + Style.RESET_ALL)
     #suprime les liens en double
     sources = list(dict.fromkeys(sources))
     # remplace le fichier par la liste sans doublons
@@ -170,14 +176,8 @@ dict_site = {}
 dict_video = {}
 dict_image = {}
 
-# Ouvre le fichier contenant la liste des liens
-if open_file(file_path_write) == False:
-    ref = []
-    if not os.path.exists(file_path_write):
-        open(file_path_write, 'w').close()
-else :
-    ref = open_file(file_path_write).splitlines()
-
+# Vérifie s'il y a des doublons dans le fichier de référence
+ref = open_file(file_path_write).splitlines()
 for line in ref:
     if line.startswith("- ["):
         url = line.split("](")[1].split(")")[0]
@@ -199,7 +199,7 @@ for url in sources:
 
 
 
-for url in sources:
+for url in sources_copy:
 
     #url, title in dict_urlName.items()
 
@@ -220,7 +220,6 @@ for url in sources:
 
     if Url_wihout.startswith("youtube.com"):
         if Url_wihout.startswith("youtube.com/playlist"):
-            print("playlist")
             data = get_json_data(soup)
             tab = data['contents']['twoColumnBrowseResultsRenderer']['tabs'][0]
             all_title = []
@@ -245,7 +244,7 @@ for url in sources:
                     dict_video[url] = title + " ---- " + string_duration(get_youtube_duration(soup))
                     dict_image[url][1] = get_image(soup,Url_wihout)[1]
                 except:
-                    print("error in " + url)
+                    print(Fore.RED + "error playlist Thumbnail in " + url)
         else:
             dict_video[url] = title + " ---- " + str(string_duration(get_youtube_duration(soup)))
             dict_image[url] = get_image(soup, Url_wihout)
@@ -294,21 +293,25 @@ else:
     dict_video2 = dict_video
 
 # Génère le texte
-text += "\n\n## Sites\n\n"
-for url, title in dict_sites2.items():
-    if dict_image[url][1] != []:
-        text += "- ![Icon]("+dict_image[url][1][0]+") ["+title+"]("+url+")\n"
-    else:
-        text += "- ["+title+"]("+url+")\n"
+if dict_sites2 != {}: 
+    text += "\n\n## Sites\n\n"
+    for url, title in dict_sites2.items():
+        if dict_image[url][1] != []:
+            text += "- ![Icon]("+dict_image[url][1][0]+") ["+title+"]("+url+")\n"
+        else:
+            text += "- ["+title+"]("+url+")\n"
 
-text += "\n\n## Videos\n\n"
-for url, title in dict_video2.items():
-    if dict_image[url][0] != []:
-        text += "- ![Thumbnail]("+dict_image[url][0][0]+")\n"
-    if dict_image[url][1] != []:
-        text += "- ![Icon]("+dict_image[url][1][0]+") ["+title+"]("+url+")\n"
-    else:
-        text += "- ["+title+"]("+url+")\n"
+if dict_video2 != {}:
+    text += "\n\n## Videos\n\n"
+    for url, title in dict_video2.items():
+        if dict_image[url][1] != []:
+            text += "- ![Icon]("+dict_image[url][1][0]+") ["+title+"]("+url+")\n"
+        else:
+            text += "- ["+title+"]("+url+")\n"
+        if dict_image[url][0] != []:
+            text += "- ![Thumbnail]("+dict_image[url][0][0]+")\n"
 
 # Écrit le fichier
+print(Fore.GREEN + "Markdown generated")
 write_file(file_path_write, text)
+print(Style.RESET_ALL + "")
