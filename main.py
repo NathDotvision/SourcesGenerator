@@ -3,6 +3,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
 from sources import open_file, info_time
 from colorama import Fore, Style
+from myjson import *
 from reportlab.platypus import Image
 from reportlab.platypus import Table, TableStyle
 from reportlab.lib import colors
@@ -11,13 +12,12 @@ from io import BytesIO
 from bs4 import BeautifulSoup
 import os
 
-info_time(os.path.basename(__file__))
 doc = SimpleDocTemplate("sources.pdf", pagesize=letter)
 styles = getSampleStyleSheet()
 story = []
-story.append(Paragraph(info_time(), styles["Normal"]))
+json_data= {}
 
-file_path_write = ".\sources-ref.md"
+file_path_write = ".\sources.md"
 
 text = open_file(file_path_write) 
 youtube_logo = None
@@ -63,7 +63,7 @@ for line in text.splitlines():
                         print(Fore.RED + "error Icon in " + image_url + Style.RESET_ALL)
             link_para = Paragraph(link, styles["BodyText"])
 
-            # Créer un tableau avec l'image, le nom et le lien
+            # Créer un tableau avec l'image, lien
             data = [[img,link_para]]
             table = Table(data, colWidths=[40, 400])
 
@@ -74,6 +74,7 @@ for line in text.splitlines():
 
             # Ajouter le tableau à l'histoire
             story.append(table)
+            json_data[link_name] = {"icon_image": image_url, "link_url": link_url, "link_pdf": link, "type":"link_with_icon"}
         elif line.startswith('- ![Thumbnail'):
             story.pop()
             # Extraire les informations de l'image et du lien
@@ -105,6 +106,7 @@ for line in text.splitlines():
 
             # Ajouter le tableau à l'histoire
             story.append(table)
+            json_data[link_name] = {"icon_image": image_url, "link_url": link_url, "link_pdf": link, "type":"video"}
     elif line.startswith('- ['):
             link_text = line.split('[')[1].split(']')[0]
             link_url = line.split('](')[1].split(')')[0]
@@ -113,16 +115,21 @@ for line in text.splitlines():
             link = '<link href="' + link_url + '">' + link_text + '</link>'
             para = Paragraph(link, styles["BodyText"])
 
+            json_data[link_text] = {"icon_image": None, "link_url": link_url, "link_pdf": link, "type":"link_without_icon"}
+
             # Ajouter le paragraphe à l'histoire
             story.append(para)
     else:
         story.append(Paragraph(line, styles["Normal"]))
 
-
+# TODO: implementer un fichier json temporaire pour les variables que l'on utilise couramment
 # Largeur et hauteur de la page
 page_width, page_height = letter
 doc.build(story)
 print(Fore.GREEN + "Pdf generated")
-print("Page width:", page_width)
-print("Page height:", page_height)
 print(Style.RESET_ALL + "")
+
+if write_json(json_data, "sources.json"):
+    print(Fore.GREEN + "JSON generated" + Style.RESET_ALL)
+else:
+    print(Fore.RED + "Error in Json file" + Style.RESET_ALL)

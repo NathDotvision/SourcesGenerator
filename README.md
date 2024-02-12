@@ -7,17 +7,12 @@ Dans le but de resencée les sources et d'etre purement utile que ça soit pour 
 ## Lancement
 
 ne pas oublier de lancer la commande
+
 ```shell
 pip install reportlab
 pip install requests
 pip install beautifulsoup4
 pip install subprocess
 ```
+
 Lancer le fichier main.py
-
-
-## Optimisation
-
-créer un fichier json avec la dernieres mise a jour des liens
-recuperer les derniers liens pour eviter de reprendre tout les liens
-creer une base de donnée pour stocker les liens

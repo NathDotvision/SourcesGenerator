@@ -6,8 +6,8 @@ import time
 import os
 from colorama import Fore, Style
 
-file_path_write = ".\sources-ref.md"
-file_path = ".\sources.md"
+file_path_write = ".\sources.md"
+file_path = ".\sources-ref.md"
 
 def info_time(name:str = ""):
     value = []
@@ -17,12 +17,11 @@ def info_time(name:str = ""):
     print(Fore.BLUE + "\n".join(value) + Style.RESET_ALL)
     return "\n".join(value)
 
-info_time(os.path.basename(__file__))
 text = info_time() +"\n"+"# Sources\n\nVoici la liste de tout les documents que j'ai utilise pour faire ce projet. Il y a des sites et des videos. Les sites sont classes par ordre alphabetique et les videos par ordre de duree."
 
 def open_file(path:str):
     try:
-        with open(path, "r") as file:
+        with open(path, "r", encoding='utf-8') as file:
             return file.read()
     except FileNotFoundError:
         print(Fore.RED + "File not found" +Style.RESET_ALL)
@@ -51,8 +50,8 @@ def get_title(soup):
 
 def write_file(path:str, content:str):
     try:
-        with open(path, "w") as file:
-            file.write(content)
+        with open(path, 'w', encoding='utf-8') as file:
+                file.write(content)
         return True
     except FileNotFoundError:
         return False
@@ -200,7 +199,7 @@ for url in sources:
 
 
 
-for url in sources:
+for url in sources_copy:
 
     #url, title in dict_urlName.items()
 
