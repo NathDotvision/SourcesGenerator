@@ -18,7 +18,7 @@ story = []
 json_data= {}
 
 file_path_write = ".\sources.md"
-
+info_time("main.py")
 text = open_file(file_path_write) 
 youtube_logo = None
 
@@ -74,14 +74,14 @@ for line in text.splitlines():
 
             # Ajouter le tableau à l'histoire
             story.append(table)
-            json_data[link_name] = {"icon_image": image_url, "link_url": link_url, "link_pdf": link, "type":"link_with_icon"}
+            json_data[link_name] = {"icon_image": image_url, "Thumbnail_image": None, "link_url": link_url, "link_pdf": link, "type":"link_with_icon"}
         elif line.startswith('- ![Thumbnail'):
             story.pop()
             # Extraire les informations de l'image et du lien
-            image_url = line.split('](')[1].split(')')[0].strip()
+            Thumbnail_url = line.split('](')[1].split(')')[0].strip()
 
             # Télécharger l'image
-            response = requests.get(image_url)
+            response = requests.get(Thumbnail_url)
             image_data = BytesIO(response.content)
 
             ImageSizeFactor = 30
@@ -92,13 +92,13 @@ for line in text.splitlines():
                 img = Image(image_data, width=ImageSize[0], height=ImageSize[1])
             else:
                 try:
-                    response = requests.get(image_url.split("?")[0])
+                    response = requests.get(Thumbnail_url.split("?")[0])
                     #soup = BeautifulSoup(response.text, 'html.parser')
                     image_data = BytesIO(response.content)
                     img = Image(image_data, width=ImageSize[0], height=ImageSize[1])
                 except:
                     img = ""
-                    print(Fore.RED + "error Thumbnail in " + image_url + Style.RESET_ALL)
+                    print(Fore.RED + "error Thumbnail in " + Thumbnail_url + Style.RESET_ALL)
     
             # Créer un tableau avec l'image
             data[0].append(img)
@@ -106,7 +106,7 @@ for line in text.splitlines():
 
             # Ajouter le tableau à l'histoire
             story.append(table)
-            json_data[link_name] = {"icon_image": image_url, "link_url": link_url, "link_pdf": link, "type":"video"}
+            json_data[link_name] = {"icon_image": image_url, "Thumbnail_image": Thumbnail_url, "link_url": link_url, "link_pdf": link, "type":"video"}
     elif line.startswith('- ['):
             link_text = line.split('[')[1].split(']')[0]
             link_url = line.split('](')[1].split(')')[0]
@@ -115,7 +115,7 @@ for line in text.splitlines():
             link = '<link href="' + link_url + '">' + link_text + '</link>'
             para = Paragraph(link, styles["BodyText"])
 
-            json_data[link_text] = {"icon_image": None, "link_url": link_url, "link_pdf": link, "type":"link_without_icon"}
+            json_data[link_text] = {"icon_image": None, "Thumbnail_image": None, "link_url": link_url, "link_pdf": link, "type":"link_without_icon"}
 
             # Ajouter le paragraphe à l'histoire
             story.append(para)
