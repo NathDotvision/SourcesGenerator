@@ -2,7 +2,6 @@ import React, { useRef } from "react"
 import { NavBar } from "../components"
 import { addDoc, links, getDocs, getDataLinks } from "./firebase"
 import { saveAs } from "file-saver"
-import axios from "axios"
 
 export default function Links() {
   const formRef = useRef()
