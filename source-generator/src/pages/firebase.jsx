@@ -1,7 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app"
 import { getAnalytics } from "firebase/analytics"
-import { collection, getDocs, getFirestore } from "firebase/firestore"
+import {
+  collection,
+  getDocs,
+  addDoc,
+  getFirestore,
+  onSnapshot,
+} from "firebase/firestore"
 
 const firebaseConfig = {
   apiKey: "AIzaSyBJmtFVk6nJkgUiL3Yq9r1BwdYsw6H7A3o",
@@ -19,13 +25,8 @@ const analytics = getAnalytics(app)
 
 const db = getFirestore(app)
 const projets = collection(db, "projets")
+const links = collection(db, "links")
 
-getDocs(projets).then((querySnapshot) => {
-  let getProjets = []
-  querySnapshot.docs.forEach((doc) => {
-    getProjets.push(doc.data())
-  })
-  console.log(getProjets)
-})
+const getDataLinks = await getDocs(links)
 
-export { projets }
+export { getDocs, addDoc, projets, links, onSnapshot, getDataLinks }

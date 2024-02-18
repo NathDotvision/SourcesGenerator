@@ -53,6 +53,11 @@ export default function NavBar() {
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
+                        onClick={() => {
+                          //alert("You clicked on " + item.name)
+                          navigation.forEach((nav) => (nav.current = false))
+                          item.current = true
+                        }}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
