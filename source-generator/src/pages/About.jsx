@@ -47,20 +47,22 @@ const Technologies = [
 class About extends React.Component {
   render() {
     return (
-      <div className="body">
+      <div>
         <NavBar />
-        <h1>Bienvenue sur {Data.name}</h1>
-        <p>{Data.ShortDescriptionFrench}</p>
-        <p>{Data.LongDescriptionFrench}</p>
-        <div className="container">
-          {Technologies.map((technology, index) => (
-            <ImageCard
-              key={index}
-              title={technology.title}
-              imagePath={technology.imagePath}
-              description={technology.description}
-            />
-          ))}
+        <div className="body">
+          <h1>Bienvenue sur {Data.name}</h1>
+          <p>{Data.ShortDescriptionFrench}</p>
+          <p>{Data.LongDescriptionFrench}</p>
+          <div className="container">
+            {Technologies.map((technology, index) => (
+              <ImageCard
+                key={index}
+                title={technology.title}
+                imagePath={technology.imagePath}
+                description={technology.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     )

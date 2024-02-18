@@ -28,24 +28,31 @@ html,
   padding: 0;
 }
 
-.body,
 body {
   font-family: Arial, sans-serif;
   background-color: var(--back);
   color: var(--front);
-  margin: 3%;
 }
 
-.container {
+.body {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.body .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   margin-top: 50px;
+  margin-right: 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card {
   border: 1px solid var(--third_color);
   border-radius: 10px;
-  width: 300px;
   padding: 2%;
   margin: 2%;
   text-align: center;
@@ -72,7 +79,7 @@ body {
   margin-top: 10px;
 }
 
-button {
+.body button {
   background-color: var(--main_color);
   color: var(--front);
   border: none;
@@ -82,10 +89,23 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.body button:hover {
   box-shadow: 0 0 10px var(--main_color);
 }
 
-button:active {
+.body button:active {
   transform: scale(0.9);
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .body .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

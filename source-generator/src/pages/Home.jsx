@@ -6,8 +6,10 @@ class Home extends React.Component {
     return (
       <div>
         <NavBar />
-        <h1>Bienvenue sur la page d'accueil</h1>
-        <p>Ceci est la page d'accueil de notre application React.</p>
+        <div className="body">
+          <h1>Bienvenue sur la page d'accueil</h1>
+          <p>Ceci est la page d'accueil de notre application React.</p>
+        </div>
       </div>
     )
   }

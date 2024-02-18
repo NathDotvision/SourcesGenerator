@@ -14,6 +14,7 @@ class NotFound extends React.Component {
           alignItems: "center",
           justifyContent: "center",
         }}
+        className="body"
       >
         <img
           style={{ filter: "hue-rotate(-30deg)" }}
