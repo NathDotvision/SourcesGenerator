@@ -116,7 +116,7 @@ export default function NavBar() {
                               )}
                             >
                               {item.name}
-                              </Link>
+                            </Link>
                           )}
                         </Menu.Item>
                       ))}

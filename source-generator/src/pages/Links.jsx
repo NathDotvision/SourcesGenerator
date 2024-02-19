@@ -1,91 +1,80 @@
 import React, { useRef } from "react"
-import { NavBar } from "../components"
-import { addDoc, links, getDocs, getDataLinks } from "./firebase"
-import { saveAs } from "file-saver"
-import {jsPDF} from 'jspdf'
+import { NavBar, Data } from "../components"
+import { addDoc, links } from "./firebase"
+
+const PORT = Data.PORT
 
 export default function Links() {
   const formRef = useRef()
 
-  const existInDatabase = async (url) => {
-    const querySnapshot = await getDocs(links)
-    querySnapshot.forEach((doc) => {
-      console.log(doc.data().link_name, url)
-      console.log(doc.data().link_name === url)
-      if (doc.data().link_name === url) {
-        return true
-      }
-    })
-    return false
-  }
-
   const reseach = async () => {
-    alert("Reseach icon for" + formRef.current.link_name.value)
     if (formRef.current.link_name.value === "") {
       alert("Please enter a link")
       return
     }
-    const baseURL = new URL(`http://localhost:5000/icon?url=${formRef.current.link_name.value}`)
-    const response = await fetch(baseURL.toString());
+    const baseURL = new URL(
+      `http://localhost:${PORT}/icon?url=${formRef.current.link_name.value}`
+    )
+    const response = await fetch(baseURL.toString())
 
-    const titleURL = new URL(`http://localhost:5000/title?url=${formRef.current.link_name.value}`)
-    const responseTitle = await fetch(titleURL.toString());
+    const titleURL = new URL(
+      `http://localhost:${PORT}/title?url=${formRef.current.link_name.value}`
+    )
+    const responseTitle = await fetch(titleURL.toString())
 
     if (!response.ok) {
-      throw new Error(`HTTP Error: ${response.status}`);
-      return;
+      throw new Error(`HTTP Error: ${response.status}`)
     }
 
     if (!responseTitle.ok) {
-      throw new Error(`HTTP Error: ${responseTitle.status}`);
-      return;
+      throw new Error(`HTTP Error: ${responseTitle.status}`)
     }
-  
-    const data = await response.json();
-    const dataTitle = await responseTitle.json();
+
+    const data = await response.json()
+    const dataTitle = await responseTitle.json()
     console.log(data)
-    if (data.favicon != undefined || data.ogImage != undefined) {
+    if (data.favicon !== undefined || data.ogImage !== undefined) {
       formRef.current.icon_logo.value = data.favicon
       formRef.current.thumnail_logo.value = data.ogImage
 
       // Sélectionnez l'élément form
-      let formElement = document.querySelector('form');
+      let formElement = document.querySelector("form")
 
       // Créez un nouvel élément img
       try {
-        let imgElement = document.querySelector('form').querySelectorAll('img');
+        let imgElement = document.querySelector("form").querySelectorAll("img")
         imgElement.remove()
       } catch (error) {
         console.log("No image to remove")
       }
-      let imgElement = document.createElement('img');
-      let imgElement2 = document.createElement('img');
+      let imgElement = document.createElement("img")
+      let imgElement2 = document.createElement("img")
 
       // Définissez l'attribut src de l'élément img
-      imgElement.src = data.favicon;
-      imgElement2.src = data.ogImage;
+      imgElement.src = data.favicon
+      imgElement2.src = data.ogImage
 
       // Ajoutez l'élément img au DOM juste après l'élément form
-      formElement.appendChild(imgElement);
-      formElement.appendChild(imgElement2);
+      formElement.appendChild(imgElement)
+      formElement.appendChild(imgElement2)
     }
     formRef.current.name.value = dataTitle.title
-    
-    
 
-    if (formRef.current.link_name.value.includes('youtube')) {
-      console.log('The URL contains "youtube".');
+    if (formRef.current.link_name.value.includes("youtube")) {
+      console.log('The URL contains "youtube".')
       formRef.current.type.value = "Video"
     } else {
-      console.log('The URL does not contain "youtube".');
+      console.log('The URL does not contain "youtube".')
       formRef.current.type.value = "Site"
     }
   }
 
   const cancelForm = () => {
     try {
-      let imgElements = document.querySelector('form').querySelectorAll('img');
-      imgElements.forEach((imgElement) => { imgElement.remove(); });
+      let imgElements = document.querySelector("form").querySelectorAll("img")
+      imgElements.forEach((imgElement) => {
+        imgElement.remove()
+      })
     } catch (error) {
       console.log("No image to remove")
     }
@@ -108,109 +97,6 @@ export default function Links() {
     }
   }
 
-  const ExportToTxt = () => {
-    let data = []
-    getDataLinks.forEach((doc) => {
-      data.push(doc.data())
-    })
-
-    // Convertissez les données en JSON
-    const json = JSON.stringify(data, null, 2)
-
-    // Créez un Blob avec les données
-    const blob = new Blob([json], { type: "text/plain;charset=utf-8" })
-
-    // Utilisez saveAs pour enregistrer le fichier
-    saveAs(blob, "data.txt")
-  }
-
-  const ExportToJSON = () => {
-    let data = []
-    getDataLinks.forEach((doc) => {
-      data.push(doc.data())
-    })
-
-    // Convertissez les données en JSON
-    const json = JSON.stringify(data, null, 2)
-
-    // Créez un Blob avec les données
-    const blob = new Blob([json], { type: "application/json" })
-
-    // Utilisez saveAs pour enregistrer le fichier
-    saveAs(blob, "data.json")
-  }
-
-  const ExportToCSV =  () => {
-    let data = []
-    getDataLinks.forEach((doc) => {
-      data.push(doc.data())
-    })
-
-    // Convertissez les données en JSON
-    const json = JSON.stringify(data, null, 2)
-
-    // Créez un Blob avec les données
-    const blob = new Blob([json], { type: "text/csv" })
-
-    // Utilisez saveAs pour enregistrer le fichier
-    saveAs(blob, "data.csv")
-  }
-
-  const ExportToPDF = async () => {
-    let data = [];
-    getDataLinks.forEach((doc) => {
-      data.push(doc.data());
-    });
-
-    // Convert the data to JSON
-    const json = JSON.stringify(data);
-
-    // Create a new jsPDF instance
-    const doc = new jsPDF();
-
-    // Add a title to the PDF
-    doc.setFontSize(22);
-    let y = 30;
-    doc.text("My Title", 10, 20);
-
-    // Add the JSON data to the PDF
-    doc.setFontSize(16);
-
-    data.forEach((item) => {
-      // Convert the item to a string
-      const itemString = JSON.stringify(item);
-      
-      for (let key in item) {
-        // Affichez la clé et la valeur
-        if (item[key].startsWith('http')) {
-          doc.textWithLink(item[key], 10, y, { url: item[key] });
-        }else {
-          doc.text(item[key], 10, y);
-        }
-        y += 10;
-      }
-  
-      // Move to the next line
-      y += 10;
-    });
-
-    // Add an image to the PDF
-    const imageData = "https://www.youtube.com/s/desktop/87423d78/img/favicon_32x32.png"
-    const titleURL = new URL(`http://localhost:5000/image?url=${imageData}`)
-    const responseImage = await fetch(titleURL.toString());
-
-    if (!responseImage.ok) {
-      throw new Error(`HTTP Error: ${responseImage.status}`);
-      return;
-    }
-    const dataImage = await responseImage.json();
-    doc.addImage(dataImage.image, 'JPEG', 10, 40, 180, 160);
-
-    // Save the PDF
-    doc.save("data.pdf");
-  };
-
-
   return (
     <div>
       <NavBar />
@@ -223,7 +109,7 @@ export default function Links() {
             </p>
 
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div className="sm:col-span-3">
+              <div className="sm:col-span-3">
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium leading-6 "
@@ -330,29 +216,7 @@ export default function Links() {
         </div>
       </form>
       <div className="mt-6 flex items-center justify-end gap-x-6">
-      <button onClick={reseach}>Research icon</button>
-        <button
-          className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          onClick={ExportToTxt}
-        >
-          Export to TXT
-        </button>
-        <button 
-        onClick={ExportToCSV}
-        className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          Export to CSV
-        </button>
-        <button 
-        onClick={ExportToPDF}
-        className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          Export to PDF
-        </button>
-        <button
-          onClick={ExportToJSON}
-          className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        >
-          Export to JSON
-        </button>
+        <button onClick={reseach}>Research icon</button>
       </div>
     </div>
   )

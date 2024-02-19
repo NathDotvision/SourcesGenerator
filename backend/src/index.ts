@@ -40,8 +40,8 @@ app.get("/icon", async (req, res) => {
 
 app.get("/title", async (req, res) => {
   let title = {
-    message : 200,
-    title : "title"
+    message: 200,
+    title: "title"
   }
 
   const url = req.query.url as string;
@@ -72,7 +72,6 @@ app.get("/image", async (req, res) => {
       message: 200,
       image: base64
     }
-
     res.json(image);
   } catch (error) {
     console.error('Error:', error);
@@ -80,6 +79,6 @@ app.get("/image", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("Server running on localhost:5000");
+app.listen(5001, () => {
+  console.log("Server running on localhost:5001");
 });
