@@ -25,6 +25,7 @@ Lancer le fichier main.py
 - warning attention
 - creer nouvel page en pdf bug
 - bug de l'import du json
+- export all tout type d'exportation
 
 WARNING in [eslint]
 src\pages\Home.jsx
