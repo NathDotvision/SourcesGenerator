@@ -16,4 +16,10 @@ pip install subprocess
 ```
 
 Lancer le fichier main.py
-Je fait uin teste de push
+
+
+## Etape suivant 
+
+- modify database into the website
+- log in different account
+- implementation of projects
