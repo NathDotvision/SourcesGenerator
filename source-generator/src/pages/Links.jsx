@@ -1,11 +1,109 @@
 import React, { useRef } from "react"
 import { NavBar, Data } from "../components"
-import { addDoc, links } from "./firebase"
+import { setDoc, db, doc } from "./firebase"
 
 const PORT = Data.PORT
 
-export default function Links() {
+function Links() {
   const formRef = useRef()
+
+  function generateRandomString(length) {
+    let result = '';
+    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
+
+  const importTxt = () => {
+    const fileInput = document.createElement("input")
+    fileInput.type = "file"
+    fileInput.accept = ".txt"
+    fileInput.click()
+
+    fileInput.addEventListener("change", async (e) => {
+      const file = e.target.files[0]
+      const text = await file.text()
+      console.log(text)
+      const textArray = text.split("\n")
+      textArray.forEach(async (url) => {
+        console.log(url)
+        let id = generateRandomString(8)
+        let data = await reseach_url(url)
+        data.id = data.type[0] + data.name + id
+        setDoc(doc(db, "links", id), data)
+        console.log("Document written with ID: " + data)
+      })
+    })
+  }
+
+  const reseach_url = async (url) => {
+    const data = {
+      name: "test_name",
+      link_name: url,
+      icon_logo: "test_icon",
+      thumnail_logo: "test_thumnail",
+      type: "test",
+      date: new Date().toISOString(),
+      id : generateRandomString(8)
+    }
+
+    console.log(data)
+
+    const baseURL = new URL(
+      `http://localhost:${PORT}/icon?url=${url}`
+    )
+
+    const response = await fetch(baseURL.toString())
+
+    const titleURL = new URL(
+      `http://localhost:${PORT}/title?url=${url}`
+    )
+    const responseTitle = await fetch(titleURL.toString())
+
+    if (!response.ok) {
+      throw new Error(`HTTP Error: ${response.status}`)
+    }
+
+    if (!responseTitle.ok) {
+      throw new Error(`HTTP Error: ${responseTitle.status}`)
+    }
+
+    let dataIcon = await response.json()
+    const dataTitle = await responseTitle.json()
+
+    if (dataIcon.favicon !== undefined) {
+      if (dataIcon.favicon[0] === "/" || dataIcon.favicon[0] === ".") {
+        data.icon_logo = url.split("/")[0]+"//"+ url.split("/")[2] + "/"+ dataIcon.favicon.slice(1)
+      }else{
+        data.icon_logo = dataIcon.favicon
+      }
+    }
+
+    if (dataIcon.ogImage !== undefined) {
+      data.thumnail_logo = dataIcon.ogImage
+    }
+
+    data.name = dataTitle.title
+
+    if (
+      url.includes("youtube") ||
+      url.includes("youtu.be")
+    ) {
+      if (url.includes("playlist")) {
+        data.type = "Playlist"
+      } else {
+        data.type = "Video"
+      }
+    } else {
+      data.type = "Site"
+    }
+
+    return data
+  }
+
 
   const reseach = async () => {
     if (formRef.current.link_name.value === "") {
@@ -29,43 +127,60 @@ export default function Links() {
     if (!responseTitle.ok) {
       throw new Error(`HTTP Error: ${responseTitle.status}`)
     }
-
-    const data = await response.json()
+    let data = {favicon: undefined, ogImage: undefined}
+    data = await response.json()
     const dataTitle = await responseTitle.json()
     console.log(data)
-    if (data.favicon !== undefined || data.ogImage !== undefined) {
-      formRef.current.icon_logo.value = data.favicon
+    const urlName = formRef.current.link_name.value
+
+    // Créez un nouvel élément img
+    try {
+      let imgElements = document.querySelector("form").querySelectorAll("img")
+    imgElements.forEach((imgElement) => {
+      imgElement.remove()
+    })
+    } catch (error) {
+      console.log("No image to remove")
+    }
+
+    if (data.favicon !== undefined && data.ogImage !== undefined) {
+      if (data.favicon[0] === "/" || data.favicon[0] === ".") {
+        formRef.current.icon_logo.value = urlName.split("/")[0]+"//"+ urlName.split("/")[2] + "/"+ data.favicon.slice(1)
+      }else{
+        formRef.current.icon_logo.value = data.favicon
+      }
       formRef.current.thumnail_logo.value = data.ogImage
 
       // Sélectionnez l'élément form
       let formElement = document.querySelector("form")
-
-      // Créez un nouvel élément img
-      try {
-        let imgElement = document.querySelector("form").querySelectorAll("img")
-        imgElement.remove()
-      } catch (error) {
-        console.log("No image to remove")
-      }
       let imgElement = document.createElement("img")
       let imgElement2 = document.createElement("img")
 
       // Définissez l'attribut src de l'élément img
-      imgElement.src = data.favicon
-      imgElement2.src = data.ogImage
+      imgElement.src = formRef.current.icon_logo.value
+      imgElement2.src = formRef.current.thumnail_logo.value
 
       // Ajoutez l'élément img au DOM juste après l'élément form
       formElement.appendChild(imgElement)
       formElement.appendChild(imgElement2)
+    }else{
+      formRef.current.icon_logo.value = ""
+      formRef.current.thumnail_logo.value = ""
     }
+
     formRef.current.name.value = dataTitle.title
 
     if (
       formRef.current.link_name.value.includes("youtube") ||
       formRef.current.link_name.value.includes("youtu.be")
     ) {
+      if (formRef.current.link_name.value.includes("playlist")) {
+        console.log('The URL contains "playlist".')
+        formRef.current.type.value = "Playlist"
+      } else {
       console.log('The URL contains "youtube".')
       formRef.current.type.value = "Video"
+      }
     } else {
       console.log('The URL does not contain "youtube".')
       formRef.current.type.value = "Site"
@@ -89,21 +204,42 @@ export default function Links() {
     const formData = new FormData(formRef.current)
     let data = Object.fromEntries(formData)
     data = { ...data, date: new Date().toISOString() }
+    data = { ...data, id: data.type[0] + data.name + generateRandomString(8) }
     if (data.link_name !== "") {
-      addDoc(links, data).then((docRef) => {
-        console.log("Document written with ID: ", docRef.id)
-        cancelForm()
-      })
+      setDoc(doc(db, "links",data.id), data)
+      console.log("Document written with ID: ", data)
     } else {
       alert("This link already exist in the database")
       cancelForm()
     }
   }
 
+  const importJson = () => {
+    const fileInput = document.createElement("input")
+    fileInput.type = "file"
+    fileInput.accept = ".json"
+    fileInput.click()
+
+    fileInput.addEventListener("change", async (e) => {
+      const file = e.target.files[0]
+      const reader = new FileReader()
+      reader.onload = async (e) => {
+        const text = e.target.result
+        const data = JSON.parse(text)
+        data.forEach(async (link) => {
+          let id = generateRandomString(8)
+          link.id = id
+          setDoc(doc(db, "links", id), link)
+          console.log("Document written with ID: " + link)
+        })
+      }
+      reader.readAsText(file)
+    })
+  }
+
   return (
     <div>
-      <NavBar />
-      <form className="m-12" id="form" ref={formRef} onSubmit={handleSubmit}>
+      <form className="mx-12 mt-12 mb-6" id="form" ref={formRef} onSubmit={handleSubmit}>
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-base font-semibold leading-7 ">New Link</h2>
@@ -218,9 +354,21 @@ export default function Links() {
           </button>
         </div>
       </form>
-      <div className="mt-6 flex items-center justify-end gap-x-6">
-        <button onClick={reseach}>Research icon</button>
+      <div className="mx-12 flex items-center justify-end gap-x-6">
+        <button 
+        className="rounded-md bg-purple-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purple-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        onClick={reseach}>Research icon</button>
+        <button
+        className="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        onClick={importTxt}>Import Txt
+        </button>
+        <button
+        className="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        onClick={importJson}>Import Json
+        </button>
       </div>
     </div>
   )
 }
+
+export default Links

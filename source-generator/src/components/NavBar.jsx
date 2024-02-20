@@ -13,7 +13,7 @@ const navigation = [
 const Parameter = [
   { name: "Profile", href: "#", current: true },
   { name: "Settings", href: "#", current: false },
-  { name: "Sign out", href: "#", current: false },
+  { name: "Sign out", href: "#", current: true },
 ]
 
 function classNames(...classes) {
@@ -75,7 +75,7 @@ export default function NavBar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="relative rounded-full bg-main_color p-1 bg-secondary_color_light hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-main_color"
+                  className="relative rounded-full bg-main_color p-1 bg-secondary_color hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-main_color"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
@@ -111,8 +111,8 @@ export default function NavBar() {
                             <Link
                               to={item.href}
                               className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
+                                active ? "bg-secondary_color_light" : "",
+                                "block px-4 py-2 text-sm text-secondary_color"
                               )}
                             >
                               {item.name}
@@ -137,7 +137,7 @@ export default function NavBar() {
                   className={classNames(
                     item.current
                       ? "bg-secondary_color text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      : "text-black hover:bg-secondary_color_light",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

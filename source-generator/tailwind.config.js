@@ -9,6 +9,19 @@ module.exports = {
         secondary_color: "#60a3bc",
         secondary_color_light: "#d9e5eb",
       },
+      screens: {
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'laptop': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'desktop': '1920px',
+        // => @media (min-width: 1280px) { ... }
+
+        'tele': '2000px',
+        // => @media (min-width: 1500px) { ... }
+      },
     },
   },
   variants: {

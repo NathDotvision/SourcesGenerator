@@ -1,12 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app"
-// import { getAnalytics } from "firebase/analytics"
 import {
   collection,
   getDocs,
   addDoc,
   getFirestore,
   onSnapshot,
+  setDoc,
+  doc,
 } from "firebase/firestore"
 
 const firebaseConfig = {
@@ -29,4 +30,7 @@ const links = collection(db, "links")
 
 const getDataLinks = await getDocs(links)
 
-export { getDocs, addDoc, projets, links, onSnapshot, getDataLinks }
+
+
+
+export { getDocs, addDoc, projets, links, onSnapshot, getDataLinks, setDoc, db, doc }

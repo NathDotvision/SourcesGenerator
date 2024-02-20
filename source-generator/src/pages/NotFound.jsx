@@ -1,11 +1,26 @@
-import React from "react"
 import { NavBar } from "../components"
+import React, { useState } from 'react';
+import Links from './Links';
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Ajouter un lien</button>
+      {Array(count).fill().map((_, i) => <Links key={i} />)}
+    </div>
+  );
+}
 
 class NotFound extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
         <div
           style={{
             backgroundColor: "var(--back)",
@@ -27,6 +42,7 @@ class NotFound extends React.Component {
           <p style={{ color: "var(--secondary_color)" }}>
             Désolé, la page que vous cherchez n'existe pas.
           </p>
+          <MyComponent />
         </div>
       </div>
     )

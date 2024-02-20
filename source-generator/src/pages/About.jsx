@@ -48,7 +48,6 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
         <div className="body">
           <h1>Bienvenue sur {Data.name}</h1>
           <p>{Data.ShortDescriptionFrench}</p>
