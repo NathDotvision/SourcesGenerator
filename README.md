@@ -17,9 +17,16 @@ pip install subprocess
 
 Lancer le fichier main.py
 
-
-## Etape suivant 
+## Etape suivant
 
 - modify database into the website
 - log in different account
 - implementation of projects
+- warning attention =>
+
+WARNING in [eslint]
+src\pages\Home.jsx
+Line 7:10: 'Links' is defined but never used
+
+no-unused-vars
+Line 17:11: 'json' is assigned a value but never used
