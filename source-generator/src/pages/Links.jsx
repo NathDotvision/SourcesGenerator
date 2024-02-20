@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import { NavBar, Data } from "../components"
+import { Data } from "../components"
 import { setDoc, db, doc } from "./firebase"
 
 const PORT = Data.PORT
@@ -8,13 +8,14 @@ function Links() {
   const formRef = useRef()
 
   function generateRandomString(length) {
-    let result = '';
-    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let charactersLength = characters.length;
+    let result = ""
+    let characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    let charactersLength = characters.length
     for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      result += characters.charAt(Math.floor(Math.random() * charactersLength))
     }
-    return result;
+    return result
   }
 
   const importTxt = () => {
@@ -47,20 +48,16 @@ function Links() {
       thumnail_logo: "test_thumnail",
       type: "test",
       date: new Date().toISOString(),
-      id : generateRandomString(8)
+      id: generateRandomString(8),
     }
 
     console.log(data)
 
-    const baseURL = new URL(
-      `http://localhost:${PORT}/icon?url=${url}`
-    )
+    const baseURL = new URL(`http://localhost:${PORT}/icon?url=${url}`)
 
     const response = await fetch(baseURL.toString())
 
-    const titleURL = new URL(
-      `http://localhost:${PORT}/title?url=${url}`
-    )
+    const titleURL = new URL(`http://localhost:${PORT}/title?url=${url}`)
     const responseTitle = await fetch(titleURL.toString())
 
     if (!response.ok) {
@@ -76,8 +73,13 @@ function Links() {
 
     if (dataIcon.favicon !== undefined) {
       if (dataIcon.favicon[0] === "/" || dataIcon.favicon[0] === ".") {
-        data.icon_logo = url.split("/")[0]+"//"+ url.split("/")[2] + "/"+ dataIcon.favicon.slice(1)
-      }else{
+        data.icon_logo =
+          url.split("/")[0] +
+          "//" +
+          url.split("/")[2] +
+          "/" +
+          dataIcon.favicon.slice(1)
+      } else {
         data.icon_logo = dataIcon.favicon
       }
     }
@@ -88,10 +90,7 @@ function Links() {
 
     data.name = dataTitle.title
 
-    if (
-      url.includes("youtube") ||
-      url.includes("youtu.be")
-    ) {
+    if (url.includes("youtube") || url.includes("youtu.be")) {
       if (url.includes("playlist")) {
         data.type = "Playlist"
       } else {
@@ -103,7 +102,6 @@ function Links() {
 
     return data
   }
-
 
   const reseach = async () => {
     if (formRef.current.link_name.value === "") {
@@ -127,7 +125,7 @@ function Links() {
     if (!responseTitle.ok) {
       throw new Error(`HTTP Error: ${responseTitle.status}`)
     }
-    let data = {favicon: undefined, ogImage: undefined}
+    let data = { favicon: undefined, ogImage: undefined }
     data = await response.json()
     const dataTitle = await responseTitle.json()
     console.log(data)
@@ -136,17 +134,22 @@ function Links() {
     // Créez un nouvel élément img
     try {
       let imgElements = document.querySelector("form").querySelectorAll("img")
-    imgElements.forEach((imgElement) => {
-      imgElement.remove()
-    })
+      imgElements.forEach((imgElement) => {
+        imgElement.remove()
+      })
     } catch (error) {
       console.log("No image to remove")
     }
 
     if (data.favicon !== undefined && data.ogImage !== undefined) {
       if (data.favicon[0] === "/" || data.favicon[0] === ".") {
-        formRef.current.icon_logo.value = urlName.split("/")[0]+"//"+ urlName.split("/")[2] + "/"+ data.favicon.slice(1)
-      }else{
+        formRef.current.icon_logo.value =
+          urlName.split("/")[0] +
+          "//" +
+          urlName.split("/")[2] +
+          "/" +
+          data.favicon.slice(1)
+      } else {
         formRef.current.icon_logo.value = data.favicon
       }
       formRef.current.thumnail_logo.value = data.ogImage
@@ -163,7 +166,7 @@ function Links() {
       // Ajoutez l'élément img au DOM juste après l'élément form
       formElement.appendChild(imgElement)
       formElement.appendChild(imgElement2)
-    }else{
+    } else {
       formRef.current.icon_logo.value = ""
       formRef.current.thumnail_logo.value = ""
     }
@@ -178,8 +181,8 @@ function Links() {
         console.log('The URL contains "playlist".')
         formRef.current.type.value = "Playlist"
       } else {
-      console.log('The URL contains "youtube".')
-      formRef.current.type.value = "Video"
+        console.log('The URL contains "youtube".')
+        formRef.current.type.value = "Video"
       }
     } else {
       console.log('The URL does not contain "youtube".')
@@ -206,7 +209,7 @@ function Links() {
     data = { ...data, date: new Date().toISOString() }
     data = { ...data, id: data.type[0] + data.name + generateRandomString(8) }
     if (data.link_name !== "") {
-      setDoc(doc(db, "links",data.id), data)
+      setDoc(doc(db, "links", data.id), data)
       console.log("Document written with ID: ", data)
     } else {
       alert("This link already exist in the database")
@@ -239,7 +242,12 @@ function Links() {
 
   return (
     <div>
-      <form className="mx-12 mt-12 mb-6" id="form" ref={formRef} onSubmit={handleSubmit}>
+      <form
+        className="mx-12 mt-12 mb-6"
+        id="form"
+        ref={formRef}
+        onSubmit={handleSubmit}
+      >
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-base font-semibold leading-7 ">New Link</h2>
@@ -355,16 +363,23 @@ function Links() {
         </div>
       </form>
       <div className="mx-12 flex items-center justify-end gap-x-6">
-        <button 
-        className="rounded-md bg-purple-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purple-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        onClick={reseach}>Research icon</button>
         <button
-        className="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        onClick={importTxt}>Import Txt
+          className="rounded-md bg-purple-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purple-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          onClick={reseach}
+        >
+          Research icon
         </button>
         <button
-        className="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        onClick={importJson}>Import Json
+          className="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          onClick={importTxt}
+        >
+          Import Txt
+        </button>
+        <button
+          className="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          onClick={importJson}
+        >
+          Import Json
         </button>
       </div>
     </div>

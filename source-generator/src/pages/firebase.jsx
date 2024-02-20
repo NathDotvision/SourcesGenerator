@@ -30,7 +30,14 @@ const links = collection(db, "links")
 
 const getDataLinks = await getDocs(links)
 
-
-
-
-export { getDocs, addDoc, projets, links, onSnapshot, getDataLinks, setDoc, db, doc }
+export {
+  getDocs,
+  addDoc,
+  projets,
+  links,
+  onSnapshot,
+  getDataLinks,
+  setDoc,
+  db,
+  doc,
+}

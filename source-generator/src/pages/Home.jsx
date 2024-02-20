@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react"
-import { NavBar, Data } from "../components"
+import { Data } from "../components"
 import { saveAs } from "file-saver"
 import { jsPDF } from "jspdf"
 import { getDataLinks } from "./firebase"
 import { Link } from "react-router-dom"
-import {Links} from "../pages"
+import { Links } from "../pages"
 
 export default function Home() {
   const ExportToTxt = () => {
@@ -18,7 +18,7 @@ export default function Home() {
     let SuperString = ""
     data.forEach((doc) => {
       console.log(doc)
-      SuperString += doc.link_name+ "\n"
+      SuperString += doc.link_name + "\n"
     })
 
     // Créez un Blob avec les données
@@ -84,13 +84,11 @@ export default function Home() {
       md += `![${source.name}](${source.thumnail_logo})\n\n`
     })
 
-
     // Créez un Blob avec les données
     const blob = new Blob([md], { type: "text/markdown" })
 
     // Utilisez saveAs pour enregistrer le fichier
     saveAs(blob, "data.md")
-
   }
 
   const getImage = async (imageData) => {
@@ -196,7 +194,7 @@ export default function Home() {
     )
   }
 
-  const DataItem = ({ data}) => (
+  const DataItem = ({ data }) => (
     <li id={data.id} name={data.link_name}>
       <div className="flex justify-between items-center gap-x-6 bg-secondary_color_light p-6 rounded-md">
         <img className="h-auto w-16 sm:h-16" src={data.icon_logo} alt="" />
@@ -205,31 +203,34 @@ export default function Home() {
             {data.name}
           </Link>
         </div>
-        <img className="h-16 w-auto 2xl:hidden" src={data.thumnail_logo} alt="" />
-      <Options_item id={data.id} />
+        <img
+          className="h-16 w-auto 2xl:hidden"
+          src={data.thumnail_logo}
+          alt=""
+        />
+        <Options_item id={data.id} />
       </div>
     </li>
-  );
-
+  )
 
   const Visualizer = () => {
-    const [dataSources, setDataSources] = useState([]);
-    const [dataVideos, setDataVideos] = useState([]);
+    const [dataSources, setDataSources] = useState([])
+    const [dataVideos, setDataVideos] = useState([])
 
     useEffect(() => {
-      const sources = [];
-      const videos = [];
+      const sources = []
+      const videos = []
       getDataLinks.forEach((doc) => {
         if (doc.data().type === "Site") {
-          sources.push(doc.data());
+          sources.push(doc.data())
         } else {
-          videos.push(doc.data());
+          videos.push(doc.data())
         }
-      });
+      })
 
-      setDataSources(sources);
-      setDataVideos(videos);
-    }, []);
+      setDataSources(sources)
+      setDataVideos(videos)
+    }, [])
 
     return (
       <div>
@@ -240,25 +241,35 @@ export default function Home() {
             </h2>
           </div>
           <div>
-          <h2 className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl">
+            <h2 className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl">
               Our Sites
             </h2>
-            <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 sm:gap-y-16 xl:grid-cols-3 tele:grid-cols-4">
-              {dataSources.map((source, index) => <DataItem data={source} key={index} />)}
+            <ul
+              role="list"
+              className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 sm:gap-y-16 xl:grid-cols-3 tele:grid-cols-4"
+            >
+              {dataSources.map((source, index) => (
+                <DataItem data={source} key={index} />
+              ))}
             </ul>
           </div>
           <div>
             <h2 className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl">
               Our Videos
             </h2>
-            <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 sm:gap-y-16 xl:grid-cols-3 tele:grid-cols-4">
-              {dataVideos.map((source , index) => <DataItem data={source} key={index}/>)}
+            <ul
+              role="list"
+              className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 sm:gap-y-16 xl:grid-cols-3 tele:grid-cols-4"
+            >
+              {dataVideos.map((source, index) => (
+                <DataItem data={source} key={index} />
+              ))}
             </ul>
           </div>
         </div>
       </div>
-    );
-  };
+    )
+  }
 
   return (
     <div>

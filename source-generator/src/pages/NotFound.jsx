@@ -1,20 +1,23 @@
-import { NavBar } from "../components"
-import React, { useState } from 'react';
-import Links from './Links';
+import React, { useState } from "react"
+import Links from "./Links"
 
 function MyComponent() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   const handleClick = () => {
-    setCount(count + 1);
-  };
+    setCount(count + 1)
+  }
 
   return (
     <div>
       <button onClick={handleClick}>Ajouter un lien</button>
-      {Array(count).fill().map((_, i) => <Links key={i} />)}
+      {Array(count)
+        .fill()
+        .map((_, i) => (
+          <Links key={i} />
+        ))}
     </div>
-  );
+  )
 }
 
 class NotFound extends React.Component {
