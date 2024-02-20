@@ -22,7 +22,9 @@ Lancer le fichier main.py
 - modify database into the website
 - log in different account
 - implementation of projects
-- warning attention =>
+- warning attention
+- creer nouvel page en pdf bug
+- bug de l'import du json
 
 WARNING in [eslint]
 src\pages\Home.jsx
