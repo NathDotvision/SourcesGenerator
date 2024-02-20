@@ -60,7 +60,10 @@ export default function Links() {
     }
     formRef.current.name.value = dataTitle.title
 
-    if (formRef.current.link_name.value.includes("youtube")) {
+    if (
+      formRef.current.link_name.value.includes("youtube") ||
+      formRef.current.link_name.value.includes("youtu.be")
+    ) {
       console.log('The URL contains "youtube".')
       formRef.current.type.value = "Video"
     } else {

@@ -3,6 +3,7 @@ import { NavBar, Data } from "../components"
 import { saveAs } from "file-saver"
 import { jsPDF } from "jspdf"
 import { getDataLinks } from "./firebase"
+import { Link } from "react-router-dom"
 
 export default function Home() {
   const ExportToTxt = () => {
@@ -72,18 +73,22 @@ export default function Home() {
       let imageData = item.icon_logo
       if (imageData !== undefined) {
         const image = await getImage(imageData)
-        doc.addImage(image, "JPEG", 0, y, 32, 32)
+        doc.addImage(image, "JPEG", 10, y, 32 / 2, 32 / 2)
       }
-
+      doc.setFontSize(12)
       doc.textWithLink(item.name, x, y, { url: item.link_name })
 
+      y += 5
       imageData = item.thumnail_logo
       if (imageData !== undefined) {
         const image = await getImage(imageData)
-        doc.addImage(image, "JPEG", x, y, 1080 / 25, 1920 / 25)
+        let factor = 50
+        let Image = [1920 / factor, 1080 / factor]
+        doc.addImage(image, "JPEG", x + Image[0] * 3, y, Image[0], Image[1])
+        y += Image[1] + 5
+      } else {
+        y += 5
       }
-
-      y += 10
     }
 
     return y
@@ -106,19 +111,109 @@ export default function Home() {
     doc.setFontSize(22)
     doc.text("My Sources", (x += 10), (y += 10))
 
-    doc.setFontSize(20)
+    doc.setFontSize(16)
     y += 10
     doc.text("Sites", (x += 10), (y += 10))
     y += 10
 
     y = await processItems(doc, dataSources, x, y)
 
+    doc.setFontSize(16)
     doc.text("Video", x, (y += 10))
     y += 10
 
     y = await processItems(doc, dataVideos, x, y)
 
+    const widthInMM = doc.internal.pageSize.getWidth()
+    const heightInMM = doc.internal.pageSize.getHeight()
+    console.log("widthInMM", widthInMM)
+    console.log("heightInMM", heightInMM)
+
     doc.save("data.pdf")
+  }
+
+  const Visualizer = () => {
+    let dataSources = []
+    let dataVideos = []
+    getDataLinks.forEach((doc) => {
+      if (doc.data().type === "Site") {
+        dataSources.push(doc.data())
+      } else {
+        dataVideos.push(doc.data())
+      }
+    })
+
+    return (
+      <div>
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-10 px-6 lg:px-8 xl:grid-cols-3">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-main_color sm:text-4xl">
+              Our Sources
+            </h2>
+          </div>
+          <h2 className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl">
+            Our Sites
+          </h2>
+          <ul
+            role="list"
+            className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            {dataSources.map((source) => (
+              <li key={source.name}>
+                <div className="flex items-center gap-x-6 bg-secondary_color_light p-6 rounded-md">
+                  <img
+                    className="h-16 w-16 rounded-full"
+                    src={source.icon_logo}
+                    alt=""
+                  />
+                  <div>
+                    <Link className="text-main_color" to={source.link_name}>
+                      {" "}
+                      {source.name}
+                    </Link>
+                  </div>
+                  <img
+                    className="h-16 w-auto"
+                    src={source.thumnail_logo}
+                    alt=""
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+          <h2 className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl">
+            Our Videos
+          </h2>
+          <ul
+            role="list"
+            className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            {dataVideos.map((source) => (
+              <li key={source.name}>
+                <div className="flex items-center gap-x-6 bg-secondary_color_light p-6 rounded-md">
+                  <img
+                    className="h-16 w-16 rounded-full"
+                    src={source.icon_logo}
+                    alt=""
+                  />
+                  <div>
+                    <Link className="text-main_color" to={source.link_name}>
+                      {" "}
+                      {source.name}
+                    </Link>
+                  </div>
+                  <img
+                    className="h-16 w-auto"
+                    src={source.thumnail_logo}
+                    alt=""
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -152,6 +247,7 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <Visualizer />
     </div>
   )
 }
