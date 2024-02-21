@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Data } from "../components"
+import { auth , signInWithPopup, GoogleAuthProvider} from "./firebase"
 
 export default function Home() {
   const [formUser, setformUser] = useState({
@@ -13,9 +14,10 @@ export default function Home() {
       logo: Data.GoogleLogo,
       action: () => {
         console.log("Google")
+        signInWithPopup(auth, new GoogleAuthProvider())
       },
       color: "bg-red-500",
-      active: true,
+      block: false,
     },
     {
       name: "Facebook",
@@ -24,7 +26,7 @@ export default function Home() {
         console.log("Facebook")
       },
       color: "bg-blue-500",
-      active: false,
+      block: true,
     },
     {
       name: "Twitter",
@@ -33,7 +35,7 @@ export default function Home() {
         console.log("Twitter")
       },
       color: "bg-blue-400",
-      active: false,
+      block: true,
     },
     {
       name: "Github",
@@ -42,7 +44,7 @@ export default function Home() {
         console.log("Github")
       },
       color: "bg-black",
-      active: false,
+      block: true,
     },
     {
       name: "Microsoft",
@@ -51,7 +53,7 @@ export default function Home() {
         console.log("Microsoft")
       },
       color: "bg-green-600",
-      active: false,
+      block: true,
     },
   ]
 
@@ -91,7 +93,7 @@ export default function Home() {
                 className={`text-white rounded-full w-10 h-10 ${fournisseur.color}`}
                 key={fournisseur.name}
                 onClick={fournisseur.action}
-                disabled={fournisseur.active}
+                disabled={fournisseur.block}
               >
                 <img
                   className="h-full"

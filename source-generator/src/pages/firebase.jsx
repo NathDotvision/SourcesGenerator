@@ -10,6 +10,8 @@ import {
   doc,
 } from "firebase/firestore"
 
+import { getAuth , signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth"
+
 const firebaseConfig = {
   apiKey: "AIzaSyBJmtFVk6nJkgUiL3Yq9r1BwdYsw6H7A3o",
   authDomain: "generatorsource-c3ea4.firebaseapp.com",
@@ -22,6 +24,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)
+const auth = getAuth(app)
 // const analytics = getAnalytics(app)
 
 const db = getFirestore(app)
@@ -29,6 +32,15 @@ const projets = collection(db, "projets")
 const links = collection(db, "links")
 
 const getDataLinks = await getDocs(links)
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    console.log("User is signed in")
+    console.log(user)
+  } else {
+    console.log("No user is signed in")
+  }
+})
 
 export {
   getDocs,
@@ -40,4 +52,8 @@ export {
   setDoc,
   db,
   doc,
+  auth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  signOut,
 }

@@ -1,6 +1,7 @@
 import { Fragment } from "react"
 import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline"
+import {auth, signOut} from "../pages/firebase"
 import { Link } from "react-router-dom"
 
 const navigation = [
@@ -13,7 +14,10 @@ const navigation = [
 const Parameter = [
   { name: "Profile", href: "#", current: true },
   { name: "Settings", href: "#", current: false },
-  { name: "Sign out", href: "#", current: true },
+  { name: "Sign out", href: "#", current: true , action: () => {
+    console.log("Sign out")
+    signOut(auth).then(() => {console.log("Sign out")})
+  }},
   { name: "Sign in", href: "/signIn", current: false },
   { name: "Log in ", href: "#", current: false },
 ]
@@ -91,8 +95,7 @@ export default function NavBar() {
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <img
-                        className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        className="h-8 w-8 rounded-full bg-secondary_color_light"
                         alt=""
                       />
                     </Menu.Button>
@@ -119,6 +122,7 @@ export default function NavBar() {
                               onClick={() => {
                                 //alert("You clicked on " + item.name)
                                 navigation.forEach((nav) => (nav.current = false))
+                                item.action()
                               }}
                             >
                               {item.name}
