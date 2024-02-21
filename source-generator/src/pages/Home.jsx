@@ -213,6 +213,48 @@ export default function Home() {
     </li>
   )
 
+  const DataButton = [
+    {
+      name: "Export to TXT",
+      action: ExportToTxt,
+    },
+    {
+      name: "Export to CSV",
+      action: ExportToCSV,
+    },
+    {
+      name: "Export to PDF",
+      action: ExportToPDF,
+    },
+    {
+      name: "Export to JSON",
+      action: ExportToJSON,
+    },
+    {
+      name: "Export to MD",
+      action: ExportToMD,
+    },
+    {
+      name: "Export All",
+      action: () => {
+        ExportToTxt()
+        ExportToCSV()
+        //ExportToPDF()
+        ExportToJSON()
+        ExportToMD()
+      },
+    }
+  ]
+
+  const ButtonItem = ({data}) => (
+    <button
+            onClick={data.action}
+            className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            {data.name}
+          </button>
+  )
+
   const Visualizer = () => {
     const [dataSources, setDataSources] = useState([])
     const [dataVideos, setDataVideos] = useState([])
@@ -275,36 +317,9 @@ export default function Home() {
     <div>
       <div className="body">
         <div className="mt-6 flex items-center justify-end gap-x-6">
-          <button
-            className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            onClick={ExportToTxt}
-          >
-            Export to TXT
-          </button>
-          <button
-            onClick={ExportToCSV}
-            className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Export to CSV
-          </button>
-          <button
-            onClick={ExportToPDF}
-            className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Export to PDF
-          </button>
-          <button
-            onClick={ExportToJSON}
-            className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Export to JSON
-          </button>
-          <button
-            onClick={ExportToMD}
-            className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Export to MD
-          </button>
+          {DataButton.map((data, index) => (
+            <ButtonItem data={data} key={index} />
+          ))}
         </div>
       </div>
       <Visualizer />

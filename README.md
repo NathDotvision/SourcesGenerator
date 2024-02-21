@@ -42,7 +42,6 @@ A travers un `npm install`
 - implementation of projects in database
 - warning attention
 - creer nouvel page en pdf bug
-- bug de l'import du json
 - export all tout type d'exportation
 
 WARNING in [eslint]
