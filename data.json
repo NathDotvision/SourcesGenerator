@@ -1693,7 +1693,7 @@
   },
   {
     "thumnail_logo": "test_thumnail",
-    "name": "stb /stb_image.h",
+    "name": "stb/stb_image.h",
     "link_name": "https://github.com/nothings/stb/blob/master/stb_image.h\r",
     "date": "2024-02-20T11:42:49.909Z",
     "type": "Site",

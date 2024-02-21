@@ -212,10 +212,10 @@ function Links() {
     const formData = new FormData(formRef.current)
     let data = Object.fromEntries(formData)
     data = { ...data, date: new Date().toISOString() }
-    data = { ...data, id: data.type[0] + data.name + generateRandomString(8) }
+    data = { ...data, id: data.type[0] + data.name.toLowerCase() + generateRandomString(8) }
     if (data.link_name !== "") {
       setDoc(doc(db, "links", data.id), data)
-      console.log("Document written with ID: ", data)
+      console.log("Document written with ID: ", data.id)
       cancelForm()
     } else {
       alert("This link already exist in the database")
@@ -235,11 +235,21 @@ function Links() {
       reader.onload = async (e) => {
         const text = e.target.result
         const data = JSON.parse(text)
-        data.forEach(async (link) => {
+        console.log(data)
+        data.forEach(async (item) => {
           let id = generateRandomString(8)
-          link.id = id
-          setDoc(doc(db, "links", id), link)
-          console.log("Document written with ID: " + link)
+          let slashNumber = item.name.split("/").length;
+          let point = item.name.split(".").length - 1;
+          let tempValue = item.name.toLowerCase()
+          for (let i = 0; i < slashNumber; i++) {
+            tempValue = tempValue.replace("/", "-")
+          }
+          for (let i = 0; i < point; i++) {
+            tempValue = tempValue.replace(".", "-")
+          }
+          item.id = item.type[0] + tempValue + id
+          setDoc(doc(db, "links", item.id), item)
+          console.log("Document written with ID: " + item.id)
         })
       }
       reader.readAsText(file)
