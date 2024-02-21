@@ -3,6 +3,9 @@ import os
 
 # Obtenir le chemin complet du répertoire courant
 current_path = os.getcwd()
+if current_path != "d:/SourcesGenerator/app.py":
+    # ce deplace dans le répertoire du fichier app.py
+    os.chdir("d:/SourcesGenerator")
 
 # Définir les commandes pour démarrer les services front et back
 front_cmd = 'start bash -c "cd source-generator && npm i && npm start"'

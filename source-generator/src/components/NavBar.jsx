@@ -116,6 +116,10 @@ export default function NavBar() {
                                 active ? "bg-secondary_color_light" : "",
                                 "block px-4 py-2 text-sm text-secondary_color"
                               )}
+                              onClick={() => {
+                                //alert("You clicked on " + item.name)
+                                navigation.forEach((nav) => (nav.current = false))
+                              }}
                             >
                               {item.name}
                             </Link>
