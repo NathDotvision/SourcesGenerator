@@ -40,3 +40,14 @@ A travers un `npm install`
 - modify database into the website
 - log in different account
 - implementation of projects in database
+- warning attention
+- creer nouvel page en pdf bug
+- bug de l'import du json
+- export all tout type d'exportation
+
+WARNING in [eslint]
+src\pages\Home.jsx
+Line 7:10: 'Links' is defined but never used
+
+no-unused-vars
+Line 17:11: 'json' is assigned a value but never used

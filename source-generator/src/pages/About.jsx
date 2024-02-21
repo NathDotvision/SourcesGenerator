@@ -1,5 +1,5 @@
 import React from "react"
-import { Data, ImageCard, NavBar } from "../components"
+import { Data, ImageCard } from "../components"
 
 const Technologies = [
   {
@@ -53,6 +53,9 @@ class About extends React.Component {
           <p>{Data.ShortDescriptionFrench}</p>
           <p>{Data.LongDescriptionFrench}</p>
           <div className="container">
+            <h2 className="text-main_color text-2xl">
+              Voici les technologies utilisée
+            </h2>
             {Technologies.map((technology, index) => (
               <ImageCard
                 key={index}

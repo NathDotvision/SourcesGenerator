@@ -14,6 +14,8 @@ const Parameter = [
   { name: "Profile", href: "#", current: true },
   { name: "Settings", href: "#", current: false },
   { name: "Sign out", href: "#", current: true },
+  { name: "Sign in", href: "/signIn", current: false },
+  { name: "Log in ", href: "#", current: false },
 ]
 
 function classNames(...classes) {

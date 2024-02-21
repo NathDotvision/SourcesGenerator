@@ -1,6 +1,14 @@
 const Data = {
   PORT: 5001,
   name: "SourceGenerator",
+  GithubLogo:
+    "https://www.gstatic.com/mobilesdk/230906_mobilesdk/github-mark-white.svg",
+  TwitterLogo:
+    "https://abs.twimg.com/responsive-web/client-web/icon-default.522d363a.png",
+  MicrosoftLogo:
+    "https://logincdn.msauth.net/16.000.30112.4/images/favicon.ico",
+  GoogleLogo: "https://www.google.fr/favicon.ico",
+  FacebookLogo: "https://www.facebook.com/favicon.ico",
   ShortDescriptionEnglish: "A simple generator source like links or videos.",
   LongDescriptionEnglish:
     "Our application is an online tool designed to facilitate the creation of bibliographies for any type of project.",
