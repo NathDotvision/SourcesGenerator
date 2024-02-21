@@ -141,31 +141,36 @@ function Links() {
       console.log("No image to remove")
     }
 
-    if (data.favicon !== undefined && data.ogImage !== undefined) {
-      if (data.favicon[0] === "/" || data.favicon[0] === ".") {
-        formRef.current.icon_logo.value =
-          urlName.split("/")[0] +
-          "//" +
-          urlName.split("/")[2] +
-          "/" +
-          data.favicon.slice(1)
+    if (data.favicon !== undefined) {
+      if (data.ogImage !== undefined) {
+        if (data.favicon[0] === "/" || data.favicon[0] === ".") {
+          formRef.current.icon_logo.value =
+            urlName.split("/")[0] +
+            "//" +
+            urlName.split("/")[2] +
+            "/" +
+            data.favicon.slice(1)
+        } else {
+          formRef.current.icon_logo.value = data.favicon
+        }
+        formRef.current.thumnail_logo.value = data.ogImage
+
+        // Sélectionnez l'élément form
+        let formElement = document.querySelector("form")
+        let imgElement = document.createElement("img")
+        let imgElement2 = document.createElement("img")
+
+        // Définissez l'attribut src de l'élément img
+        imgElement.src = formRef.current.icon_logo.value
+        imgElement2.src = formRef.current.thumnail_logo.value
+
+        // Ajoutez l'élément img au DOM juste après l'élément form
+        formElement.appendChild(imgElement)
+        formElement.appendChild(imgElement2)
       } else {
-        formRef.current.icon_logo.value = data.favicon
+        formRef.current.icon_logo.value = ""
+        formRef.current.thumnail_logo.value = ""
       }
-      formRef.current.thumnail_logo.value = data.ogImage
-
-      // Sélectionnez l'élément form
-      let formElement = document.querySelector("form")
-      let imgElement = document.createElement("img")
-      let imgElement2 = document.createElement("img")
-
-      // Définissez l'attribut src de l'élément img
-      imgElement.src = formRef.current.icon_logo.value
-      imgElement2.src = formRef.current.thumnail_logo.value
-
-      // Ajoutez l'élément img au DOM juste après l'élément form
-      formElement.appendChild(imgElement)
-      formElement.appendChild(imgElement2)
     } else {
       formRef.current.icon_logo.value = ""
       formRef.current.thumnail_logo.value = ""
@@ -211,6 +216,7 @@ function Links() {
     if (data.link_name !== "") {
       setDoc(doc(db, "links", data.id), data)
       console.log("Document written with ID: ", data)
+      cancelForm()
     } else {
       alert("This link already exist in the database")
       cancelForm()
