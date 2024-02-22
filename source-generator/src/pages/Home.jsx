@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react"
 import { Data } from "../components"
 import { saveAs } from "file-saver"
 import { jsPDF } from "jspdf"
-import { getDataLinks } from "./firebase"
+import { deleteLinks, getOnSnappLinks } from "./firebase"
 import { Link } from "react-router-dom"
-import { Links } from "../pages"
+import {ChevronDownIcon, ChevronUpIcon} from "@heroicons/react/24/outline"
 
 export default function Home() {
   const ExportToTxt = () => {
     let data = []
-    getDataLinks.forEach((doc) => {
+    getOnSnappLinks.forEach((doc) => {
       data.push(doc.data())
     })
 
@@ -30,7 +30,7 @@ export default function Home() {
 
   const ExportToJSON = () => {
     let data = []
-    getDataLinks.forEach((doc) => {
+    getOnSnappLinks.forEach((doc) => {
       data.push(doc.data())
     })
 
@@ -46,7 +46,7 @@ export default function Home() {
 
   const ExportToCSV = () => {
     let data = []
-    getDataLinks.forEach((doc) => {
+    getOnSnappLinks.forEach((doc) => {
       data.push(doc.data())
     })
 
@@ -63,7 +63,7 @@ export default function Home() {
   const ExportToMD = () => {
     let dataSources = []
     let dataVideos = []
-    getDataLinks.forEach((doc) => {
+    getOnSnappLinks.forEach((doc) => {
       if (doc.data().type === "Site") {
         dataSources.push(doc.data())
       } else {
@@ -134,7 +134,7 @@ export default function Home() {
   const ExportToPDF = async () => {
     let dataSources = []
     let dataVideos = []
-    getDataLinks.forEach((doc) => {
+    getOnSnappLinks.forEach((doc) => {
       if (doc.data().type === "Site") {
         dataSources.push(doc.data())
       } else {
@@ -171,47 +171,65 @@ export default function Home() {
 
   const Options_item = (id) => {
     return (
-      <div className="m-2 flex gap-4">
-        <button
-          onClick={() => {
-            alert("You clicked on " + id.id)
+      <div className="absolute bg-white rounded-md shadow-lg">
+            <div className="flex flex-col p-2">
+              <button onClick={() => {
+            alert("Want to edit " + id.id)
             console.log("You clicked on ", id.id)
           }}
-          className="text-main_color hover:bg-main_color_light hover:text-black p-2 rounded-md border border-white"
-        >
-          Edit
-        </button>
-        <button
-          onClick={() => {
-            alert("You clicked on " + id.id)
-            console.log("You clicked on ", id.id)
-          }}
-          className="text-main_color hover:bg-main_color_light hover:text-black p-2 rounded-md border border-white"
-        >
-          Delete
-        </button>
-      </div>
+          className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                Edit
+              </button>
+              <button
+              onClick={() => {
+                const strint = "Want to Delete " + id.id
+                alert(strint)
+                console.log(strint)
+                deleteLinks(id.id)  
+              }}
+              className="px-4 py-2 text-sm text-red-600 hover:bg-red-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                Delete
+              </button>
+            </div>
+          </div>
     )
-  }
+  } 
 
-  const DataItem = ({ data }) => (
-    <li id={data.id} name={data.link_name}>
-      <div className="flex justify-between items-center gap-x-6 bg-secondary_color_light p-6 rounded-md">
-        <img className="h-auto w-16 sm:h-16" src={data.icon_logo} alt="" />
-        <div>
-          <Link className="text-main_color" to={data.link_name}>
-            {data.name}
-          </Link>
-        </div>
+  const DataItem = ({ data }) => {
+    const [isOpen, setIsOpen] = useState(false)
+    
+    let name = data.name.length > 10 ? data.name.substring(0, 10) + "..." : data.name;
+
+    return (
+    <div className="flex flex-col m-2 bg-gray-100 rounded-lg p-4 justify-between items-center" id={data.id} name={data.link_name}>
+      <div className="flex flex-col items-center justify-center text-center h-full">
+        {data.thumnail_logo === 'test_thumnail' ? <img src={data.icon_logo} className="h-20"/> : <img src={data.thumnail_logo} className="max-h-20"/>}
+      </div>
+        <li className="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+      <div className="flex items-center">
         <img
-          className="h-16 w-auto 2xl:hidden"
-          src={data.thumnail_logo}
-          alt=""
+          src={data.icon_logo}
+          alt="Tuple"
+          className="w-12 h-12 object-contain"
         />
-        <Options_item id={data.id} />
+        <Link className="ml-4 font-semibold text-main_color" to={data.link_name}>
+            {name}
+          </Link>
+      </div>
+      <div>
+        <button
+          className="px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span>Open options</span>
+        {isOpen && (
+          <Options_item id={data.id} />
+        )}
+        </button>
       </div>
     </li>
-  )
+        </div>
+  )}
 
   const DataButton = [
     {
@@ -258,15 +276,17 @@ export default function Home() {
   const Visualizer = () => {
     const [dataSources, setDataSources] = useState([])
     const [dataVideos, setDataVideos] = useState([])
+    const [showSources, setShowSources] = useState(false)
+    const [showVideos, setShowVideos] = useState(false)
 
     useEffect(() => {
       const sources = []
       const videos = []
-      getDataLinks.forEach((doc) => {
-        if (doc.data().type === "Site") {
-          sources.push(doc.data())
+      getOnSnappLinks.forEach((doc) => {
+        if (doc.type === "Site") {
+          sources.push(doc)
         } else {
-          videos.push(doc.data())
+          videos.push(doc)
         }
       })
 
@@ -283,30 +303,40 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <h2 className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl">
-              Our Sites
-            </h2>
-            <ul
-              role="list"
-              className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 sm:gap-y-16 xl:grid-cols-3 tele:grid-cols-4"
+            <button className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl flex jutify-center items-center"
+            onClick={() => setShowSources(!showSources)}
             >
-              {dataSources.map((source, index) => (
-                <DataItem data={source} key={index} />
-              ))}
-            </ul>
+                <h1>Our Sites </h1>
+                {showSources ? <ChevronDownIcon className="ml-2 block h-6 w-6 flex"/> : <ChevronUpIcon className="ml-2 block h-6 w-6 flex"/>}
+            </button>
+            {showSources && (
+          <ul
+          role="list"
+          className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
+        >
+          {dataSources.map((source, index) => (
+            <DataItem data={source} key={index} />
+          ))}
+        </ul>
+        )}
           </div>
           <div>
-            <h2 className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl">
-              Our Videos
-            </h2>
-            <ul
-              role="list"
-              className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 sm:gap-y-16 xl:grid-cols-3 tele:grid-cols-4"
+            <button className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl flex jutify-center items-center"
+            onClick={() => setShowVideos(!showVideos)}
             >
-              {dataVideos.map((source, index) => (
-                <DataItem data={source} key={index} />
-              ))}
-            </ul>
+                <h1>Our Video </h1>
+                {showVideos ? <ChevronDownIcon className="ml-2 block h-6 w-6 flex"/> : <ChevronUpIcon className="ml-2 block h-6 w-6 flex"/>}
+            </button>
+            {showVideos && (
+          <ul
+          role="list"
+          className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
+        >
+          {dataVideos.map((source, index) => (
+            <DataItem data={source} key={index} />
+          ))}
+        </ul>
+        )}
           </div>
         </div>
       </div>

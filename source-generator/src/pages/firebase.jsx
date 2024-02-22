@@ -8,6 +8,7 @@ import {
   onSnapshot,
   setDoc,
   doc,
+  deleteDoc,
 } from "firebase/firestore"
 
 import { getAuth , signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth"
@@ -31,7 +32,26 @@ const db = getFirestore(app)
 const projets = collection(db, "projets")
 const links = collection(db, "links")
 
-const getDataLinks = await getDocs(links)
+let getDataLinks = await getDocs(links)
+
+const getOnSnappLinks = []
+
+onSnapshot(links, (doc) => {
+  doc.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      getOnSnappLinks.push(change.doc.data());
+    }
+    if (change.type === "modified") {
+      // handle modified data if needed
+    }
+    if (change.type === "removed") {
+      let index = getOnSnappLinks.findIndex(item => JSON.stringify(item) === JSON.stringify(change.doc.data()));
+      if (index !== -1) {
+        getOnSnappLinks.splice(index, 1);
+      }
+    }
+  });
+});
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
@@ -39,8 +59,15 @@ onAuthStateChanged(auth, (user) => {
     console.log(user)
   } else {
     console.log("No user is signed in")
+    console.log(getOnSnappLinks)
   }
 })
+
+const deleteLinks = async (id) => {
+   const docToDelete = doc(db, "links", id)
+
+   deleteDoc(docToDelete).then(console.log("Document successfully deleted!"))
+}
 
 export {
   getDocs,
@@ -56,4 +83,6 @@ export {
   signInWithPopup,
   GoogleAuthProvider,
   signOut,
+  deleteLinks,
+  getOnSnappLinks,
 }

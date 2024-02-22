@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { Home, About, NotFound, Links, SignIn } from "./pages"
+import { Home, About, NotFound, Links, SignIn, Projets } from "./pages"
 import { NavBar } from "./components"
 import "./App.css"
 
@@ -50,6 +50,15 @@ function App() {
             <div>
               <NavBar />
               <SignIn />
+            </div>
+          }
+        />
+        <Route
+          path="/projets"
+          element={
+            <div>
+              <NavBar />
+              <Projets />
             </div>
           }
         />
