@@ -38,15 +38,11 @@ A travers un `npm install`
 ## Etape suivant
 
 - modify database into the website
+  -> voir tailwind pour le mode edit (paneau de confi a droite)
 - log in different account
 - implementation of projects in database
 - warning attention
-- creer nouvel page en pdf bug
-- export all tout type d'exportation
-
-WARNING in [eslint]
-src\pages\Home.jsx
-Line 7:10: 'Links' is defined but never used
-
-no-unused-vars
-Line 17:11: 'json' is assigned a value but never used
+  -> system de notifaication
+  -> quand on appui sur les projet aussi
+  ==> bare de progression pour les files
+- system de recherche

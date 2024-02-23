@@ -326,7 +326,17 @@ export default function Home() {
         <div className="mx-auto flex flex-col max-w-7xl gap-x-8 gap-y-10 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl flex justify-between">
             <h2 className="text-3xl font-bold tracking-tight text-main_color sm:text-4xl">
-              Our Sources
+              Our Sources of
+              <select
+                id="type"
+                name="type"
+                autoComplete="type"
+                className="text-black block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+              >
+                <option>Site</option>
+                <option>Video</option>
+                <option>Playlist</option>
+              </select>
             </h2>
           </div>
           <div>
