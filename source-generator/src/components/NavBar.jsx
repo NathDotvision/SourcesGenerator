@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline"
-import {auth, signOut} from "../pages/firebase"
+import { auth, signOut } from "../pages/firebase"
 import { Link } from "react-router-dom"
 
 const navigation = [
@@ -14,10 +14,17 @@ const navigation = [
 const Parameter = [
   { name: "Profile", href: "#", current: true },
   { name: "Settings", href: "#", current: false },
-  { name: "Sign out", href: "#", current: true , action: () => {
-    console.log("Sign out")
-    signOut(auth).then(() => {console.log("Sign out")})
-  }},
+  {
+    name: "Sign out",
+    href: "#",
+    current: true,
+    action: () => {
+      console.log("Sign out")
+      signOut(auth).then(() => {
+        console.log("Sign out")
+      })
+    },
+  },
   { name: "Sign in", href: "/signIn", current: false },
   { name: "Log in ", href: "#", current: false },
 ]
@@ -121,7 +128,9 @@ export default function NavBar() {
                               )}
                               onClick={() => {
                                 //alert("You clicked on " + item.name)
-                                navigation.forEach((nav) => (nav.current = false))
+                                navigation.forEach(
+                                  (nav) => (nav.current = false)
+                                )
                                 item.action()
                               }}
                             >

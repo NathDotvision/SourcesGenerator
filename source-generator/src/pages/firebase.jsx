@@ -11,7 +11,13 @@ import {
   deleteDoc,
 } from "firebase/firestore"
 
-import { getAuth , signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth"
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth"
 
 const firebaseConfig = {
   apiKey: "AIzaSyBJmtFVk6nJkgUiL3Yq9r1BwdYsw6H7A3o",
@@ -39,20 +45,22 @@ const getOnSnappLinks = []
 onSnapshot(links, (doc) => {
   doc.docChanges().forEach((change) => {
     if (change.type === "added") {
-      getOnSnappLinks.push(change.doc.data());
+      getOnSnappLinks.push(change.doc.data())
     }
     if (change.type === "modified") {
       // handle modified data if needed
     }
     if (change.type === "removed") {
-      let index = getOnSnappLinks.findIndex(item => JSON.stringify(item) === JSON.stringify(change.doc.data()));
+      let index = getOnSnappLinks.findIndex(
+        (item) => JSON.stringify(item) === JSON.stringify(change.doc.data())
+      )
       if (index !== -1) {
-        getOnSnappLinks.splice(index, 1);
+        getOnSnappLinks.splice(index, 1)
       }
     }
-  });
-  getOnSnappLinks.sort((a, b) => a.id - b.id);
-});
+  })
+  getOnSnappLinks.sort((a, b) => a.id - b.id)
+})
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
@@ -65,9 +73,9 @@ onAuthStateChanged(auth, (user) => {
 })
 
 const deleteLinks = async (id) => {
-   const docToDelete = doc(db, "links", id)
+  const docToDelete = doc(db, "links", id)
 
-   deleteDoc(docToDelete).then(console.log("Document successfully deleted!"))
+  deleteDoc(docToDelete).then(console.log("Document successfully deleted!"))
 }
 
 export {

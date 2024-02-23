@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 const SavedNotification = ({ message, onClose }) => {
   return (
@@ -22,7 +22,9 @@ const SavedNotification = ({ message, onClose }) => {
           </svg>
           <p className="text-green-600 font-semibold">{message}</p>
         </div>
-        <p className="text-gray-700">Anyone with a link can now view this file.</p>
+        <p className="text-gray-700">
+          Anyone with a link can now view this file.
+        </p>
         <div className="flex justify-end mt-4">
           <button
             type="button"
@@ -34,7 +36,7 @@ const SavedNotification = ({ message, onClose }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SavedNotification;
+export default SavedNotification

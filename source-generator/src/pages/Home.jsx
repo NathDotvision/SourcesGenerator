@@ -4,17 +4,17 @@ import { saveAs } from "file-saver"
 import { jsPDF } from "jspdf"
 import { deleteLinks, getOnSnappLinks } from "./firebase"
 import { Link } from "react-router-dom"
-import {ChevronDownIcon, ChevronUpIcon} from "@heroicons/react/24/outline"
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline"
+import Papa from "papaparse"
 
 export default function Home() {
   const ExportToTxt = () => {
     let data = []
     getOnSnappLinks.forEach((doc) => {
-      data.push(doc.data())
+      data.push(doc)
     })
 
     // Convertissez les données en JSON
-    const json = JSON.stringify(data, null, 2)
     let SuperString = ""
     data.forEach((doc) => {
       console.log(doc)
@@ -47,14 +47,14 @@ export default function Home() {
   const ExportToCSV = () => {
     let data = []
     getOnSnappLinks.forEach((doc) => {
-      data.push(doc.data())
+      data.push(doc)
     })
 
-    // Convertissez les données en JSON
-    const json = JSON.stringify(data, null, 2)
+    // Convertissez les données en CSV
+    const csv = Papa.unparse(data)
 
     // Créez un Blob avec les données
-    const blob = new Blob([json], { type: "text/csv" })
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" })
 
     // Utilisez saveAs pour enregistrer le fichier
     saveAs(blob, "data.csv")
@@ -64,10 +64,10 @@ export default function Home() {
     let dataSources = []
     let dataVideos = []
     getOnSnappLinks.forEach((doc) => {
-      if (doc.data().type === "Site") {
-        dataSources.push(doc.data())
+      if (doc.type === "Site") {
+        dataSources.push(doc)
       } else {
-        dataVideos.push(doc.data())
+        dataVideos.push(doc)
       }
     })
 
@@ -136,9 +136,9 @@ export default function Home() {
     let dataVideos = []
     getOnSnappLinks.forEach((doc) => {
       if (doc.data().type === "Site") {
-        dataSources.push(doc.data())
+        dataSources.push(doc)
       } else {
-        dataVideos.push(doc.data())
+        dataVideos.push(doc)
       }
     })
 
@@ -172,64 +172,78 @@ export default function Home() {
   const Options_item = (id) => {
     return (
       <div className="absolute bg-white rounded-md shadow-lg">
-            <div className="flex flex-col p-2">
-              <button onClick={() => {
-            alert("Want to edit " + id.id)
-            console.log("You clicked on ", id.id)
-          }}
-          className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                Edit
-              </button>
-              <button
-              onClick={() => {
-                const strint = "Want to Delete " + id.id
-                alert(strint)
-                console.log(strint)
-                deleteLinks(id.id)  
-              }}
-              className="px-4 py-2 text-sm text-red-600 hover:bg-red-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                Delete
-              </button>
-            </div>
-          </div>
+        <div className="flex flex-col p-2">
+          <button
+            onClick={() => {
+              alert("Want to edit " + id.id)
+              console.log("You clicked on ", id.id)
+            }}
+            className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            Edit
+          </button>
+          <button
+            onClick={() => {
+              const strint = "Want to Delete " + id.id
+              alert(strint)
+              console.log(strint)
+              deleteLinks(id.id)
+            }}
+            className="px-4 py-2 text-sm text-red-600 hover:bg-red-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
     )
-  } 
+  }
 
   const DataItem = ({ data }) => {
     const [isOpen, setIsOpen] = useState(false)
-    
-    let name = data.name.length > 10 ? data.name.substring(0, 10) + "..." : data.name;
+
+    let name =
+      data.name.length > 10 ? data.name.substring(0, 10) + "..." : data.name
 
     return (
-    <div className="flex flex-col m-2 bg-gray-100 rounded-lg p-4 justify-between items-center" id={data.id} name={data.link_name}>
-      <div className="flex flex-col items-center justify-center text-center h-full">
-        {data.thumnail_logo === 'test_thumnail' ? <img src={data.icon_logo} className="h-20"/> : <img src={data.thumnail_logo} className="max-h-20"/>}
-      </div>
-        <li className="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
-      <div className="flex items-center">
-        <img
-          src={data.icon_logo}
-          alt="Tuple"
-          className="w-12 h-12 object-contain"
-        />
-        <Link className="ml-4 font-semibold text-main_color" to={data.link_name}>
-            {name}
-          </Link>
-      </div>
-      <div>
-        <button
-          className="px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span>Open options</span>
-        {isOpen && (
-          <Options_item id={data.id} />
-        )}
-        </button>
-      </div>
-    </li>
+      <div
+        className="flex flex-col m-2 bg-gray-100 rounded-lg p-4 justify-between items-center"
+        id={data.id}
+        name={data.link_name}
+      >
+        <div className="flex flex-col items-center justify-center text-center h-full">
+          {data.thumnail_logo === "test_thumnail" ? (
+            <img src={data.icon_logo} className="h-20" />
+          ) : (
+            <img src={data.thumnail_logo} className="max-h-20" />
+          )}
         </div>
-  )}
+        <li className="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+          <div className="flex items-center">
+            <img
+              src={data.icon_logo}
+              alt="Tuple"
+              className="w-12 h-12 object-contain"
+            />
+            <Link
+              className="ml-4 font-semibold text-main_color"
+              to={data.link_name}
+            >
+              {name}
+            </Link>
+          </div>
+          <div>
+            <button
+              className="px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <span>Open options</span>
+              {isOpen && <Options_item id={data.id} />}
+            </button>
+          </div>
+        </li>
+      </div>
+    )
+  }
 
   const DataButton = [
     {
@@ -261,16 +275,16 @@ export default function Home() {
         ExportToJSON()
         ExportToMD()
       },
-    }
+    },
   ]
 
-  const ButtonItem = ({data}) => (
+  const ButtonItem = ({ data }) => (
     <button
-            onClick={data.action}
-            className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            {data.name}
-          </button>
+      onClick={data.action}
+      className="rounded-md bg-main_color px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-main_color_light hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+    >
+      {data.name}
+    </button>
   )
 
   const Visualizer = () => {
@@ -303,40 +317,50 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <button className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl flex jutify-center items-center"
-            onClick={() => setShowSources(!showSources)}
+            <button
+              className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl flex jutify-center items-center"
+              onClick={() => setShowSources(!showSources)}
             >
-                <h1>Our Sites </h1>
-                {showSources ? <ChevronDownIcon className="ml-2 block h-6 w-6 flex"/> : <ChevronUpIcon className="ml-2 block h-6 w-6 flex"/>}
+              <h1>Our Sites </h1>
+              {showSources ? (
+                <ChevronDownIcon className="ml-2 block h-6 w-6 flex" />
+              ) : (
+                <ChevronUpIcon className="ml-2 block h-6 w-6 flex" />
+              )}
             </button>
             {showSources && (
-          <ul
-          role="list"
-          className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
-        >
-          {dataSources.map((source, index) => (
-            <DataItem data={source} key={index} />
-          ))}
-        </ul>
-        )}
+              <ul
+                role="list"
+                className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
+              >
+                {dataSources.map((source, index) => (
+                  <DataItem data={source} key={index} />
+                ))}
+              </ul>
+            )}
           </div>
           <div>
-            <button className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl flex jutify-center items-center"
-            onClick={() => setShowVideos(!showVideos)}
+            <button
+              className="text-xl font-bold tracking-tight text-main_color_light sm:text-2xl flex jutify-center items-center"
+              onClick={() => setShowVideos(!showVideos)}
             >
-                <h1>Our Video </h1>
-                {showVideos ? <ChevronDownIcon className="ml-2 block h-6 w-6 flex"/> : <ChevronUpIcon className="ml-2 block h-6 w-6 flex"/>}
+              <h1>Our Video </h1>
+              {showVideos ? (
+                <ChevronDownIcon className="ml-2 block h-6 w-6 flex" />
+              ) : (
+                <ChevronUpIcon className="ml-2 block h-6 w-6 flex" />
+              )}
             </button>
             {showVideos && (
-          <ul
-          role="list"
-          className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
-        >
-          {dataVideos.map((source, index) => (
-            <DataItem data={source} key={index} />
-          ))}
-        </ul>
-        )}
+              <ul
+                role="list"
+                className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
+              >
+                {dataVideos.map((source, index) => (
+                  <DataItem data={source} key={index} />
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>

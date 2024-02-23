@@ -212,7 +212,10 @@ function Links() {
     const formData = new FormData(formRef.current)
     let data = Object.fromEntries(formData)
     data = { ...data, date: new Date().toISOString() }
-    data = { ...data, id: data.type[0] + data.name.toLowerCase() + generateRandomString(8) }
+    data = {
+      ...data,
+      id: data.type[0] + data.name.toLowerCase() + generateRandomString(8),
+    }
     if (data.link_name !== "") {
       setDoc(doc(db, "links", data.id), data)
       console.log("Document written with ID: ", data.id)
@@ -238,8 +241,8 @@ function Links() {
         console.log(data)
         data.forEach(async (item) => {
           let id = generateRandomString(8)
-          let slashNumber = item.name.split("/").length;
-          let point = item.name.split(".").length - 1;
+          let slashNumber = item.name.split("/").length
+          let point = item.name.split(".").length - 1
           let tempValue = item.name.toLowerCase()
           for (let i = 0; i < slashNumber; i++) {
             tempValue = tempValue.replace("/", "-")

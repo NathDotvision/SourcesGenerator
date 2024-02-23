@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Data } from "../components"
-import { auth , signInWithPopup, GoogleAuthProvider} from "./firebase"
+import { auth, signInWithPopup, GoogleAuthProvider } from "./firebase"
 
 export default function Home() {
   const [formUser, setformUser] = useState({
