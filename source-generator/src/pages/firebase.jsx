@@ -51,6 +51,7 @@ onSnapshot(links, (doc) => {
       }
     }
   });
+  getOnSnappLinks.sort((a, b) => a.id - b.id);
 });
 
 onAuthStateChanged(auth, (user) => {

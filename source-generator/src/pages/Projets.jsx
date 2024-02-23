@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
+import { SavedNotification } from "../components"
 
 const Projet = (data) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -8,18 +9,12 @@ const Projet = (data) => {
 
 
   return (
-    <div className="flex flex-col mb-4 bg-gray-100 rounded-lg p-4" id={data.id} name={data.link_name}>
-            <img src={data.thumnail_logo}/>
+    <div className="flex flex-col m-2 bg-gray-100 rounded-lg p-4" id={data.id} name={data.link_name}>
         <li className="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
       <div className="flex items-center">
-        <img
-          src={data.icon_logo}
-          alt="Tuple"
-          className="w-12 h-12 object-contain"
-        />
-        <Link className="ml-4 font-semibold text-main_color" to={data.link_name}>
+        <h1 className="ml-4 font-semibold text-main_color">
         {name}
-          </Link>
+          </h1>
       </div>
       <div>
         <button
@@ -50,13 +45,26 @@ const DataProjets = [
   {
     id: 1,
     name : "Projet 1",
-    link_name : "https://www.youtube.com/watch?v=EgqXbIZFCUs&list=PLT2KSPhMMiqp0jwqSCKaOjJHjl8ZFS2tI&index=4",
-    icon_logo : "https://yt3.ggpht.com/VoVN_l-8s0Wd3NFl_ef0aFnA_JBHWE5yui_XIj1Mh8g5df5nBZWoihMYcDugK5ugr0wtMbD4Mw=s88-c-k-c0x00ffffff-no-rj",
-    thumnail_logo : "https://i.ytimg.com/vi/EgqXbIZFCUs/hqdefault.jpg",
+  }, 
+  {
+    id: 2,
+    name : "Projet 2",
+  }, 
+  {
+    id: 3,
+    name : "Projet 3",
+  }, 
+  {
+    id: 4,
+    name : "Projet 4",
+  }, 
+  {
+    id: 5,
+    name : "Projet 5",
   }
 ]
 
-const Projets = () => {
+const Test = () => {
 
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-7">
@@ -64,6 +72,21 @@ const Projets = () => {
         <Projet {...data} />
       ))}
 </div>
+  )
+}
+
+const Projets = () => {
+  const [showNotification, setShowNotification] = useState(true);
+
+  const handleClose = () => {
+    setShowNotification(false);
+  };
+
+  return (
+    <div>
+      {showNotification && <SavedNotification message="Successfully saved!" onClose={handleClose} />}
+      <Test />
+    </div>
   )
 }
 

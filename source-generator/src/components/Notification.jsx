@@ -1,8 +1,8 @@
 import React from 'react';
 
-function SavedNotification() {
+const SavedNotification = ({ message, onClose }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center">
+    <div className="fixed top-0 right-0 m-6">
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <div className="flex items-center mb-4">
           <svg
@@ -20,13 +20,14 @@ function SavedNotification() {
               d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             ></path>
           </svg>
-          <p className="text-green-600 font-semibold">Successfully saved!</p>
+          <p className="text-green-600 font-semibold">{message}</p>
         </div>
         <p className="text-gray-700">Anyone with a link can now view this file.</p>
         <div className="flex justify-end mt-4">
           <button
             type="button"
             className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            onClick={onClose}
           >
             Close
           </button>
@@ -34,6 +35,6 @@ function SavedNotification() {
       </div>
     </div>
   );
-}
+};
 
 export default SavedNotification;
