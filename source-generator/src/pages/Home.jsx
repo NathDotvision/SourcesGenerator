@@ -31,7 +31,7 @@ export default function Home() {
   const ExportToJSON = () => {
     let data = []
     getOnSnappLinks.forEach((doc) => {
-      data.push(doc.data())
+      data.push(doc)
     })
 
     // Convertissez les données en JSON
@@ -107,11 +107,17 @@ export default function Home() {
 
   const processItems = async (doc, items, x, y) => {
     for (const item of items) {
+      if (y > doc.internal.pageSize.getHeight() - 20) {
+        doc.addPage()
+        y = 20 // Réinitialisez la position y pour la nouvelle page
+      }
+
       let imageData = item.icon_logo
       if (imageData !== undefined) {
         const image = await getImage(imageData)
         doc.addImage(image, "JPEG", 10, y, 32 / 2, 32 / 2)
       }
+
       doc.setFontSize(12)
       doc.textWithLink(item.name, x, y, { url: item.link_name })
 
@@ -135,7 +141,7 @@ export default function Home() {
     let dataSources = []
     let dataVideos = []
     getOnSnappLinks.forEach((doc) => {
-      if (doc.data().type === "Site") {
+      if (doc.type === "Site") {
         dataSources.push(doc)
       } else {
         dataVideos.push(doc)
@@ -155,16 +161,23 @@ export default function Home() {
 
     y = await processItems(doc, dataSources, x, y)
 
+    // Vérifiez si le contenu suivant dépassera la limite de la page
+    if (y > doc.internal.pageSize.getHeight() - 20) {
+      doc.addPage()
+      y = 20 // Réinitialisez la position y pour la nouvelle page
+    }
+
     doc.setFontSize(16)
     doc.text("Video", x, (y += 10))
     y += 10
 
     y = await processItems(doc, dataVideos, x, y)
 
-    const widthInMM = doc.internal.pageSize.getWidth()
-    const heightInMM = doc.internal.pageSize.getHeight()
-    console.log("widthInMM", widthInMM)
-    console.log("heightInMM", heightInMM)
+    // Vérifiez à nouveau pour le débordement de page
+    if (y > doc.internal.pageSize.getHeight() - 20) {
+      doc.addPage()
+      y = 20
+    }
 
     doc.save("data.pdf")
   }
