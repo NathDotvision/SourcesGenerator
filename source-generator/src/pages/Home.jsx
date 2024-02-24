@@ -295,9 +295,9 @@ export default function Home() {
     {
       name: "Export All",
       action: () => {
+        ExportToPDF()
         ExportToTxt()
         ExportToCSV()
-        //ExportToPDF()
         ExportToJSON()
         ExportToMD()
       },

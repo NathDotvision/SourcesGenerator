@@ -1,5 +1,6 @@
 https://www.youtube.com/playlist?list=PLPpgDoSBYYWgAsFdt3AsvyblUk04qkEob
 https://www.youtube.com/playlist?list=PLBLmKCAjA25AzbbDhIVUdZeSc6o07pMfe
+https://www.youtube.com/playlist?list=PLT2KSPhMMiqp0jwqSCKaOjJHjl8ZFS2tI
 https://www.youtube.com/playlist?list=PLbgD2Tk2QUnkYVdDN-EMSiinyKpWXRpIR
 https://www.youtube.com/playlist?list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy
 https://www.youtube.com/playlist?list=PLrpW4usReKy13pLMay2XWCXtwVEDz2BMa
@@ -20,10 +21,10 @@ https://cesium.com/platform/cesium-for-unreal/
 https://docs.unrealengine.com/5.0/en-US/collision-in-unreal-engine---overview/
 https://docs.unrealengine.com/5.3/en-US/collision-tutorials-in-unreal-engine/
 https://forums.unrealengine.com/t/collisions-in-vr-and-movement/88690
+https://tailwindui.com/components/application-ui/navigation/command-palettes
 https://forums.unrealengine.com/t/community-tutorial-unreal-engine-5-3-2-for-meta-quest-vr/1376911
 https://forums.unrealengine.com/t/creating-a-new-material-in-c/357563
-https://developer.oculus.com/documentation/unreal/unreal-quick-start-guide-quest/
-https://tangrams.readthedocs.io/en/latest/Tutorials/Demos/
+https://tailwindui.com/components/application-ui/overlays/dialogs
 https://docs.sentinel-hub.com/api/latest/data/dem/
 https://mapzen.com/documentation
 https://www.meta.com/s/1C6MMAdTq
@@ -54,7 +55,9 @@ https://forums.unrealengine.com/t/lighting-on-the-oculus-quest/138178
 https://forums.unrealengine.com/t/lighting-settings-for-vr-messed-up-on-light-build/626120
 https://docs.unrealengine.com/5.2/en-US/math-material-expressions-in-unreal-engine/
 https://docs.unrealengine.com/4.27/en-US/WorkingWithMedia/IntegratingMedia/MediaFramework/TechReference/
+https://docs.unrealengine.com/5.1/fr/landscape-paint-mode-in-unreal-engine/
 https://docs.unrealengine.com/5.0/en-US/navigating-the-world-in-vr-mode/
+https://tailwindui.com/components/application-ui/overlays/notifications
 https://docs.unrealengine.com/5.3/fr/organizing-a-material-graph-in-unreal-engine/
 https://docs.unrealengine.com/5.3/en-US/packaging-unreal-engine-projects/
 https://peterleontev.com/blog/efficient_construction_of_textures/
@@ -81,6 +84,7 @@ https://www.reddit.com/r/unrealengine/comments/vu65z1/slower_event_tick/
 http://localhost:3000/
 https://github.com/nothings/stb/blob/master/stb_image.h
 https://docs.unrealengine.com/5.3/en-US/supported-xr-devices-in-unreal-engine/
+https://tangrams.github.io/spheremap-demos/#3.25/75.33/-29.82
 https://registry.opendata.aws/terrain-tiles/
 https://nerivec.github.io/old-ue4-wiki/pages/texture-merging-with-ucanvasrendertarget2d.html
 https://forums.unrealengine.com/t/transfer-actors-between-levels/128043
@@ -109,6 +113,7 @@ https://www.youtube.com/watch?v=BX37A949tiw&t=1s
 https://youtu.be/R9pHrKQlW2E
 https://www.youtube.com/watch?v=HDZUTzjuXBo
 https://youtu.be/0rTxaApsj_0
+https://youtu.be/e83qWNcUNhg
 https://youtu.be/TWjqci4nbO4
 https://www.youtube.com/watch?v=lWV52h-VHi8&t=47s
 https://youtu.be/STqt92VF3KM
@@ -146,6 +151,7 @@ https://youtu.be/nW4dHuEFbQ4
 https://youtu.be/EnHvMuX6Y-U
 https://youtu.be/-Qj1ufuw470
 https://www.youtube.com/watch?v=nVm-DYdAsts
+https://youtu.be/ic_T8eDYNuQ
 https://youtu.be/ZceJPOMDLSA
 https://youtu.be/m8DGSmDUHfk
 https://youtu.be/1LfiYtKDsac
@@ -172,8 +178,8 @@ https://www.youtube.com/watch?v=ocKFXjut6ls
 https://youtu.be/62MllhLQLvs?list=PLL7ZPw6CY7Ezdo7XbZoepGF83eGCHOEA_
 https://youtu.be/N7TUC0ZvuGM?list=PL5jucrVJoa43G22mqydtCb3qmFXipf2Uy
 https://youtu.be/m4oSOugBQCg
-https://youtu.be/oqTwBmuw54Y
 https://www.youtube.com/watch?v=oqTwBmuw54Y
+https://www.youtube.com/watch?v=qQmQDWOACo0&t=28s
 https://youtu.be/aavZbRjSE8w
 https://youtu.be/GFsGLpliG8E
 https://youtu.be/uSKzkg0dQpY
