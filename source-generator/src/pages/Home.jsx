@@ -7,6 +7,19 @@ import { Link } from "react-router-dom"
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline"
 import Papa from "papaparse"
 
+const ProjetsList = [
+  {
+    name: "Bibliographic",
+    author: "Nathan",
+    license: "MIT",
+  },
+  {
+    name: "DotVisionUnreal",
+    author: "Nathan",
+    license: "MIT",
+  },
+]
+
 export default function Home() {
   const ExportToTxt = () => {
     let data = []
@@ -333,9 +346,11 @@ export default function Home() {
                 autoComplete="type"
                 className="text-black block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
               >
-                <option>Site</option>
-                <option>Video</option>
-                <option>Playlist</option>
+                {ProjetsList.map((project, index) => (
+                  <option key={index} value={project.name}>
+                    {project.name}
+                  </option>
+                ))}
               </select>
             </h2>
           </div>

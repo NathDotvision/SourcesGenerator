@@ -1,5 +1,78 @@
 import React, { useState } from "react"
 import { SavedNotification } from "../components"
+import {
+  ChevronDownIcon,
+  PencilSquareIcon,
+  DocumentDuplicateIcon,
+  ArchiveBoxIcon,
+  ShareIcon,
+  HeartIcon,
+  TrashIcon,
+} from "@heroicons/react/24/outline"
+
+const DataOptions = [
+  {
+    id: 1,
+    name: "Edit",
+    icon: PencilSquareIcon,
+    action: null,
+    color: "text-gray-700",
+  },
+  {
+    id: 2,
+    name: "Duplicate",
+    icon: DocumentDuplicateIcon,
+    action: null,
+    color: "text-gray-700",
+  },
+  {
+    id: 3,
+    name: "Archive",
+    icon: ArchiveBoxIcon,
+    action: null,
+    color: "text-gray-700",
+  },
+  {
+    id: 4,
+    name: "Share",
+    icon: ShareIcon,
+    action: null,
+    color: "text-gray-700",
+  },
+  {
+    id: 5,
+    name: "Favorite",
+    icon: HeartIcon,
+    action: null,
+    color: "text-orange-600",
+  },
+  {
+    id: 5,
+    name: "Delete",
+    icon: TrashIcon,
+    action: null,
+    color: "text-red-600",
+  },
+]
+
+const OptionsItem2 = () => {
+  return (
+    <div className="absolute mt-2 w-auto origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+      <div className="py-1" role="none">
+        {DataOptions.map((option) => (
+          <div
+            onClick={option.action}
+            key={option.id}
+            className={`flex items-center justify-between w-full px-4 py-2 text-sm ${option.color} hover:bg-gray-100`}
+          >
+            <option.icon className="w-5 h-5 mr-2" aria-hidden="true" />
+            <span>{option.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 const Projet = (data) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,22 +92,14 @@ const Projet = (data) => {
         </div>
         <div>
           <button
-            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-md shadow-md"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <span>Open options</span>
-            {isOpen && (
-              <div className="absolute bg-white rounded-md shadow-lg">
-                <div className="flex flex-col p-2">
-                  <button className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                    Edit
-                  </button>
-                  <button className="px-4 py-2 text-sm text-red-600 hover:bg-red-100 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                    Delete
-                  </button>
-                </div>
-              </div>
-            )}
+            <span className="flex">
+              Open options
+              <ChevronDownIcon className="w-5 h-5 ml-2" />
+            </span>
+            {isOpen && <OptionsItem2 id={data.id} />}
           </button>
         </div>
       </li>
