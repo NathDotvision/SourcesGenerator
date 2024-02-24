@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { Home, About, NotFound, Links, SignIn, Projets } from "./pages"
-import { NavBar } from "./components"
+import { NavBar, Footer } from "./components"
 import "./App.css"
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
             <div>
               <NavBar />
               <Home />
+              <Footer />
             </div>
           }
         />
@@ -23,6 +24,7 @@ function App() {
             <div>
               <NavBar />
               <About />
+              <Footer />
             </div>
           }
         />
@@ -32,6 +34,7 @@ function App() {
             <div>
               <NavBar />
               <Links />
+              <Footer />
             </div>
           }
         />
@@ -41,6 +44,7 @@ function App() {
             <div>
               <NavBar />
               <NotFound />
+              <Footer />
             </div>
           }
         />
@@ -50,6 +54,7 @@ function App() {
             <div>
               <NavBar />
               <SignIn />
+              <Footer />
             </div>
           }
         />
@@ -59,6 +64,7 @@ function App() {
             <div>
               <NavBar />
               <Projets />
+              <Footer />
             </div>
           }
         />
