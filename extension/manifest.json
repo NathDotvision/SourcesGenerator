@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Bibliographic Extension",
+    "version": "1.0",
+    "description": "Un générateur de sources simple comme des liens ou des vidéos.",
+    "permissions": [
+        "activeTab",
+        "http://*/*",
+        "https://*/*",
+        "notifications"
+    ],
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "img/icon16.jpg"
+    }
+}

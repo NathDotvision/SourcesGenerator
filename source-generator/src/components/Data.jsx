@@ -1,6 +1,6 @@
 const Data = {
   PORT: 5001,
-  name: "SourceGenerator",
+  name: "Bibliographic",
   GithubLogo:
     "https://www.gstatic.com/mobilesdk/230906_mobilesdk/github-mark-white.svg",
   TwitterLogo:
