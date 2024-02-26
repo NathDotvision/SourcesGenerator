@@ -101,6 +101,15 @@ const reseach_url = async (url) => {
 }
 
 document.getElementById("cancel").addEventListener("click", function () {
+  cancel()
+})
+
+document.getElementById("msj").addEventListener("click", function () {
+  document.getElementById("logo_image").src = document.getElementById("logo").value
+  document.getElementById("thumbnail_image").src = document.getElementById("thumbnail").value
+})
+
+function cancel() {
   document.getElementById("name").value = ""
   document.getElementById("url").value = ""
   document.getElementById("logo").value = ""
@@ -108,4 +117,4 @@ document.getElementById("cancel").addEventListener("click", function () {
   document.getElementById("thumbnail").value = ""
   document.getElementById("logo_image").src = ""
   document.getElementById("thumbnail_image").src = ""
-})
+}
