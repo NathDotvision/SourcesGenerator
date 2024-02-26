@@ -13,12 +13,55 @@
       p {
         color: #666;
       }
+      input {
+        margin: 5px;
+        padding: 5px;
+        width: 200px;
+      }
+      button {
+        margin: 5px;
+        padding: 5px;
+        width: 100px;
+      }
+      #image {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+      img {
+        margin: 5px;
+        padding: 5px;
+        width: 50%;
+      }
     </style>
   </head>
   <body>
     <h1>Bienvenue sur to Bibliographic</h1>
-    <p>Un générateur de sources simple comme des liens ou des vidéos.</p>
-    <button id="clickme">Enregistrer le lien</button>
+    <p>Un generateur de sources simple comme des liens ou des videos.</p>
+    <button id="clickme">Recherche</button>
+    <div id="form">
+      <input
+        type="text"
+        id="name"
+        placeholder="Nom du site"
+        autocomplete="name"
+      />
+      <input type="text" id="url" placeholder="URL" />
+      <input type="text" id="logo" placeholder="Url du logo" />
+      <input type="text" id="thumbnail" placeholder="Url du logo" />
+      <select id="type" name="type">
+        <option>Site</option>
+        <option>Video</option>
+        <option>Playlist</option>
+      </select>
+      <button id="add">Ajouter</button>
+      <button id="cancel">Annuler</button>
+      <button id="msj">Mise a jour</button>
+    </div>
+    <div id="image">
+      <img id="logo_image" src="null" />
+      <img id="thumbnail_image" src="null" />
+    </div>
   </body>
   <script src="popup.js"></script>
 </html>

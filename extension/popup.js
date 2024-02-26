@@ -6,9 +6,18 @@ document.getElementById("clickme").addEventListener("click", function () {
     async function (tabs) {
       var currentTabUrl = tabs[0].url
       console.log(currentTabUrl)
-      alert("Vous vous trouver sur la page: " + currentTabUrl)
-      notifyMe((await reseach_url(currentTabUrl)).name)
-      console.log(await reseach_url(currentTabUrl))
+      const data = await reseach_url(currentTabUrl)
+      notifyMe(data.name)
+      console.log(data)
+
+      document.getElementById("name").value = data.name
+      document.getElementById("url").value = data.link_name
+      document.getElementById("logo").value = data.icon_logo
+      document.getElementById("thumbnail").value = data.thumnail_logo
+      document.getElementById("type").value = data.type
+
+      document.getElementById("logo_image").src = data.icon_logo
+      document.getElementById("thumbnail_image").src = data.thumnail_logo
     }
   )
 })
@@ -90,3 +99,13 @@ const reseach_url = async (url) => {
 
   return data
 }
+
+document.getElementById("cancel").addEventListener("click", function () {
+  document.getElementById("name").value = ""
+  document.getElementById("url").value = ""
+  document.getElementById("logo").value = ""
+  document.getElementById("type").value = ""
+  document.getElementById("thumbnail").value = ""
+  document.getElementById("logo_image").src = ""
+  document.getElementById("thumbnail_image").src = ""
+})
