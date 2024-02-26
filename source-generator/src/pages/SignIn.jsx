@@ -1,13 +1,35 @@
+/**
+ * Component for the sign-in page.
+ * @returns {JSX.Element} The sign-in page component.
+ */
 import React, { useState } from "react"
 import { Data } from "../components"
 import { auth, signInWithPopup, GoogleAuthProvider } from "./firebase"
 
 export default function Home() {
+  /**
+   * Represents the state of the form inputs for the sign-in page.
+   * @typedef {Object} FormUser
+   * @property {string} username - The username input value.
+   * @property {string} password - The password input value.
+   */
   const [formUser, setformUser] = useState({
     username: "",
     password: "",
   })
 
+  /**
+   * @typedef {Object} Fournisseur
+   * @property {string} name - The name of the provider.
+   * @property {string} logo - The logo of the provider.
+   * @property {Function} action - The action to be performed when the provider is selected.
+   * @property {string} color - The color associated with the provider.
+   * @property {boolean} block - Indicates whether the provider should be displayed as a block element.
+   */
+
+  /**
+   * @type {Fournisseur[]}
+   */
   const fournisseur = [
     {
       name: "Google",

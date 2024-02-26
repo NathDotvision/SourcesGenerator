@@ -1,3 +1,11 @@
+/**
+ * FILEPATH: /c:/Users/Nathan/Documents/Projet/SourcesGenerator/source-generator/src/App.css
+ * 
+ * This CSS file contains styling rules for the App component in the Source Generator project.
+ * It defines CSS variables for main and secondary colors, as well as different color schemes for light and dark mode.
+ * The file also includes styling rules for the body, container, card, and button elements.
+ * Media queries are used to adjust the layout based on screen size.
+ */
 :root {
   --main_color: #d49c49;
   --secondary_color: #60a3bc;

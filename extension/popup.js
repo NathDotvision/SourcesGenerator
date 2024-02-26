@@ -1,3 +1,6 @@
+/**
+ * Adds an event listener to the "clickme" element and performs various actions when clicked.
+ */
 document.getElementById("clickme").addEventListener("click", function () {
   console.log("Hello, world!")
   //chrome.tabs.create({ url: "https://www.google.com" })
@@ -22,6 +25,10 @@ document.getElementById("clickme").addEventListener("click", function () {
   )
 })
 
+/**
+ * Notifies the user with a desktop notification.
+ * @param {string} message - The notification message.
+ */
 function notifyMe(message) {
   if (!("Notification" in window)) {
     alert("Ce navigateur ne supporte pas les notifications desktop")
@@ -38,6 +45,11 @@ function notifyMe(message) {
   }
 }
 
+/**
+ * Retrieves data from a given URL.
+ * @param {string} url - The URL to retrieve data from.
+ * @returns {Promise<Object>} - The retrieved data.
+ */
 const reseach_url = async (url) => {
   const data = {
     name: "test_name",
@@ -100,15 +112,26 @@ const reseach_url = async (url) => {
   return data
 }
 
+/**
+ * Adds an event listener to the "cancel" element and calls the cancel function when clicked.
+ */
 document.getElementById("cancel").addEventListener("click", function () {
   cancel()
 })
 
+/**
+ * Adds an event listener to the "msj" element and updates the image sources when clicked.
+ */
 document.getElementById("msj").addEventListener("click", function () {
-  document.getElementById("logo_image").src = document.getElementById("logo").value
-  document.getElementById("thumbnail_image").src = document.getElementById("thumbnail").value
+  document.getElementById("logo_image").src =
+    document.getElementById("logo").value
+  document.getElementById("thumbnail_image").src =
+    document.getElementById("thumbnail").value
 })
 
+/**
+ * Resets the values and image sources of the form.
+ */
 function cancel() {
   document.getElementById("name").value = ""
   document.getElementById("url").value = ""

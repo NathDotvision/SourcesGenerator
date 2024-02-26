@@ -4,6 +4,10 @@ import { Home, About, NotFound, Links, SignIn, Projets } from "./pages"
 import { NavBar, Footer } from "./components"
 import "./App.css"
 
+/**
+ * Renders the main application component.
+ * @returns {JSX.Element} The rendered application component.
+ */
 function App() {
   return (
     <Router>

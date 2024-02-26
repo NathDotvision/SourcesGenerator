@@ -10,6 +10,15 @@ file_path_write = ".\sources.md"
 file_path = ".\sources-ref.md"
 
 def info_time(name:str = ""):
+    """
+    Affiche les informations sur le temps d'exécution.
+
+    Args:
+        name (str, optional): Le nom du fichier. Defaults to "".
+
+    Returns:
+        str: Les informations sur le temps d'exécution.
+    """
     value = []
     if name != "":
         value.append("File " + name)
@@ -20,6 +29,18 @@ def info_time(name:str = ""):
 text = info_time() +"\n"+"# Sources\n\nVoici la liste de tout les documents que j'ai utilise pour faire ce projet. Il y a des sites et des videos. Les sites sont classes par ordre alphabetique et les videos par ordre de duree."
 
 def open_file(path:str):
+    """
+    Opens a file and returns its content as a string.
+
+    Args:
+        path (str): The path to the file.
+
+    Returns:
+        str: The content of the file.
+
+    Raises:
+        FileNotFoundError: If the file is not found.
+    """
     try:
         with open(path, "r", encoding='utf-8') as file:
             return file.read()
@@ -28,6 +49,15 @@ def open_file(path:str):
         return False
 
 def extract_sources(content:str):
+    """
+    Extracts sources from the given content.
+
+    Parameters:
+    content (str): The content to extract sources from.
+
+    Returns:
+    dict: A dictionary containing the extracted sources.
+    """
     sources = {}
     for line in content.splitlines():
         if line.startswith("- ["):
@@ -35,12 +65,30 @@ def extract_sources(content:str):
     return sources
 
 def same(sources:list):
+    """
+    Check if there are any duplicate elements in the given list.
+
+    Args:
+        sources (list): The list of elements to check.
+
+    Returns:
+        bool: True if there are duplicate elements, False otherwise.
+    """
     for source in sources:
         if sources.count(source) > 1:
             return True
     return False
 
 def get_title(soup):
+    """
+    Extracts the title from the given BeautifulSoup object.
+
+    Parameters:
+    soup (BeautifulSoup): The BeautifulSoup object representing the HTML page.
+
+    Returns:
+    str: The extracted title.
+    """
     try:
         title = soup.title.string.replace('"',"").replace(":","").replace("}","").replace(" - YouTube","")
         return str(title)
@@ -49,6 +97,16 @@ def get_title(soup):
         return str_soup.split("title")[1].replace('"',"").replace(":","").replace("}","").replace("- Youtube", "")
 
 def write_file(path:str, content:str):
+    """
+    Écrit le contenu spécifié dans le fichier spécifié.
+
+    Args:
+        path (str): Le chemin du fichier.
+        content (str): Le contenu à écrire dans le fichier.
+
+    Returns:
+        bool: True si l'écriture du fichier est réussie, False sinon.
+    """
     try:
         with open(path, 'w', encoding='utf-8') as file:
                 file.write(content)
@@ -57,7 +115,16 @@ def write_file(path:str, content:str):
         return False
         
 def get_youtube_duration(soup):
-    
+    """
+    Extracts the duration of a YouTube video from the given BeautifulSoup object.
+
+    Parameters:
+    soup (BeautifulSoup): The BeautifulSoup object representing the HTML of the YouTube video page.
+
+    Returns:
+    list or None: A list containing the duration of the video in hours, minutes, and seconds [h, m, s].
+                  Returns None if the duration tag is not found.
+    """
     duration_tag = soup.find('meta', {'itemprop': 'duration'})
     if duration_tag is not None:
         duration = duration_tag["content"].replace("PT","").replace("H",":").replace("M",":").replace("S","").split(":")[0:3]
@@ -71,6 +138,19 @@ def get_youtube_duration(soup):
         return None
     
 def string_duration(duration:list):
+    """
+    Converts a duration list into a formatted string representation.
+
+    Args:
+        duration (list): A list containing the duration in hours, minutes, and seconds.
+
+    Returns:
+        str: The formatted string representation of the duration.
+
+    Example:
+        >>> string_duration([1, 30, 45])
+        '1h 30m 45s'
+    """
     if duration is not None:
         if len(duration) == 3:
             return str(duration[0])+"h "+str(duration[1])+"m "+str(duration[2])+"s"
@@ -82,6 +162,15 @@ def string_duration(duration:list):
         return None
 
 def get_json_data(soup):
+    """
+    Extracts JSON data from a BeautifulSoup object.
+
+    Parameters:
+    - soup: BeautifulSoup object representing the HTML content.
+
+    Returns:
+    - JSON data extracted from the soup object, or None if no JSON data is found.
+    """
     scripts = soup.find_all('script')
     for script in scripts:
         if 'ytInitialData' in script.text:
@@ -91,6 +180,15 @@ def get_json_data(soup):
     return None
 
 def title_format(title:str) -> str:
+    """
+    Format the title by replacing accented characters with non-accented characters.
+
+    Args:
+        title (str): The title to be formatted.
+
+    Returns:
+        str: The formatted title.
+    """
     dict_accent = {"à":"a","â":"a","ä":"a","é":"e","è":"e","ê":"e","ë":"e","î":"i","ï":"i","ô":"o","ö":"o","ù":"u","û":"u","ü":"u","ÿ":"y","ç":"c","œ":"oe","æ":"ae","·":"-","–":"-","#":"","Ã©":"e"}
     # Remplace les accents par des lettres sans accents
     title = title.replace("\n","").replace("\n","").replace("\t", "").replace("\r", "").replace("  ","").replace("  ","")
@@ -102,6 +200,15 @@ def title_format(title:str) -> str:
 
 # Function qui convertie un temps en secondes
 def time_to_seconds(time:str) -> int:
+    """
+    Converts a time string in the format 'hh:mm:ss' to seconds.
+
+    Parameters:
+    time (str): The time string to be converted.
+
+    Returns:
+    int: The equivalent time in seconds.
+    """
     h, m, s = 0, 0, 0
     if 'h' in time:
         h, time = time.split('h')
@@ -112,6 +219,16 @@ def time_to_seconds(time:str) -> int:
     return int(h) * 3600 + int(m) * 60 + int(s)
 
 def get_image(soup, url):
+    """
+    Retrieves the images from a given HTML soup and URL.
+
+    Parameters:
+    - soup (BeautifulSoup): The HTML soup object.
+    - url (str): The URL of the webpage.
+
+    Returns:
+    - img (list): A list containing two lists of image URLs. The first list (img[0]) contains image URLs found in the HTML soup, and the second list (img[1]) contains image URLs based on specific conditions.
+    """
     img= [[],[]]
     if url != None:
         if "epicgames" in url:
@@ -279,6 +396,7 @@ if same(list(dict_site.values())):
                 dict_sites2[k] = v
 else:
     dict_sites2 = dict_site
+    
 if same(list(dict_video.values())):
     #suprime les doublons
     for k,v in dict_video.items():

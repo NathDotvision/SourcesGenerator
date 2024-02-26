@@ -1,3 +1,16 @@
+"""
+This script generates a PDF document containing a collection of sources.
+It reads a markdown file, extracts information about images and links, and creates a PDF with the corresponding content.
+The script also generates a JSON file with the extracted information.
+
+Dependencies:
+- reportlab
+- colorama
+- myjson
+- requests
+- bs4
+"""
+
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet

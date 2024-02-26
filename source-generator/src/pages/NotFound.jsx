@@ -1,9 +1,16 @@
 import React, { useState } from "react"
 import Links from "./Links"
 
+/**
+ * Component affichant une page d'erreur 404 avec un message et un bouton pour ajouter des liens.
+ */
 function MyComponent() {
   const [count, setCount] = useState(0)
 
+  /**
+   * Fonction appelée lors du clic sur le bouton "Ajouter un lien".
+   * Incrémente le compteur de liens.
+   */
   const handleClick = () => {
     setCount(count + 1)
   }
@@ -20,6 +27,9 @@ function MyComponent() {
   )
 }
 
+/**
+ * Classe représentant la page d'erreur 404.
+ */
 class NotFound extends React.Component {
   render() {
     return (

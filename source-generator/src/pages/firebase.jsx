@@ -1,4 +1,6 @@
-// Import the functions you need from the SDKs you need
+/**
+ * Import the functions you need from the SDKs you need
+ */
 import { initializeApp } from "firebase/app"
 import {
   collection,
@@ -19,29 +21,37 @@ import {
   signOut,
 } from "firebase/auth"
 
+/**
+ * Configuration object for Firebase
+ */
 const firebaseConfig = {
-  apiKey: "AIzaSyBJmtFVk6nJkgUiL3Yq9r1BwdYsw6H7A3o",
-  authDomain: "generatorsource-c3ea4.firebaseapp.com",
-  projectId: "generatorsource-c3ea4",
-  storageBucket: "generatorsource-c3ea4.appspot.com",
-  messagingSenderId: "510629378826",
-  appId: "1:510629378826:web:82daead7d5c656d05458f3",
-  measurementId: "G-6SWB89J39S",
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "YOUR_MEASUREMENT_ID",
 }
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
-// const analytics = getAnalytics(app)
 
 const db = getFirestore(app)
 const projets = collection(db, "projets")
 const links = collection(db, "links")
 
+/**
+ * Get the data from the 'links' collection
+ */
 let getDataLinks = await getDocs(links)
 
 const getOnSnappLinks = []
 
+/**
+ * Listen for changes in the 'links' collection
+ */
 onSnapshot(links, (doc) => {
   doc.docChanges().forEach((change) => {
     if (change.type === "added") {
@@ -62,6 +72,9 @@ onSnapshot(links, (doc) => {
   getOnSnappLinks.sort((a, b) => a.id - b.id)
 })
 
+/**
+ * Listen for changes in the authentication state
+ */
 onAuthStateChanged(auth, (user) => {
   if (user) {
     console.log("User is signed in")
@@ -72,6 +85,10 @@ onAuthStateChanged(auth, (user) => {
   }
 })
 
+/**
+ * Delete a document from the 'links' collection
+ * @param {string} id - The ID of the document to delete
+ */
 const deleteLinks = async (id) => {
   const docToDelete = doc(db, "links", id)
 

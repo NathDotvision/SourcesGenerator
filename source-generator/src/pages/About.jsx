@@ -55,7 +55,7 @@ const Technologies = [
     url: "https://www.blobmaker.app/",
     description: "Un outil pour générer des formes de blob aléatoires.",
   },
-];
+]
 
 /**
  * Represents the About page component.
