@@ -50,7 +50,7 @@ const SocialMedia = [
   },
   {
     name: "Instagram",
-    link: "#",
+    link: "https://www.instagram.com/nathan__morel?igsh=MW9qNmR6N29pemVkaw==",
     svg: (
       <svg
         fill="currentColor"
@@ -68,7 +68,7 @@ const SocialMedia = [
   },
   {
     name: "GitHub",
-    link: "#",
+    link: "https://github.com/NathDotvision/SourcesGenerator",
     svg: (
       <svg
         fill="currentColor"
@@ -120,6 +120,8 @@ const Footer = () => {
             key={index}
             to={item.link}
             className="flex items-center hover:text-gray-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {item.name}
             {item.svg}

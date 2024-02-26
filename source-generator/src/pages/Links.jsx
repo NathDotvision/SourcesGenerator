@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import { Data } from "../components"
-import { setDoc, db, doc } from "./firebase"
+import { setDoc, db, doc, getOnSnappLinks } from "./firebase"
 
 const PORT = Data.PORT
 
@@ -103,11 +103,27 @@ function Links() {
     return data
   }
 
+  const ExistInData = (data, url) => {
+    let exist = false
+    data.forEach((item) => {
+      if (item.link_name === url) {
+        exist = true
+      }
+    })
+    return exist
+  }
+
   const reseach = async () => {
     if (formRef.current.link_name.value === "") {
       alert("Please enter a link")
       return
     }
+
+    if (ExistInData(getOnSnappLinks, formRef.current.link_name.value)) {
+      alert("This link already exist in the database")
+      return
+    }
+
     const baseURL = new URL(
       `http://localhost:${PORT}/icon?url=${formRef.current.link_name.value}`
     )

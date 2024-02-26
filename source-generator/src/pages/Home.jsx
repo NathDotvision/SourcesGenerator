@@ -120,7 +120,7 @@ export default function Home() {
 
   const processItems = async (doc, items, x, y) => {
     for (const item of items) {
-      if (y > doc.internal.pageSize.getHeight() - 20) {
+      if (y + 5 > doc.internal.pageSize.getHeight() - 20) {
         doc.addPage()
         y = 20 // Réinitialisez la position y pour la nouvelle page
       }
@@ -131,7 +131,11 @@ export default function Home() {
         doc.addImage(image, "JPEG", 10, y, 32 / 2, 32 / 2)
       }
 
-      doc.setFontSize(12)
+      let fontSize = 12
+      doc.setFontSize(fontSize)
+      if (item.name.length * fontSize / 5 > doc.internal.pageSize.getWidth() - x) {
+        item.name = item.name.substring(0, 75) + "..."
+      }
       doc.textWithLink(item.name, x, y, { url: item.link_name })
 
       y += 5
@@ -329,7 +333,6 @@ export default function Home() {
           videos.push(doc)
         }
       })
-
       setDataSources(sources)
       setDataVideos(videos)
     }, [])
@@ -369,7 +372,7 @@ export default function Home() {
             {showSources && (
               <ul
                 role="list"
-                className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
+                className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 tele:grid-cols-5 gap-7"
               >
                 {dataSources.map((source, index) => (
                   <DataItem data={source} key={index} />
@@ -392,7 +395,7 @@ export default function Home() {
             {showVideos && (
               <ul
                 role="list"
-                className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-7"
+                className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 tele:grid-cols-5 gap-7"
               >
                 {dataVideos.map((source, index) => (
                   <DataItem data={source} key={index} />

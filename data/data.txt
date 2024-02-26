@@ -21,8 +21,10 @@ https://cesium.com/platform/cesium-for-unreal/
 https://docs.unrealengine.com/5.0/en-US/collision-in-unreal-engine---overview/
 https://docs.unrealengine.com/5.3/en-US/collision-tutorials-in-unreal-engine/
 https://forums.unrealengine.com/t/collisions-in-vr-and-movement/88690
+https://htmlcolorcodes.com/color-picker/
 https://tailwindui.com/components/application-ui/navigation/command-palettes
 https://forums.unrealengine.com/t/community-tutorial-unreal-engine-5-3-2-for-meta-quest-vr/1376911
+https://blog.logrocket.com/creating-chrome-extension-react-typescript/
 https://forums.unrealengine.com/t/creating-a-new-material-in-c/357563
 https://tailwindui.com/components/application-ui/overlays/dialogs
 https://docs.sentinel-hub.com/api/latest/data/dem/
@@ -109,6 +111,7 @@ https://youtu.be/Mi7r0LqUmOE
 https://youtu.be/hn98tbztoBg
 https://youtu.be/xKPqqmPJGTI
 https://youtu.be/kM27HYbpvc0
+https://youtu.be/SnSH8Ht3MIc
 https://www.youtube.com/watch?v=BX37A949tiw&t=1s
 https://youtu.be/R9pHrKQlW2E
 https://www.youtube.com/watch?v=HDZUTzjuXBo
