@@ -4,6 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline"
 import { auth, signOut } from "../pages/firebase"
 import { Link } from "react-router-dom"
 
+/**
+ * Navigation data for the NavBar component.
+ * @type {Array<{ name: string, href: string, current: boolean }>}
+ */
 const navigation = [
   { name: "Dashboard", href: "../", current: true },
   { name: "Links", href: "/links", current: false },
@@ -11,6 +15,14 @@ const navigation = [
   { name: "Abouts", href: "/about", current: false },
 ]
 
+/**
+ * Represents an array of parameters.
+ * @typedef {Object[]} Parameter
+ * @property {string} name - The name of the parameter.
+ * @property {string} href - The URL of the parameter.
+ * @property {boolean} current - Indicates if the parameter is currently active.
+ * @property {Function} [action] - The action to be performed when the parameter is clicked.
+ */
 const Parameter = [
   { name: "Profile", href: "#", current: true },
   { name: "Settings", href: "#", current: false },
@@ -29,10 +41,19 @@ const Parameter = [
   { name: "Log in ", href: "#", current: false },
 ]
 
+/**
+ * Returns a string of concatenated class names.
+ * @param {...string} classes - The class names to be concatenated.
+ * @returns {string} - The concatenated class names.
+ */
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
 }
 
+/**
+ * Renders the navigation bar component.
+ * @returns {JSX.Element} The rendered navigation bar.
+ */
 export default function NavBar() {
   return (
     <Disclosure as="nav" className="bg-main_color">

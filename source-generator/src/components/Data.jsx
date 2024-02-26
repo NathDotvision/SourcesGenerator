@@ -1,3 +1,24 @@
+/**
+ * Data object containing various constants and URLs.
+ * @typedef {Object} Data
+ * @property {number} PORT - The port number.
+ * @property {string} name - The name.
+ * @property {string} GithubLogo - The URL for the GitHub logo.
+ * @property {string} TwitterLogo - The URL for the Twitter logo.
+ * @property {string} MicrosoftLogo - The URL for the Microsoft logo.
+ * @property {string} GoogleLogo - The URL for the Google logo.
+ * @property {string} FacebookLogo - The URL for the Facebook logo.
+ * @property {string} ShortDescriptionEnglish - The short description in English.
+ * @property {string} LongDescriptionEnglish - The long description in English.
+ * @property {string} ShortDescriptionFrench - The short description in French.
+ * @property {string} LongDescriptionFrench - The long description in French.
+ * @property {string} ReactImage - The URL for the React image.
+ * @property {string} NPMImage - The URL for the NPM image.
+ * @property {string} FirebaseImage - The URL for the Firebase image.
+ * @property {string} TailwindImage - The URL for the Tailwind image.
+ * @property {string} FlatUIColorsImage - The URL for the Flat UI Colors image.
+ * @property {string} BlobMakerImage - The URL for the Blob Maker image.
+ */
 const Data = {
   PORT: 5001,
   name: "Bibliographic",

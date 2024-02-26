@@ -1,7 +1,21 @@
+/**
+ * Footer component that displays a navigation menu and social media links.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Footer />
+ * )
+ */
 import React from "react"
 import { Data } from "../components"
 import { Link } from "react-router-dom"
 
+/**
+ * DataFooter is an array of objects representing the footer links.
+ *
+ * @type {Array<{name: string, link: string}>}
+ */
 const DataFooter = [
   {
     name: "About",
@@ -29,6 +43,18 @@ const DataFooter = [
   },
 ]
 
+/**
+ * Array of social media objects.
+ * @typedef {Object} SocialMediaObject
+ * @property {string} name - The name of the social media platform.
+ * @property {string} link - The link to the social media profile.
+ * @property {JSX.Element} svg - The SVG icon for the social media platform.
+ */
+
+/**
+ * Array of social media objects.
+ * @type {SocialMediaObject[]}
+ */
 const SocialMedia = [
   {
     name: "Facebook",
@@ -104,6 +130,11 @@ const SocialMedia = [
   },
 ]
 
+/**
+ * Footer component.
+ *
+ * @returns {JSX.Element} The rendered Footer component.
+ */
 const Footer = () => {
   return (
     <div className="flex flex-col justify-between items-center py-4 px-6 bg-main_color text-white fixed inset-x-0 bottom-0">

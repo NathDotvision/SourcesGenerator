@@ -7,6 +7,10 @@ import { Link } from "react-router-dom"
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline"
 import Papa from "papaparse"
 
+/**
+ * List of projects.
+ * @type {Array<Object>}
+ */
 const ProjetsList = [
   {
     name: "Bibliographic",
@@ -20,7 +24,15 @@ const ProjetsList = [
   },
 ]
 
+/**
+ * The Home component.
+ * 
+ * @returns {JSX.Element} The rendered Home component.
+ */
 export default function Home() {
+  /**
+   * Export data to a text file.
+   */
   const ExportToTxt = () => {
     let data = []
     getOnSnappLinks.forEach((doc) => {
@@ -41,6 +53,9 @@ export default function Home() {
     saveAs(blob, "data.txt")
   }
 
+  /**
+   * Export the data to JSON format.
+   */
   const ExportToJSON = () => {
     let data = []
     getOnSnappLinks.forEach((doc) => {
@@ -57,6 +72,9 @@ export default function Home() {
     saveAs(blob, "data.json")
   }
 
+  /**
+   * Export data to CSV format.
+   */
   const ExportToCSV = () => {
     let data = []
     getOnSnappLinks.forEach((doc) => {
@@ -73,6 +91,11 @@ export default function Home() {
     saveAs(blob, "data.csv")
   }
 
+  /**
+   * ExportToMD function generates a Markdown file containing the data from dataSources and dataVideos arrays.
+   * The Markdown file includes a list of sites and videos with their respective names, links, and thumbnail logos.
+   * The generated Markdown file is then saved as "data.md".
+   */
   const ExportToMD = () => {
     let dataSources = []
     let dataVideos = []
@@ -104,6 +127,11 @@ export default function Home() {
     saveAs(blob, "data.md")
   }
 
+  /**
+   * Retrieves an image from a given URL.
+   * @param {string} imageData - The URL of the image to retrieve.
+   * @returns {Promise<string>} - The retrieved image data.
+   */
   const getImage = async (imageData) => {
     const titleURL = new URL(
       `http://localhost:${Data.PORT}/image?url=${imageData}`
@@ -118,6 +146,14 @@ export default function Home() {
     return dataImage.image
   }
 
+  /**
+   * Processes items and adds them to the document.
+   * @param {Object} doc - The document object.
+   * @param {Array} items - The array of items to process.
+   * @param {number} x - The x-coordinate for positioning the items.
+   * @param {number} y - The y-coordinate for positioning the items.
+   * @returns {number} - The updated y-coordinate after processing the items.
+   */
   const processItems = async (doc, items, x, y) => {
     for (const item of items) {
       if (y + 5 > doc.internal.pageSize.getHeight() - 20) {
@@ -154,6 +190,12 @@ export default function Home() {
     return y
   }
 
+  /**
+   * Export data to PDF.
+   * @async
+   * @function ExportToPDF
+   * @returns {Promise<void>}
+   */
   const ExportToPDF = async () => {
     let dataSources = []
     let dataVideos = []
@@ -199,6 +241,12 @@ export default function Home() {
     doc.save("data.pdf")
   }
 
+  /**
+   * Renders an options item with edit and delete buttons.
+   * 
+   * @param {Object} id - The ID of the item.
+   * @returns {JSX.Element} The rendered options item.
+   */
   const Options_item = (id) => {
     return (
       <div className="absolute bg-white rounded-md shadow-lg">
@@ -228,6 +276,14 @@ export default function Home() {
     )
   }
 
+  /**
+   * Renders a data item component.
+   *
+   * @component
+   * @param {Object} props - The component props.
+   * @param {Object} props.data - The data object for the item.
+   * @returns {JSX.Element} The rendered DataItem component.
+   */
   const DataItem = ({ data }) => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -275,6 +331,11 @@ export default function Home() {
     )
   }
 
+  /**
+   * Array of objects representing data buttons.
+   * Each object contains a name and an action.
+   * @type {Array<{name: string, action: Function}>}
+   */
   const DataButton = [
     {
       name: "Export to TXT",
@@ -308,6 +369,15 @@ export default function Home() {
     },
   ]
 
+  /**
+   * ButtonItem component.
+   *
+   * @component
+   * @param {Object} data - The data object containing the button information.
+   * @param {Function} data.action - The action to be performed when the button is clicked.
+   * @param {string} data.name - The name of the button.
+   * @returns {JSX.Element} The rendered ButtonItem component.
+   */
   const ButtonItem = ({ data }) => (
     <button
       onClick={data.action}
@@ -317,6 +387,11 @@ export default function Home() {
     </button>
   )
 
+  /**
+   * Renders a visualizer component that displays sources and videos.
+   *
+   * @returns {JSX.Element} The visualizer component.
+   */
   const Visualizer = () => {
     const [dataSources, setDataSources] = useState([])
     const [dataVideos, setDataVideos] = useState([])

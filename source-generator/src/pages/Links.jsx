@@ -4,9 +4,21 @@ import { setDoc, db, doc, getOnSnappLinks } from "./firebase"
 
 const PORT = Data.PORT
 
+/**
+ * Renders the Links component.
+ * This component handles the generation of random strings, importing and processing text and JSON files,
+ * researching URLs, checking for URL existence, handling form submission, and rendering the form for adding new links.
+ * @component
+ * @returns {JSX.Element} The Links component.
+ */
 function Links() {
   const formRef = useRef()
 
+  /**
+   * Generates a random string of the specified length.
+   * @param {number} length - The length of the random string to generate.
+   * @returns {string} The randomly generated string.
+   */
   function generateRandomString(length) {
     let result = ""
     let characters =
@@ -18,6 +30,9 @@ function Links() {
     return result
   }
 
+  /**
+   * Imports a text file, reads its contents, and processes each URL found.
+   */
   const importTxt = () => {
     const fileInput = document.createElement("input")
     fileInput.type = "file"
@@ -40,6 +55,11 @@ function Links() {
     })
   }
 
+  /**
+   * Reseaches the URL and retrieves relevant data.
+   * @param {string} url - The URL to be researched.
+   * @returns {Promise<Object>} - The data object containing the researched information.
+   */
   const reseach_url = async (url) => {
     const data = {
       name: "test_name",
@@ -103,6 +123,12 @@ function Links() {
     return data
   }
 
+  /**
+   * Checks if a given URL exists in the data array.
+   * @param {Array} data - The data array to search in.
+   * @param {string} url - The URL to check for existence.
+   * @returns {boolean} - Returns true if the URL exists in the data array, false otherwise.
+   */
   const ExistInData = (data, url) => {
     let exist = false
     data.forEach((item) => {
@@ -113,6 +139,12 @@ function Links() {
     return exist
   }
 
+  /**
+   * Performs a research based on the provided link.
+   * @async
+   * @function reseach
+   * @returns {Promise<void>} A Promise that resolves when the research is completed.
+   */
   const reseach = async () => {
     if (formRef.current.link_name.value === "") {
       alert("Please enter a link")
@@ -211,6 +243,9 @@ function Links() {
     }
   }
 
+  /**
+   * Cancels the form and removes any images within the form.
+   */
   const cancelForm = () => {
     try {
       let imgElements = document.querySelector("form").querySelectorAll("img")
@@ -223,6 +258,11 @@ function Links() {
     formRef.current.reset()
   }
 
+  /**
+   * Handles the form submission.
+   * @param {Event} e - The form submission event.
+   * @returns {Promise<void>} - A promise that resolves when the form submission is handled.
+   */
   const handleSubmit = async (e) => {
     e.preventDefault()
     const formData = new FormData(formRef.current)
@@ -242,6 +282,9 @@ function Links() {
     }
   }
 
+  /**
+   * Imports a JSON file and processes its data.
+   */
   const importJson = () => {
     const fileInput = document.createElement("input")
     fileInput.type = "file"

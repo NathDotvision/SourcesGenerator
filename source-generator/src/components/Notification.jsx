@@ -1,5 +1,14 @@
 import React from "react"
 
+/**
+ * Renders a notification component with a success message and a close button.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.message - The success message to display.
+ * @param {Function} props.onClose - The function to call when the close button is clicked.
+ * @returns {JSX.Element} The rendered notification component.
+ */
 const SavedNotification = ({ message, onClose }) => {
   return (
     <div className="fixed top-0 right-0 m-6">

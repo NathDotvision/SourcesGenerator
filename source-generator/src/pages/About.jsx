@@ -1,6 +1,19 @@
 import React from "react"
 import { Data, ImageCard } from "../components"
 
+/**
+ * Represents a list of technologies.
+ * @typedef {Object} Technology
+ * @property {string} title - The title of the technology.
+ * @property {string} imagePath - The image path of the technology.
+ * @property {string} description - The description of the technology.
+ * @property {string} url - The URL of the technology.
+ */
+
+/**
+ * List of technologies.
+ * @type {Technology[]}
+ */
 const Technologies = [
   {
     title: "React",
@@ -42,8 +55,11 @@ const Technologies = [
     url: "https://www.blobmaker.app/",
     description: "Un outil pour générer des formes de blob aléatoires.",
   },
-]
+];
 
+/**
+ * Represents the About page component.
+ */
 class About extends React.Component {
   render() {
     return (

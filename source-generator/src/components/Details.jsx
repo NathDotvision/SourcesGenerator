@@ -1,5 +1,9 @@
 import React from "react"
 
+/**
+ * ProfileComponent is a functional component that renders a profile modal.
+ * It displays the profile image, name, and username, along with buttons for messaging and calling.
+ */
 const ProfileComponent = () => {
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
