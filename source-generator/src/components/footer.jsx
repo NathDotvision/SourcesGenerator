@@ -140,7 +140,7 @@ const Footer = () => {
     <div>
       <div className="h-32">
       </div>
-      <div className="flex flex-col justify-between items-center py-4 px-6 bg-main_color text-white fixed inset-x-0 bottom-0">
+      <div className="flex flex-col justify-between items-center py-4 px-6 bg-main_color text-white fixed inset-x-0 bottom-0 h-24">
         <nav className="flex space-x-4">
           {DataFooter.map((item, index) => (
             <Link key={index} to={item.link} className="hover:text-gray-300">
