@@ -36,6 +36,9 @@ module.exports = {
         secondary_color: "#60a3bc",
         secondary_color_light: "#d9e5eb",
       },
+      boxShadow: {
+        'left': '-8px 0 8px -8px rgba(0, 0, 0, 0.5)',
+      },
 
       /**
        * Custom screen breakpoints.

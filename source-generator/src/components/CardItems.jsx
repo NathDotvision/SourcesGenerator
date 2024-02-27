@@ -47,9 +47,9 @@ const CardItem = ({ data, largeur = window.innerWidth }) => {
             <div className="flex flex-col items-center justify-center text-center h-full"
                 onMouseMove={handleMouseMoveName} onMouseLeave={handleMouseLeave}>
                 {data.thumnail_logo === "test_thumnail" ? (
-                    <img src={data.icon_logo} className="h-20" />
+                    <img src={data.icon_logo} className="h-20" alt="icon logo" />
                 ) : (
-                    <img src={data.thumnail_logo} className="max-h-20" />
+                    <img src={data.thumnail_logo} className="max-h-20" alt="thumnail logo" />
                 )}
                 {showDescriptionName && <components.Description data={data.name} style={{ position: 'fixed', top: position.y, left: position.x }} />}
             </div>
