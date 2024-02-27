@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { SavedNotification } from "../components"
+import * as components from "../components"
 import {
   ChevronDownIcon,
   PencilSquareIcon,
@@ -150,7 +150,7 @@ const Projets = () => {
   return (
     <div>
       {showNotification && (
-        <SavedNotification
+        <components.SavedNotification
           message="Successfully saved!"
           onClose={handleClose}
         />

@@ -1,3 +1,12 @@
-import { traduire } from "./translate"
+// Export functions for various file formats.
+import ExportToPDF from "./Export/ToPDF"
+import ExportToTxt from "./Export/ToTXT"
+import ExportToCSV from "./Export/ToCSV"
+import ExportToJSON from "./Export/ToJSON"
+import ExportToMD from "./Export/ToMD"
 
-export { traduire }
+/**
+ * Export functions
+ * @module functions
+ */
+export { ExportToPDF, ExportToTxt, ExportToCSV, ExportToJSON, ExportToMD }

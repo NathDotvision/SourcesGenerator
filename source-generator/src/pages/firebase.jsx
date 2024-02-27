@@ -25,13 +25,13 @@ import {
  * Configuration object for Firebase
  */
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID",
+  apiKey: "AIzaSyBJmtFVk6nJkgUiL3Yq9r1BwdYsw6H7A3o",
+  authDomain: "generatorsource-c3ea4.firebaseapp.com",
+  projectId: "generatorsource-c3ea4",
+  storageBucket: "generatorsource-c3ea4.appspot.com",
+  messagingSenderId: "510629378826",
+  appId: "1:510629378826:web:82daead7d5c656d05458f3",
+  measurementId: "G-6SWB89J39S",
 }
 
 // Initialize Firebase
@@ -57,6 +57,7 @@ onSnapshot(links, (doc) => {
     if (change.type === "added") {
       getOnSnappLinks.push(change.doc.data())
     }
+    getOnSnappLinks.sort((a, b) => a.id - b.id)
     if (change.type === "modified") {
       // handle modified data if needed
     }
@@ -69,7 +70,6 @@ onSnapshot(links, (doc) => {
       }
     }
   })
-  getOnSnappLinks.sort((a, b) => a.id - b.id)
 })
 
 /**
