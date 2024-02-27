@@ -67,6 +67,7 @@ function Links() {
       icon_logo: "test_icon",
       thumnail_logo: "test_thumnail",
       type: "test",
+      description: "test_description",
       date: new Date().toISOString(),
       id: generateRandomString(8),
     }
@@ -397,6 +398,23 @@ function Links() {
                     name="thumnail_logo"
                     type="text"
                     className="text-black block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300  focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div className="sm:col-span-4">
+                <label
+                  htmlFor="thumnail_logo"
+                  className="block text-sm font-medium leading-6 "
+                >
+                  Description
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="description"
+                    name="description"
+                    type="text"
+                    className="text-black block w-full h-20 rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>

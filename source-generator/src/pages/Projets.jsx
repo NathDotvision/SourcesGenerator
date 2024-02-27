@@ -10,6 +10,7 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline"
 
+
 const DataOptions = [
   {
     id: 1,
@@ -142,10 +143,12 @@ const Test = () => {
 
 const Projets = () => {
   const [showNotification, setShowNotification] = useState(true)
+  const [showDetails, setShowDetails] = useState(false)
 
   const handleClose = () => {
     setShowNotification(false)
   }
+
 
   return (
     <div>
@@ -155,6 +158,8 @@ const Projets = () => {
           onClose={handleClose}
         />
       )}
+      {showDetails && <components.ProfileComponent />}
+      <button onClick={() => setShowDetails(!showDetails)}>Show Details</button>
       <Test />
     </div>
   )

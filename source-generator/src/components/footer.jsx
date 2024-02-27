@@ -137,31 +137,35 @@ const SocialMedia = [
  */
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-between items-center py-4 px-6 bg-main_color text-white fixed inset-x-0 bottom-0">
-      <nav className="flex space-x-4">
-        {DataFooter.map((item, index) => (
-          <Link key={index} to={item.link} className="hover:text-gray-300">
-            {item.name}
-          </Link>
-        ))}
-      </nav>
-      <div className="flex space-x-4">
-        {SocialMedia.map((item, index) => (
-          <Link
-            key={index}
-            to={item.link}
-            className="flex items-center hover:text-gray-300"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.name}
-            {item.svg}
-          </Link>
-        ))}
+    <div>
+      <div className="h-32">
       </div>
-      <p className="text-sm">
-        {new Date().getFullYear()} {Data.name} All rights reserved.
-      </p>
+      <div className="flex flex-col justify-between items-center py-4 px-6 bg-main_color text-white fixed inset-x-0 bottom-0">
+        <nav className="flex space-x-4">
+          {DataFooter.map((item, index) => (
+            <Link key={index} to={item.link} className="hover:text-gray-300">
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+        <div className="flex space-x-4">
+          {SocialMedia.map((item, index) => (
+            <Link
+              key={index}
+              to={item.link}
+              className="flex items-center hover:text-gray-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.name}
+              {item.svg}
+            </Link>
+          ))}
+        </div>
+        <p className="text-sm">
+          {new Date().getFullYear()} {Data.name} All rights reserved.
+        </p>
+      </div>
     </div>
   )
 }
